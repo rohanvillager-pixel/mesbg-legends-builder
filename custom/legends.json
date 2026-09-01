@@ -1,0 +1,1275 @@
+{
+  "name": "Legends of Middle-earth",
+  "version": "1.2",
+  "toggle": {
+    "property": "legendsOfMiddleEarth",
+    "label": "Legends of Middle-earth",
+    "default": false
+  },
+  "source": "Legends of Middle-earth 1.2 by Antonio Andrino, last updated 2026-08-02",
+  "factions": [
+    {
+      "name": "Watchers of the Carrock",
+      "alignment": "good",
+      "heroes": [
+        [
+          "Grimbeorn",
+          "Hero of Legend"
+        ],
+        [
+          "Radagast the Brown",
+          "Hero of Legend"
+        ]
+      ],
+      "warriors": [
+        "Beorning"
+      ],
+      "required": [
+        {
+          "name": "Grimbeorn",
+          "general": true
+        }
+      ],
+      "additionalRules": [
+        "A Watchers of the Carrock Army must include Grimbeorn, who is always the Army's General."
+      ],
+      "armyBonuses": [
+        {
+          "name": "The Old Bear",
+          "definition": "Grimbeorn has grown older and, over the years, has been through many battles and sustained quite a few wounds that have left him with scars. Whenever Grimbeorn the Bear suffers a Wound, roll a D6. On the roll of a natural 5+, the Wound is ignored. Note that if this roll is failed, Grimbeorn may still use Fate Points as normal."
+        },
+        {
+          "name": "Roar of the Bear",
+          "definition": "Stories tell of the old bear’s roar, which can penetrate the valleys right down to their deepest corners. Once per game, so long as Grimbeorn is alive and on the battlefield, you may use this special rule at the start of any Move Phase in which your Army is Broken. Enemy models within 12\" of Grimbeorn gain the Fearful special rule until the end of the round."
+        },
+        {
+          "name": "Counsel of the Brown Wizard",
+          "definition": "Thanks to his wisdom and the knowledge of his animal companions, Radagast can enhance his allies’ combat abilities and improve their chances of survival. Friendly Beorning Warrior models treat Radagast as a Banner. Additionally, friendly Beorning Warrior models within 12\" of Radagast gain the Resistant to Magic special rule."
+        },
+        {
+          "name": "On the watch",
+          "definition": "Since Beorn showed them the way, the Beornings have taken charge of security in the valleys and mountain passes, where they have survived under harsh conditions. Friendly Beorning models gain the Mountain Dweller special rule."
+        }
+      ],
+      "sourcePage": 5
+    },
+    {
+      "name": "Denizens of the Drúadan Forest",
+      "alignment": "good",
+      "heroes": [
+        [
+          "Ghan-buri-Ghan",
+          "Hero of Valour"
+        ]
+      ],
+      "warriors": [
+        "Woses Warrior"
+      ],
+      "required": [
+        {
+          "name": "Ghan-buri-Ghan",
+          "general": true
+        }
+      ],
+      "additionalRules": [
+        "A Denizens of the Drúadan Forest must always include Ghân-buri-Ghân, who is always the Army's General."
+      ],
+      "armyBonuses": [
+        {
+          "name": "The Drúadan Forest",
+          "definition": "At the start of the game, after both sides have been deployed, you may place up to two 25mm Forest Markers on the battlefield. Forest Markers cannot be set up within 3\" of an Objective Marker, and cannot be set up within 6\" of the edge of the board or within 9\" of another Forest Marker. Any models within 3\" of a Forest Marker is considered to be in a piece of woodland terrain classed as Difficult Terrain."
+        },
+        {
+          "name": "Rites of the Drúadan",
+          "definition": "A Denizens of the Drúadan Forest Army works in an unusual way in that it is allowed to purchase additional special rules. Each of the special rules listed below can be purchased for 100 points, allowing this Army to be taken at many different points values."
+        },
+        {
+          "name": "Assault at Night",
+          "definition": "At the start of each game using this Army List, you may choose for the Scenario to take place at night if you wish. Additionally, whilst within a piece of woodland terrain, friendly models cannot be seen at distances of more than 6\"."
+        },
+        {
+          "name": "Defenders of the Woods",
+          "definition": "Friendly models receive a bonus of +1 when rolling for Ghân-buri-Ghân’s Forest Stalker special rule. Additionally, whilst within a piece of woodland terrain, friendly models count as being in range of Ghân-buri-Ghân for the purpose of his Forest Stalker special rule."
+        },
+        {
+          "name": "Ghosts of the Woods",
+          "definition": "Whilst within a piece of woodland terrain, friendly models gain the Blades of the Dead and the Terror special rule."
+        },
+        {
+          "name": "Guidance of the Chief",
+          "definition": "Ghân-buri-Ghân increase his starting Will and Fate Points to 3. Additionally, if at the end of the game Ghân-buri-Ghân is alive, you gain additional 2 Victory Points. This can never take this Army’s controlling player’s total Victory Points above 20."
+        },
+        {
+          "name": "Warriors of the Forest",
+          "definition": "Warbands from this Army do not need a Hero to lead them if they number eight or more models. Instead, one Warrior model within the Warband takes on the role of the Warband's Captain for the purposes of deployment. Warbands without a Hero model leading them may not include more than 12 models."
+        },
+        {
+          "name": "Traps of the Drúadan",
+          "definition": "At the start of the Move Phase, before the Declare Heroic Actions Step, you may choose an enemy model within 12\" of Ghân-buri-Ghân that is within a piece of woodland terrain. The target must take an Intelligence Test. If the test is failed, the target suffers one Strength 7 hit and is knocked Prone. If the target was a Cavalry model, they will automatically count as suffering the Knocked Flying result on the Thrown Rider Chart."
+        },
+        {
+          "name": "The Faithful Stone",
+          "definition": "The Faithful Stone is a Heavy Object on a 40mm base, and has a Defence of 10 and 3 Wounds. It is deployed within 6\" of Ghân-buri-Ghân at the start of the game, though for Scenarios in which models Move onto the board it can be carried onto the battlefield by two friendly models. Friendly models within 6\" of the Faithful Stone count as being in range of a banner. Additionally, the Faithful Stone counts as a banner for the purpose of Victory Points. If, during the End Phase of a turn, an enemy model is in base contact with the Faithful Stone, that model hasn’t done anything during that turn except Move (i.e., has not made a shooting attack, cast a Magical Power, been Engaged in Combat), and that model was not affected by a Magical Power that turn, then it can remove the Faithful Stone from play."
+        }
+      ],
+      "sourcePage": 6
+    },
+    {
+      "name": "Helm's Guard",
+      "alignment": "good",
+      "heroes": [
+        [
+          "Helm Hammerhand, King of Rohan",
+          "Hero of Legend"
+        ],
+        [
+          "Captain of Rohan",
+          "Hero of Fortitude"
+        ],
+        [
+          "King's Huntsman",
+          "Minor Hero"
+        ]
+      ],
+      "warriors": [
+        "Warrior of Rohan",
+        "Rider of Rohan",
+        "Rohan Royal Guard",
+        "Rohan Outrider"
+      ],
+      "required": [
+        {
+          "name": "Helm Hammerhand, King of Rohan",
+          "general": true
+        }
+      ],
+      "additionalRules": [
+        "A Helm’s Guard Army must always include Helm, who is always the Army’s General.",
+        "A Helm’s Guard Army may have up to 50% of its Warrior models armed with throwing spears rather than the usual 33%."
+      ],
+      "armyBonuses": [
+        {
+          "name": "The Legend of the Hammerhand",
+          "definition": "Helm has proven himself to be a mighty warrior, one who has fought off countless enemies. Helm Hammerhand gains the Mighty Hero Special Rule. Additionally, in a turn in which Helm Hammerhand charges into combat, he gains the Terror special rule until the end of the turn."
+        },
+        {
+          "name": "To the King!",
+          "definition": "Many stories tell of the warriors of the Mark and how their shield walls fought most fiercely wherever their king was nearby. Other friendly Rohan Infantry models within 12\" of Helm Hammerhand gain a bonus of +1 to their Fight Value."
+        },
+        {
+          "name": "The King's court",
+          "definition": "Helm was accompanied by several members of his court who had stood by him from the very beginning, and although their names are not recorded, they were known for their courage. Captain of Rohan and King’s Huntsmen gain the Sworn Protector (Helm Hammerhand) special rule."
+        },
+        {
+          "name": "Death to the Dunlendings!",
+          "definition": "Almost everyone in the ranks of the Hammerhand had suffered a loss at the hands of a Dunlending. Friendly Rohan gain the Hatred (Dunland) special rule."
+        }
+      ],
+      "sourcePage": 7
+    },
+    {
+      "name": "Defenders of Aglarond",
+      "alignment": "good",
+      "heroes": [
+        [
+          "Gimli, Son of Gloin",
+          "Hero of Valour"
+        ],
+        [
+          "Erkenbrand, Captain of Rohan",
+          "Hero of Valour"
+        ],
+        [
+          "Dwarf Captain",
+          "Hero of Fortitude"
+        ],
+        [
+          "Captain of Rohan",
+          "Hero of Fortitude"
+        ],
+        [
+          "Dwarf Shieldbearer",
+          "Minor Hero"
+        ],
+        [
+          "King's Huntsman",
+          "Minor Hero"
+        ]
+      ],
+      "warriors": [
+        "Dwarf Warrior",
+        "Dwarf Ranger",
+        "Warrior of Rohan",
+        "Rider of Rohan"
+      ],
+      "required": [
+        {
+          "name": "Gimli, Son of Gloin",
+          "general": true
+        },
+        {
+          "name": "Erkenbrand, Captain of Rohan"
+        }
+      ],
+      "additionalRules": [
+        "A Defenders of Aglarond Army must include Gimli and Erkenbrand. Gimli must always be the Army’s General.",
+        "A Defenders of Aglarond Army may have up to 50% of its Warrior models armed with Throwing Spears rather than the usual 33%.",
+        "Only a maximum of 33% of the models in this Army may have the Dwarf keyword."
+      ],
+      "armyBonuses": [
+        {
+          "name": "The Lord of Aglarond",
+          "definition": "During his reign over the caves of Aglarond, Gimli was at the height of his powers and a true Lord among the Dwarves, held in the highest esteem. Gimli gains the Mighty Hero special rule. Additionally, friendly Dwarf models within 3\" of Gimli gain the Dominant (2) special rule."
+        },
+        {
+          "name": "Brothers in arms",
+          "definition": "A deep friendship existed between the dwarves of Aglarond and the men of Helm's Deep. Friendly models may re-roll To Wound Rolls of a natural 1 when making Strikes if they are involved in a Combat with a friendly model that has a different racial Keyword to themselves."
+        },
+        {
+          "name": "The Lord of the Westfold",
+          "definition": "As Lord of the Westfold and Marshal of the Riddermark, Erkenbrand was one of Rohan’s most capable leaders. Riders of Rohan in Erkenbrand’s Warband are automatically upgraded to Westfold Redshields - this upgrade is free rather than costing 1 point per model. Additionally, Westfold Redshields within 12\" of Erkenbrand gain a Bonus of +1 to their Fight Value."
+        }
+      ],
+      "sourcePage": 8
+    },
+    {
+      "name": "Host of Eärnur",
+      "alignment": "good",
+      "heroes": [
+        [
+          "Earnur, Last King of Gondor",
+          "Hero of Legend"
+        ],
+        [
+          "Captain of Minas Tirith",
+          "Hero of Fortitude"
+        ],
+        [
+          "Knight of the White Tower",
+          "Hero of Fortitude"
+        ]
+      ],
+      "warriors": [
+        "Warrior of Minas Tirith",
+        "Knight of Minas Tirith",
+        "Citadel Guard",
+        "Guard of the Fountain Court"
+      ],
+      "required": [
+        {
+          "name": "Earnur, Last King of Gondor",
+          "general": true
+        }
+      ],
+      "additionalRules": [
+        "A Host of Eärnur Army must include Eärnur, who is always the Army’s General."
+      ],
+      "armyBonuses": [
+        {
+          "name": "The Last King of Gondor",
+          "definition": "Eärnur commanded all the forces of the White City to fight against his enemies and was a warrior whot took great pride in his fighting abilities. Once per game Eärnur may declare a Heroic Challenge for free, though this Heroic Challenge must target the enemy General . Eärnur may still do this even if the enemy General has a lower Heroic Tier. Additionally, Eärnur gains the Leader (Citadel Guard) and Leader (Guard of the Fountain Court) special rules."
+        },
+        {
+          "name": "Protect the King",
+          "definition": "Eärnur was an imposing leader who could always rely on his men. The king’s fearlessness was reflected in his ranks, which were filled with experienced and loyal servants. Friendly Gondor models gain the Sworn Protector (Eärnur) special rule."
+        },
+        {
+          "name": "The charge of Gondor",
+          "definition": "The charge of the Gondor cavalry is a devastating force, fuelled by the leadership of their king. Friendly GondorCavalry models gain a bonus of +1 to their Fight Value on a turn in which they Charge."
+        }
+      ],
+      "sourcePage": 9
+    },
+    {
+      "name": "Defenders of Cair Andros",
+      "alignment": "good",
+      "heroes": [
+        [
+          "Captain of Minas Tirith",
+          "Hero of Fortitude"
+        ],
+        [
+          "Anborn, Ranger of Ithilien",
+          "Minor Hero"
+        ],
+        [
+          "Mablung, Ranger of Ithilien",
+          "Minor Hero"
+        ],
+        [
+          "Gondor Battlecry Trebuchet",
+          "Minor Hero"
+        ]
+      ],
+      "warriors": [
+        "Warrior of Minas Tirith",
+        "Knight of Minas Tirith",
+        "Ranger of Gondor"
+      ],
+      "required": [
+        {
+          "name": "Captain of Minas Tirith",
+          "general": true
+        },
+        {
+          "name": "Gondor Battlecry Trebuchet"
+        }
+      ],
+      "additionalRules": [
+        "A Defenders of Cair Andros Army must always contain a Captain of Minas Tirith, who is always the Army’s General.",
+        "A Defenders of Cair Andros Army must always contain only one Gondor Battlecry Trebuchet.",
+        "Rangers of Gondor can only be included in Anborn’s and Mablung’s Warband.",
+        "Rangers of Gondor do not count towards this Army’s Bow Limit."
+      ],
+      "armyBonuses": [
+        {
+          "name": "Commander of Cair Andros",
+          "definition": "A veteran of many battles, the Commander of Cair Andros is an experienced warrior who leads by example. The Captain of Minas Tirith that is your General increases their Attacks and Wounds to 3 each."
+        },
+        {
+          "name": "Old Rattle-Hirwen",
+          "definition": "The trebuchet of Cair Andros has been given a charming name, inspired by the rattling sounds of its mechanism. Despite its age and well-known shortcomings, the garrison cannot do without this war machine. The Gondor Battlecry Trebuchet may re-roll all failed To Hit Rolls when making Shooting Attacks. However, if a natural 1 is rolled when rolling To Hit in this instance, the Trebuchet will malfunction and it will suffer a Wound."
+        },
+        {
+          "name": "Reinforcements from Osgiliath",
+          "definition": "Because Faramir wanted to ensure that Cair Andros would hold out, he sent two of his best captains to provide the fortress with the necessary manpower. Anborn and Mablung increase their Attacks and Wounds to 2 each. Additionally, in Scenarios where you roll for Warbands to arrive, or ones where you roll to see which part of the board you deploy a Warband in (though not when rolling to choose deployment zones), you may modify the roll for Anborn’s and Mablung’s Warband by +1 or -1, even if they are not on the battlefield."
+        }
+      ],
+      "sourcePage": 10
+    },
+    {
+      "name": "Remnants of Arnor",
+      "alignment": "good",
+      "heroes": [
+        [
+          "Aranarth, First Chieftain of the Dunedain",
+          "Hero of Valour"
+        ]
+      ],
+      "warriors": [
+        "Ranger of the North"
+      ],
+      "required": [
+        {
+          "name": "Aranarth, First Chieftain of the Dunedain",
+          "general": true
+        }
+      ],
+      "additionalRules": [
+        "A Remnants of Arnor Army must include Aranarth, who is always the Army's General."
+      ],
+      "armyBonuses": [
+        {
+          "name": "Armoury of Arnor",
+          "definition": "Aranarth leads a group of nobles who fought alongside him at the Battle of Fornost and and are still armed with equipment from the war. Rangers of the North do not have to pay for Armour; they automatically have this upgrade – it is free."
+        },
+        {
+          "name": "Gifted Warriors",
+          "definition": "The remnants of Arnor are skilled warriors, in whose veins the blood of Númenor still flows strongly. If a friendly model is involved in a Drawn Combat, and the Combat is tied at his Fight Value (i.e., both sides have Fight Value 4 as their highest), then instead of rolling off to see who wins, the frienldy model wins instead. If both sides have a similar special rule, roll off as normal."
+        },
+        {
+          "name": "Veterans of Fornost",
+          "definition": "Those in the ranks of the Dúnedain are outstanding warriors who survived the Battle of Fornost and all the horrors associated with it. Rangers of the North increase their Attacks value to 2. Additionally, they gain the Hatred ( Angmar ) special rule."
+        },
+        {
+          "name": "Legacy of the Fallen Kingdom",
+          "definition": "The followers of Aranarth have dedicated themselves to protect the heir to the northern realm. If at the end of the game Aranarth is alive, you gain additional 2 Victory Points. This can never take this Army’s controlling player’s total Victory Points above 20."
+        }
+      ],
+      "sourcePage": 11
+    },
+    {
+      "name": "The Dead of Dunharrow",
+      "alignment": "good",
+      "heroes": [
+        [
+          "The King of the Dead",
+          "Hero of Valour"
+        ],
+        [
+          "Herald of the Dead",
+          "Hero of Fortitude"
+        ]
+      ],
+      "warriors": [
+        "Warrior of the Dead",
+        "Rider of the Dead"
+      ],
+      "required": [
+        {
+          "name": "The King of the Dead",
+          "general": true
+        }
+      ],
+      "additionalRules": [
+        "A Dead of Dunharrow Army must include The King of the Dead, who is always the Army's General."
+      ],
+      "armyBonuses": [
+        {
+          "name": "Visions of Terror",
+          "definition": "The sight of the King of the Dead charging headlong into the fray is truly horrifying, one that may send enemies fleeing in terror. Whenever the King of the Dead Charges into Combat, after the Charge has been completed, he may spend a Will Point to use this special rule. If he does, enemy models within 3\" of the King of the Dead must take a Courage Test in an order chosen by the King of the Dead's controlling player. If the test is failed, the model must Move up to its Move Value directly away from the King of the Dead. Once the models have been moved, they cannot move any further that turn for any reason but may otherwise act normally."
+        },
+        {
+          "name": "Broken Vows of Erech",
+          "definition": "In the very early days of Gondor, the king of the men from the White Mountains swore an oath of allegiance to Isildur on the Stone of Erech. Friendly Dunharrow Warrior models within 3” of the King of the Dead gain a Bonus on +1 to their Fight value. Additionally, should the King of the Dead ever be removed as a casualty, a Dead of Dunharrow army will immediately count as being broken."
+        },
+        {
+          "name": "Pennants of Dunharrow",
+          "definition": "The waving pennants of the dead mark the areas of the battlefield where the fighting is fiercest. A Herald of the Dead may spend a Will Point at the start of any Fight Phase to use this special rule. If he does, friendly Dunharrow models within 6” of the Herald of the Dead may re-roll To Wound Rolls of a natural 1 when making Strikes until the end of the turn."
+        }
+      ],
+      "sourcePage": 12
+    },
+    {
+      "name": "Army of Eryn Lasgalen",
+      "alignment": "good",
+      "heroes": [
+        [
+          "Thranduil, King of the Woodland Realm",
+          "Hero of Valour"
+        ],
+        [
+          "Celeborn, Lord of Lothlorien",
+          "Hero of Valour"
+        ],
+        [
+          "Mirkwood Elf Captain",
+          "Hero of Fortitude"
+        ],
+        [
+          "Galadhrim Captain",
+          "Hero of Fortitude"
+        ]
+      ],
+      "warriors": [
+        "Mirkwood Elf Warrior",
+        "Galadhrim Warrior"
+      ],
+      "requireOne": [
+        "Thranduil, King of the Woodland Realm",
+        "Celeborn, Lord of Lothlorien"
+      ],
+      "additionalRules": [
+        "An Army of Eryn Lasgalen Army must always contain Celeborn or Thranduil.",
+        "Mirkwood Warrior models can only be included in the Warband of a Mirkwood Hero.",
+        "Lothlórien Warrior models can only be included in the Warband of a Lothlórien Hero."
+      ],
+      "armyBonuses": [
+        {
+          "name": "Wrath of the Elvenking",
+          "definition": "After the gruelling battles and the inevitable losses, the Elven King’s wrath burns fiercely. No line of defence will be able to stop his charge. Thranduil gains a bonus of +1 To Wound on the hits caused by the Majestic Steed special rule. Additionally, whenever Thranduil would be knocked Prone whilst riding the Great Elk, and the Great Elk is not slain as a result of the effect causing Thranduil to be knocked Prone, then before becoming a Separated Mount Thranduil may roll a D6. On a natural 4+, Thranduil is not knocked Prone and stays mounted upon the Great Elk."
+        },
+        {
+          "name": "The Last Stand of the Eldar",
+          "definition": "The Elves of Wilderland know that this is to be their finest moment, and will stand their ground against all comers. Friendly Infantry models within 3\" of a friendly Unique Hero model that share the same Faction Keyword as the Hero gain the Dominant (2) special rule."
+        },
+        {
+          "name": "The Lord of Lórien",
+          "definition": "Following the Battles of the Golden Wood, Celeborn once again donned the warrior’s cloak and came to Mirkwood to bring peace to what was once known as Greenwood the Great. Celeborn gains a heavy armour, shield and Elven hand-and-a-half weapon as Part of his Wargear. Additionally, all Galadhrim Warriors in Celeborn's Warband are automatically upgraded to Lorien Guard for free."
+        }
+      ],
+      "sourcePage": 13
+    },
+    {
+      "name": "Battle of Eregion",
+      "alignment": "good",
+      "heroes": [
+        [
+          "Elrond, Master of Rivendell",
+          "Hero of Legend"
+        ],
+        [
+          "Rivendell Captain",
+          "Hero of Fortitude"
+        ],
+        [
+          "Dwarf Captain",
+          "Hero of Fortitude"
+        ],
+        [
+          "Dwarven Ballista",
+          "Minor Hero"
+        ]
+      ],
+      "warriors": [
+        "Rivendell Warrior",
+        "Rivendell Knight",
+        "Dwarf Warrior"
+      ],
+      "required": [
+        {
+          "name": "Elrond, Master of Rivendell",
+          "general": true
+        }
+      ],
+      "additionalRules": [
+        "A Battle of Eregion Army must always contain Elrond, who is always the Army's General.",
+        "Elf Warrior models can only be included in the Warband of an Elf Hero.",
+        "Dwarf Warrior models can only be included in the Warband of a Dwarf Hero."
+      ],
+      "armyBonuses": [
+        {
+          "name": "Herald of the High King",
+          "definition": "As Gil-galad's highest servant, Elrond possesses the military expertise needed to save Eregion. Elrond gains the Master of Battle (3+) special rule. Additionally, other friendly Elf models that can draw Line of Sight to Elrond gain a bonus of +1 to any Courage Tests they are required to take."
+        },
+        {
+          "name": "Old Allies",
+          "definition": "The Dwarves of Khazad-dûm are cautious in choosing their allies, yet they are loyal to those they call friends. Dwarf Captains and Dwarf Warriors gain the Dominant (2) special rule. Additionally, Friendly Dwarf models may re-roll To Wound Rolls of a natural 1when making Strikes."
+        }
+      ],
+      "sourcePage": 14
+    },
+    {
+      "name": "Waywardens of Eriador",
+      "alignment": "good",
+      "heroes": [
+        [
+          "Gildor Inglorion",
+          "Hero of Valour"
+        ],
+        [
+          "Elladan",
+          "Hero of Fortitude"
+        ],
+        [
+          "Elrohir",
+          "Hero of Fortitude"
+        ],
+        [
+          "Lothlorien Captain",
+          "Hero of Fortitude"
+        ]
+      ],
+      "warriors": [
+        "Lothlorien Warrior",
+        "Wood Elf Sentinel"
+      ],
+      "required": [
+        {
+          "name": "Gildor Inglorion",
+          "general": true
+        }
+      ],
+      "additionalRules": [
+        "A Waywardens of Eriador Army must include Gildor Inglorion, who is always the Army's General."
+      ],
+      "armyBonuses": [
+        {
+          "name": "Of the House of Finrod",
+          "definition": "Gildor is a noble lord among the Elves and a leader of those who set out on the journey to the immortal lands. Gildor increases its Attacks and Wounds to 3 each. Additionally, Gildor gains the following Wargear:"
+        },
+        {
+          "name": "Lamp of Balar",
+          "definition": "This is a Unique piece of Wargear. At the start of each of his Activations, Gildor may roll a D6. On a 3+, Gildor counts as having Cast the Blinding Light Magical Power."
+        },
+        {
+          "name": "Wandering Noldor",
+          "definition": "This band of Noldor consists of survivors from the many fallen Elven kingdoms of Middle-earth. Their skill with a weapon is matched only by their experience in battle. All friendly Lothlórien Warriors may be upgraded to Noldorin Exiles rather than just the ones in Gildor’s warband – this upgrade is free rather than costing 1 point per model. Additionally, friendly Lothlórien Captains and Wood Elf Sentinels increase their Move value to 8”."
+        },
+        {
+          "name": "The Sons of Peredhel",
+          "definition": "The elven twins of rivendell can always be found wherever the people of the Firstborn need them, ready to protect those who cannot protect themselves. Elladan and Elrohir exchange their heavy armour for an elf bow and Elven cloak as part of their Wargear. Additionally, Elladan and Elrohir increase their Move value to 8”."
+        },
+        {
+          "name": "The Passing of the Elves",
+          "definition": "When the burden of the world becomes too great, the Elves must leave Middle-earth behind and journey to their homeland in the Undying Lands. At the start of the game, after both sides have deployed, you may deploy three 40mm Elven Wanderers Markers anywhere on the battlefield within your deployment zone. Elven Wanderers Markers are treated as Heavy Objects. At the End of the Game, you gain 1 Victory Point for each Elven Wanderers that escaped the battlefield via your opponent’s board edge. This can never take this Army’s total number of Victory Points above 20. This special rule does not count in Scenarios with the Maelstrom of Battle Special Rule."
+        }
+      ],
+      "sourcePage": 15
+    },
+    {
+      "name": "Kingdom of the Ered Luin",
+      "alignment": "good",
+      "heroes": [
+        [
+          "Dwarf King",
+          "Hero of Valour"
+        ],
+        [
+          "Dwarf Captain",
+          "Hero of Fortitude"
+        ],
+        [
+          "King's Champion",
+          "Hero of Fortitude"
+        ],
+        [
+          "Dwarf Shieldbearer",
+          "Minor Hero"
+        ],
+        [
+          "Dwarven Ballista",
+          "Minor Hero"
+        ]
+      ],
+      "warriors": [
+        "Dwarf Warrior",
+        "Dwarf Ranger",
+        "Khazad Guard"
+      ],
+      "additionalRules": [
+        "If a Dwarf King is your General, they gain the Leader (Khazad Guard) special rule."
+      ],
+      "armyBonuses": [
+        {
+          "name": "Ancient Will",
+          "definition": "The Dwarves of the Ered Luin have endured much hardship over the millennia and are considered particularly resilient, even by dwarven standards. Whilst this Army is considered to be Broken, friendly models gain a bonus of +1 to any Courage Tests they are required to take."
+        },
+        {
+          "name": "Wondrous Engines",
+          "definition": "In ancient times, following the death of a great Dwarf king at the hands of a dragon, these machines were built to ward off such creatures in future. Today, the knowledge of how to craft these weapons may have been lost, but a few still remain in the Ered Luin. Friendly Dwarven Ballistae improve their Shoot Value to 3+. Additionally, they may re-roll Scatter rolls and failed To Wound rolls when making a shooting attack targeting a Monster model."
+        },
+        {
+          "name": "Treasures from times long past",
+          "definition": "The warriors of the Ered Luin possess a number of weapons and armour that were forged in the days of the First Age and are of extraordinary power. At the start of the game, after both sides have deployed, you may a 40mm Armor Stand Marker and a 40 mm Weapon Rack Marker anywhere on the battlefield that is not within the opposition deployment zone. This Markers cannot be set up within 3\" of an Objective Marker, and cannot be set up within 9\" of each other."
+        },
+        {
+          "name": "Armor Stand",
+          "definition": "Whenever a friendly Dwarf model within 3\" of a friendly Armor Stand Marker suffers a Wound, roll a D6. On a 5+, the Wound has been prevented and is ignored."
+        },
+        {
+          "name": "Weapon Rack",
+          "definition": "Friendly Dwarf models within 3\" of a friendly Weapon Rack Marker gain a Bonus of +1 To Wound when making Strikes."
+        }
+      ],
+      "sourcePage": 16
+    },
+    {
+      "name": "Brigands of Breeland",
+      "alignment": "evil",
+      "heroes": [
+        [
+          "Sid Briarthorn",
+          "Hero of Valour"
+        ],
+        [
+          "Rowan Thistlewood",
+          "Hero of Fortitude"
+        ],
+        [
+          "Bill Ferny",
+          "Hero of Fortitude"
+        ]
+      ],
+      "warriors": [
+        "The Gatekeeper of Bree",
+        "Ruffian",
+        "Crebain"
+      ],
+      "required": [
+        {
+          "name": "Sid Briarthorn",
+          "general": true
+        }
+      ],
+      "additionalRules": [
+        "A Brigands of Breeland Army must always include Sid Briarthorn, who is always the Army’s General.",
+        "This Army may include Warbands of 10-12 Ruffians without a Hero to lead them. In these Warbands, nominate a single Warrior model to count as the Warband's Captain for the purpose of deployment. These Warbands may only be included after all other available Ruffian Hero models have been Included in the Army.",
+        "Ruffian Hero models may lead up to one Crebain in their Warbands."
+      ],
+      "armyBonuses": [
+        {
+          "name": "Strenght in Numbers",
+          "definition": "Ruffians are far braver when they have the advantage and things are going their way. Whilst this Army is not Broken, friendly Ruffian models gain a bonus of +1 to any Courage Tests they are required to take."
+        },
+        {
+          "name": "Secret Agent of Sharkey",
+          "definition": "The gatekeeper learns a great deal about what goes on in Breeland, which makes him a perfect informant. The Gatekeeper of Bree gains the Ruffian Keyword. Additionally, he gains the A Traitor Within special rule and will treat Sid Briarthorn as Saruman for the purpose of this special rule."
+        },
+        {
+          "name": "On the Hunt for Ring-lore",
+          "definition": "Sharkey is on the hunt for any scrap of knowledge about the Rings of Power. His henchmen know nothing about it, but sometimes there are happy coincidences. Whenever a Ruffian model slays an enemy model in combat, they may roll a D6. On a natural 6, they have located a scrap about Ring-lore. At the end of the game, so long as at least one Ruffian Hero model is alive, you gain an additional Victory Point for each scrap they have found, up to a maximum of 5 Victory Points. This can never take controlling player’s total number of Victory Points above 20."
+        },
+        {
+          "name": "Greenway Robbery",
+          "definition": "Although Sharkey would prefer to keep them working in secret, the ruffians cannot quite resist their nature and occasionally raid the Greenway, Breeland’s main road to the south, in search of loot and informations. At the start of the game, before either side has deployed their units, you can decide that a warband consisting solely of warrior models will set up an ambush rather than arriving in the usual way. If they are kept in reserve, then from turn 2 onwards at the end of your Move Phase, Sid Briarthorn must take an Intelligence Test. If the test is passed, then their controlling player may decide whether or not they arrive. If the test is failed, then the opposing player may decide whether or not they arrive. When the Warband arrives, deploy in, or within 1” of a wood, building, rocky outcrop or other similar piece of terrain that the models could hide in. A degree of common sense is required when deciding which pieces of terrain the Warband can hide in — they shouldn’t be leaping out of a river or from behind a single rock! You should always agree with your opponent at the beginning of the game which terrain pieces are eligible to ambush from. Models deployed in this way cannot be placed in base contact with, or within the Control Zones of, enemy models. Models that enter the board this way do not Activate as part of the Move Phase, and will count as having Moved half their Move Value for the purposes of shooting."
+        }
+      ],
+      "sourcePage": 18
+    },
+    {
+      "name": "Battle of Moria",
+      "alignment": "evil",
+      "heroes": [
+        [
+          "Azog, the Defiler",
+          "Hero of Legend"
+        ],
+        [
+          "The Keeper of the Dungeons",
+          "Hero of Valour"
+        ],
+        [
+          "Hunter Orc Captain",
+          "Hero of Fortitude"
+        ]
+      ],
+      "warriors": [
+        "Hunter Orc Warrior"
+      ],
+      "required": [
+        {
+          "name": "Azog, the Defiler",
+          "general": true
+        }
+      ],
+      "additionalRules": [
+        "A Battle of Moria Army must always include Azog, who is always the Army’s General."
+      ],
+      "armyBonuses": [
+        {
+          "name": "Fury of the Pale Orc",
+          "definition": "Azog is at the height of his power and is a formidable foe on the battlefield. Azog may declare a Heroic Combat each Fight Phase for free. Additionally, in a turn in which Azog Charges, any model on a 25mm base hit by him but not killed is Knocked Prone at the end of the Combat."
+        },
+        {
+          "name": "The Pale Orc's Demands",
+          "definition": "Though not inherently brave, Orcs fear failing the commands of the Pale Orc far more than they do any foe. Whilst within 6\" of a friendly Hero , friendly Orc Warrior models gain a bonus of +1 to any Courage Tests to Charge an enemy model with the Terror special rule."
+        },
+        {
+          "name": "Savage Onslaught",
+          "definition": "Under the direct command of the Pale Orc, his warriors fight with extraordinary ferocity and are capable of breaking through even the heaviest battle lines. Orc Hunter Captains and Orc Hunter Warriors are always treated as if they had charged, for the purposes of their Savage Hunter special rule."
+        },
+        {
+          "name": "Occupants of Moria",
+          "definition": "The Orcs of Moria have lived in the mountains for many years and have had to fight numerous battles against Durin’s folk. Friendly models gain the Hatred ( Dwarf ) and the Mountain Dweller special rules."
+        }
+      ],
+      "sourcePage": 19
+    },
+    {
+      "name": "Assault upon Minas Tirith",
+      "alignment": "evil",
+      "heroes": [
+        [
+          "Goroth, Captain of the Morannon",
+          "Hero of Valour"
+        ],
+        [
+          "Zagdush, Orc Captain",
+          "Hero of Fortitude"
+        ],
+        [
+          "Mordor Orc Captain",
+          "Hero of Fortitude"
+        ],
+        [
+          "Morannon Orc Captain",
+          "Hero of Fortitude"
+        ]
+      ],
+      "warriors": [
+        "Mordor Orc Warrior",
+        "Morannon Orc Warrior",
+        "Mordor Troll"
+      ],
+      "required": [
+        {
+          "name": "Goroth, Captain of the Morannon",
+          "general": true
+        }
+      ],
+      "additionalRules": [
+        "An Assault upon Minas Tirith Army must always include Goroth, who is always the Army’s General."
+      ],
+      "armyBonuses": [
+        {
+          "name": "Monstrous Breakthrough",
+          "definition": "It takes a bit of troll strength to bring the White City to its knees. When Mordor Trolls Charge an enemy Infantry model, they gain the Knock to the Ground bonus as if they were Cavalry . This bonus is not lost if they are subsequently Charged by an enemy Cavalry model."
+        },
+        {
+          "name": "Seize the advantage",
+          "definition": "Goroth knows that his orcs fight best when they advance alongside the trolls and leave the enemy no room to defend themselves. Friendly Orc models within 3\" of a friendly Troll model gain a +1 bonus to any Courage Tests they are required to take and may re-roll To Wound Rolls of a natural 1 when making Strikes."
+        },
+        {
+          "name": "Flight of the Nazgûl",
+          "definition": "The screeching of the Ringwraiths is deafening and causes even the bravest warriors’ hearts to falter. Once per game, at the end of the Priority Phase, you can declare you are using this special rule. Until the end of the turn, all enemy models gain the Fearful special rule. Enemy models attempting to charge a friendly model cannot benefit from special rules that would allow them to automatically pass Courage Tests, with the exception of Heroic Resolve."
+        }
+      ],
+      "sourcePage": 20
+    },
+    {
+      "name": "Raiders from the Ered Nimras",
+      "alignment": "evil",
+      "heroes": [
+        [
+          "Shank & Wrot, Orc Scavengers",
+          "Hero of Valour"
+        ],
+        [
+          "Mordor Orc Captain",
+          "Hero of Fortitude"
+        ],
+        [
+          "Mordor Orc Shaman",
+          "Hero of Fortitude"
+        ],
+        [
+          "Wild Warg Chieftain",
+          "Hero of Fortitude"
+        ]
+      ],
+      "warriors": [
+        "Mordor Orc Warrior",
+        "Mordor Warg Rider",
+        "Wild Warg",
+        "Orc Tracker"
+      ],
+      "required": [
+        {
+          "name": "Shank & Wrot, Orc Scavengers",
+          "general": true
+        }
+      ],
+      "additionalRules": [
+        "A Raiders from the Ered Nimras Army must always include Shank and Wrot. Shank must always be the Army’s General."
+      ],
+      "armyBonuses": [
+        {
+          "name": "Mountain Raiders",
+          "definition": "This band of savage orcs is highly aggressive as long as they believe they have the upper hand. Friendly models gain the Mountain Dweller special rule. Additionally, so long as you have more models on the battlefield than your opponent, friendly models gain a +1 bonus to any Courage Tests they are required to take and may re-roll To Wound Rolls of a natural 1 when making Strikes."
+        },
+        {
+          "name": "Orcish Cunning",
+          "definition": "Shank is a clever one among the Orcs and is always at least one step ahead of his fellow Orcs. Whenever Shank spends a Will Point to use his Call ‘the Beast’ special rule, roll a D6. On a 4+ the point of Will is free and does not reduce Shank’s store of Will."
+        },
+        {
+          "name": "Loot them All!",
+          "definition": "The Black Tower’s orders are clear and promise great rewards to those who can achieve the impossible. Whenever a friendly Orc model kills an enemy model, it counts for the purpose of Shank & Wrot’s Loot the Bodies special rule. However, at the end of the game, at least one of Shank & Wrot needs to be alive to gain the additional Victory Points."
+        },
+        {
+          "name": "Scourge of the Vales",
+          "definition": "In the lower valleys of the Ered Nimras, people fear the devastating orcs’ night-time raids. At the start of each game, you may choose either Hate ( Gondor ) or Hate ( Rohan ). Friendly Orc models gain the chosen special rule for the duration of the game."
+        }
+      ],
+      "sourcePage": 21
+    },
+    {
+      "name": "Grishnakh's Horde",
+      "alignment": "evil",
+      "heroes": [
+        [
+          "Grishnakh, Orc Captain",
+          "Hero of Valour"
+        ],
+        [
+          "Snaga, Orc Captain",
+          "Hero of Fortitude"
+        ],
+        [
+          "Mordor Orc Captain",
+          "Hero of Fortitude"
+        ]
+      ],
+      "warriors": [
+        "Mordor Orc Drummer",
+        "Mordor Orc Warrior",
+        "Orc Tracker"
+      ],
+      "required": [
+        {
+          "name": "Grishnakh, Orc Captain",
+          "general": true
+        }
+      ],
+      "additionalRules": [
+        "A Grishnákh's Horde Army must always include Grishnákh, who is always the Army’s General.",
+        "Grishnákh and Snaga replace their Isengard keyword with the Mordor keyword."
+      ],
+      "armyBonuses": [
+        {
+          "name": "Orders from Barad-dûr",
+          "definition": "Although they do not know the exact word, these Orcs know that they are acting on direct orders from Barad-dûr in a matter of great importance. So long as you have more models on the battlefield than your opponent, friendly models gain a +1 bonus to any Courage Tests they are required to take."
+        },
+        {
+          "name": "Captain of Lugbúrz",
+          "definition": "Only the finest orcs can serve as captains in the Dark Tower of Barad-dûr. As such, Grishnákh is a formidable adversary. Grishnákh gains an additional point each of Might and Will. Additionally, Grishnákh may profite from his \"Let's put a maggot hole in your belly\" special rule even if he is supported by other models and may re-roll the D6 when using this special rule."
+        },
+        {
+          "name": "\"Go get 'em, maggots!\"",
+          "definition": "The orcs under Grishnákh’s command are particularly nasty warriors. Friendly models gain the Backstabbers special rule. Additionally, friendly models Engaged in Combat with an enemy model that would be considered Trapped gain a bonus of +1 to their Fight Value for the duration of the Combat."
+        },
+        {
+          "name": "Second in command",
+          "definition": "Grishnákh’s deputy is also somewhat cunning and does not rely on violence alone when carrying out his duties. Snaga gains an additional point of Will. Additionally, he may re-roll the D6 when using his Cunning Mind special rule. However, he cannot benefit from his Cunning Mind special rule if the Heroic Action was for free, without spending a Might Point."
+        }
+      ],
+      "sourcePage": 22
+    },
+    {
+      "name": "Dread from the Barrow-downs",
+      "alignment": "evil",
+      "heroes": [
+        [
+          "The Tainted",
+          "Hero of Valour"
+        ],
+        [
+          "The Dwimmerlaik",
+          "Hero of Valour"
+        ],
+        [
+          "Shade",
+          "Hero of Fortitude"
+        ],
+        [
+          "Barrow-wight",
+          "Minor Hero"
+        ]
+      ],
+      "warriors": [
+        "Spectre"
+      ],
+      "requireOne": [
+        "The Tainted",
+        "The Dwimmerlaik"
+      ],
+      "additionalRules": [
+        "A Dread from the Barrow-downs Army must always include The Tainted or The Dwimmerlaik."
+      ],
+      "armyBonuses": [
+        {
+          "name": "Terror and Decay",
+          "definition": "Thanks to the eerie mist, it looks as though the Ringwraiths are gliding over the landscape, bypassing the difficulties of the terrain. Friendly Ringwraith models gain the Blades of the Dead and Spectral Walk special rules. If they are equipped with a Horse their Mount also gain the Spectral Walk special rule."
+        },
+        {
+          "name": "March of the Dead",
+          "definition": "Like a shimmering host in the moonlight, the dead march across the land to serve the cause of the Witch-King. Any Hero in this Army may declare a Heroic March, even if it is not listed as one of their Heroic Actions. Additionally, Hero models may spend Will Points to call a Heroic Move or Heroic March."
+        },
+        {
+          "name": "Looming mist",
+          "definition": "The dead are guided by the sorcery of Angmar and spare no enemy. Whether their power stems from the presence of the Ringwraiths or is due to the eerie mist, no one can say. Friendly Spirit models gain a bonus of +1 to their Attacks value."
+        },
+        {
+          "name": "Whispers in the mist",
+          "definition": "The living hear the whispers of their former loved ones in the mist and set off down paths that are best not to follow. Spectres may use their A fell light is in them special rule at any point during their movement, rather than at the end of it. Additionally, if they use the A fell light is in them special rule, the Spectre may choose a point within 6\". The target must then move towards that point instead of moving towards the Spectre's position."
+        }
+      ],
+      "sourcePage": 23
+    },
+    {
+      "name": "Terrors of Fornost",
+      "alignment": "evil",
+      "heroes": [
+        [
+          "Gulavhar, The Terror of Arnor",
+          "Hero of Legend"
+        ],
+        [
+          "Nazthak, Orc Captain",
+          "Hero of Fortitude"
+        ],
+        [
+          "Angmar Orc Captain",
+          "Hero of Fortitude"
+        ],
+        [
+          "Wild Warg Chieftain",
+          "Hero of Fortitude"
+        ],
+        [
+          "Angmar Orc Shaman",
+          "Minor Hero"
+        ]
+      ],
+      "warriors": [
+        "Angmar Orc Warrior",
+        "Angmar Warg Rider",
+        "Wild Warg",
+        "Werewolf",
+        "Bat Swarm"
+      ],
+      "required": [
+        {
+          "name": "Gulavhar, The Terror of Arnor",
+          "general": true
+        }
+      ],
+      "additionalRules": [
+        "A Terrors of Fornost Army must always include Gûlavhar, who is always the Army’s General."
+      ],
+      "armyBonuses": [
+        {
+          "name": "Ambushed in the Ruins",
+          "definition": "All servants of the shadows who dwell in the ruins of Fornost have adapted perfectly to their surroundings. It comes as no surprise to anyone that no intruder survives there for long. Friendly models gain the Mountain Dweller special rule. Additionally, friendly models gain a bonus of +1 To Wound when making Strikes against a model that is within a piece of difficult terrain, such as a piece of rocky terrain, or a ruin."
+        },
+        {
+          "name": "The Shadow of Fornost",
+          "definition": "Gûlavhar feels at home in the ruins of the once-great city of Fornost, where he has his hunting grounds.There is no greater hunter in these ruins than he. Gûlavhar gains the Fell Sight and Stalk Unseen special rules."
+        },
+        {
+          "name": "The Scavenger in the dark",
+          "definition": "Názthak knows the ruins of Fornost like the back of his hand and has been able to indulge in hunting for new equipment there. Whenever Nazthák suffers a Wound, roll a D6. On a natural 4+, the Wound is ignored. Additionally, Nazthák may use his Scavenge special rule whenever an enemy model in the same combat is killed."
+        }
+      ],
+      "sourcePage": 24
+    },
+    {
+      "name": "Host of the Black Easterling",
+      "alignment": "evil",
+      "heroes": [
+        [
+          "Khamûl the Easterling",
+          "Hero of Legend"
+        ],
+        [
+          "Easterling Captain",
+          "Hero of Fortitude"
+        ],
+        [
+          "Easterling Kataphrakt Captain",
+          "Hero of Fortitude"
+        ],
+        [
+          "Easterling War Priest",
+          "Hero of Fortitude"
+        ]
+      ],
+      "warriors": [
+        "Easterling Warrior",
+        "Easterling Kataphrakt"
+      ],
+      "required": [
+        {
+          "name": "Khamûl the Easterling",
+          "general": true
+        }
+      ],
+      "additionalRules": [
+        "A Host of the Black Easterling Army must always include Khamûl, who is always the Army’s General."
+      ],
+      "armyBonuses": [
+        {
+          "name": "No quarter was asked...",
+          "definition": "The Easterlings will fight to the bitter end in the name of the Dark Lord. Friendly Easterling models gain a bonus of +1 to any Courage Tests they are required to take once their Army is Broken. Additionally, once per game in Scenarios in which a dice is rolled to see when the game ends, you may choose to have the dice re-rolled if the Scenario ends before you wish it to."
+        },
+        {
+          "name": "The Black Easterling",
+          "definition": "Khamûl was a great warrior throughout his life, and in his form as a Ringwraith he has lost none of that power. Khamûl increases his Attacks value to 2. Additionally, he gains the Bane of Kings special rule."
+        },
+        {
+          "name": "Zealous Warriors",
+          "definition": "The Black Easterling has gathered a following of fanatical supporters who are willing to make great sacrifices. As long as Khamûl is alive, whenever other friendly Easterling models suffers a Wound, roll a D6. On a natural 5+, the Wound has been prevented and is ignored. Note that if this roll is failed, a Hero model may still use Fate Points as normal."
+        }
+      ],
+      "sourcePage": 25
+    },
+    {
+      "name": "The Dragon Legion",
+      "alignment": "evil",
+      "heroes": [
+        [
+          "Rutabi, General of the Dragon Legion",
+          "Hero of Valour"
+        ],
+        [
+          "Brorgir the Conjurer",
+          "Hero of Fortitude"
+        ],
+        [
+          "Easterling Captain",
+          "Hero of Fortitude"
+        ],
+        [
+          "Easterling Kataphrakt Captain",
+          "Hero of Fortitude"
+        ],
+        [
+          "Easterling War Priest",
+          "Hero of Fortitude"
+        ]
+      ],
+      "warriors": [
+        "Easterling Warrior",
+        "Easterling Kataphrakt",
+        "War Drake of Rhun"
+      ],
+      "required": [
+        {
+          "name": "Rutabi, General of the Dragon Legion",
+          "general": true
+        }
+      ],
+      "additionalRules": [
+        "A Dragon Legion Army must always include Rutabi, who is always the Army’s General."
+      ],
+      "armyBonuses": [
+        {
+          "name": "No quarter was asked...",
+          "definition": "The Easterlings will fight to the bitter end in the name of the Dark Lord. Friendly Easterling models gain a bonus of +1 to any Courage Tests they are required to take once their Army is Broken. Additionally, once per game in Scenarios in which a dice is rolled to see when the game ends, you may choose to have the dice re-rolled if the Scenario ends before you wish it to."
+        },
+        {
+          "name": "Vanguard of the East",
+          "definition": "The Easterlings in the Dragon Legion are well organised and have the honour of announcing the arrival of the Dragon Emperor. Friendly Easterling models within 3\" of an Unique Easterling Hero model may re-roll a single D6 in a Duel Roll. Additionally, friendly Easterling models within 3\" of Rutabi gain the Show no Mercy special rule."
+        }
+      ],
+      "sourcePage": 26
+    },
+    {
+      "name": "The Wainriders",
+      "alignment": "evil",
+      "heroes": [
+        [
+          "Khandish King",
+          "Hero of Valour"
+        ],
+        [
+          "Easterling Captain",
+          "Hero of Fortitude"
+        ],
+        [
+          "Easterling Kataphrakt Captain",
+          "Hero of Fortitude"
+        ],
+        [
+          "Easterling War Priest",
+          "Hero of Fortitude"
+        ],
+        [
+          "Khandish Chieftain",
+          "Hero of Fortitude"
+        ]
+      ],
+      "warriors": [
+        "Easterling Warrior",
+        "Easterling Kataphrakt",
+        "Khandish Warrior",
+        "Khandish Horseman",
+        "Khandish Charioteer"
+      ],
+      "required": [
+        {
+          "name": "Easterling Kataphrakt Captain",
+          "general": true,
+          "tier": "Hero of Valour"
+        },
+        {
+          "name": "Khandish King"
+        }
+      ],
+      "additionalRules": [
+        "A Wainriders Army must include an Easterling Kataphrakt Captain, who is always the Army’s General. The Easterling Kataphrakt Captain that is your General is treated as a Hero of Valour.",
+        "A Wainriders Army must always contain a Khandish King. No other Khandish Kings can be taken.",
+        "Easterling Warrior models can only be included in the Warband of an Easterling Hero.",
+        "Khand Warrior models can only be included in the Warband of a Khand Hero.",
+        "Only a maximum of 33% of the models in this Army may have the Khand keyword."
+      ],
+      "armyBonuses": [
+        {
+          "name": "Warlord of the Wainriders",
+          "definition": "The Easterlings will fight to the bitter end in the name of the Dark Lord. The Easterling Kataphrakt Captain that is your General increases its Attacks to 3 and gains Heroic Strike. Additionally, friendly Easterling models treat the Easterling Kataphrakt Captain that is your General as a banner with a range of 6\"."
+        },
+        {
+          "name": "Tribal rivalry",
+          "definition": "The Wainraiders were a confederation of various tribes, united only by their common enemy. Keep track of how many models the Khandish King and the General of this Army have each killed. If at any point either of them has fewer kills than the other, that model may re-roll a single D6 during a Duel Roll."
+        },
+        {
+          "name": "The Wagon Camps",
+          "definition": "The Wainriders traveled in large wagons, known as ‘wains’, and used them as fortifications whenever they set up camp. At the start of the game, after both sides have deployed, you may deploy two 60mm Wagon Camp Markers anywhere on the battlefield that is not within the opposition deployment zone. Whenever a friendly model within 3\" of a Wagon Camp Marker suffer a wound, roll a D6. On a natural 6, the Wound is ignored. Additionally, friendly models within 3\" of Wagon Camp gain the Fearless special rule. A Wagon Camp Marker can be attacked as normal, and has a Defence of 7 and 3 Wounds. Models cannot overlap a Wagon Camp Marker for any reason, though a War Beast or Chariot that Moves into base contact with one (via Trample or Chariot Charge respectively) will immediately remove it from play and may carry on as normal."
+        }
+      ],
+      "sourcePage": 27
+    },
+    {
+      "name": "Host of the Golden King",
+      "alignment": "evil",
+      "heroes": [
+        [
+          "The Golden King of Abrakhan",
+          "Hero of Legend"
+        ],
+        [
+          "Haradrim Chieftain",
+          "Hero of Fortitude"
+        ],
+        [
+          "Haradrim Taskmaster",
+          "Hero of Fortitude"
+        ],
+        [
+          "War Mumak of Harad",
+          "Hero of Fortitude"
+        ],
+        [
+          "Hasharin",
+          "Hero of Fortitude"
+        ]
+      ],
+      "warriors": [
+        "Haradrim Warrior",
+        "Haradrim Raider",
+        "Abrakhan Merchant Guard"
+      ],
+      "required": [
+        {
+          "name": "The Golden King of Abrakhan",
+          "general": true
+        }
+      ],
+      "additionalRules": [
+        "A Host of the Golden King Army must always contain the Golden King of Abrakhân, who is always the Army’s General.",
+        "A Host of the Golden King Army may have up to 50% of its Warrior models armed with bows rather than the usual 33%."
+      ],
+      "armyBonuses": [
+        {
+          "name": "Riches beyond Immagination",
+          "definition": "In Abrakhan, they say there’s no problem that can’t be solved with gold. So long as the Golden King of Abrakhân has Will Points remaining, Abrakhân Merchant Guard gain the Sworn Protector (The Golden King of Abrakhân) special rule."
+        },
+        {
+          "name": "Spoils of Battle",
+          "definition": "Wars cost a lot of gold, but looting can minimise losses to a manageable level. If the enemy General is removed from the battlefield as a casualty, the Golden King of Abrakhân regains 1 Will Point spent earlier in the battle. If the enemy General is slain in combat by the Golden King of Abrakhân, he regains 3 Will Points instead."
+        },
+        {
+          "name": "By the Order of the golden Throne",
+          "definition": "The treasure chambers of Abrakhân are said to be just as large and well-stocked as those of the dwarves. The Golden King of Abrakhân may spend a Will Point at the end of his Activation to use this ability, so long as he is not Engaged in Combat. If he does, pick one of the following orders; its effects will last until the end of the turn. ♦ Friendly Harad models within 3\" of the Golden King may re-roll failed To Hit Rolls when making shooting attacks. ♦ Friendly Harad models that start their Activation within 3\" of the Golden King increase their Move Value by 3\". ♦ Friendly Harad models within 3\" of the Golden King gain a Bonus of +1 to Wound when making Strikes."
+        }
+      ],
+      "sourcePage": 28
+    },
+    {
+      "name": "Tyranny from the Southlands",
+      "alignment": "evil",
+      "heroes": [
+        [
+          "The Knight of Umbar",
+          "Hero of Legend"
+        ],
+        [
+          "Black Númenórean Marshal",
+          "Hero of Fortitude"
+        ]
+      ],
+      "warriors": [
+        "Black Numenorean Warrior",
+        "Black Numenorean Knight"
+      ],
+      "required": [
+        {
+          "name": "The Knight of Umbar",
+          "general": true
+        }
+      ],
+      "additionalRules": [
+        "A Tyranny from the Southlands Army must always include the Knight of Umbar, who is always the Army’s General."
+      ],
+      "armyBonuses": [
+        {
+          "name": "Shifting sands",
+          "definition": "The Knight of Umbar was feared throughout the Southlands, and according to rumors, he could even command the sandstorms to cover his host. At the start of the Shoot Phase, before the Declare Heroic Actions step, the Knight of Umbar may spend a Will Point to use this ability. If he does, then for the remainder of the turn, enemy models will suffer a -1 penalty To Hit when making a shooting attack that targets a friendly model within 6\" of the Knight of Umbar."
+        },
+        {
+          "name": "The Dark Knight",
+          "definition": "In his former life as king, the Knight of Umbar was a great warrior with exceptional horsemanship, worthy of his Númenórean heritage. The Knight of Umbar increases his Attacks value to 2 and gains the Horse Lord special rule. Additionally, so long as the Knight of Umbar is alive, other friendly models gain a bonus of +1 to any Courage Tests they are required to take."
+        },
+        {
+          "name": "Lords of Umbar",
+          "definition": "Marching alongside the Knight of Umbar are his most deadly servants. It is said that most of these Númenóreans had already rallied to his banner whilst he was still among the living. Friendly banners have a range of 6\" rather than 3\". Additionally, friendly models gains the Shieldwall special rule and may still benefit from the special rule whilst they have the Cavalry keyword and are mounted. The bonus of +1 Defence is applied to both rider and Mount . Hero models with this special rule that do not have a shield will still benefit from this special rule."
+        },
+        {
+          "name": "Númenórean Formation",
+          "definition": "The Knight of Umbar came from a noble lineage of warrior kings, and his followers were trained in the most advanced tactics from Westernesse. Friendly Infantry models may Support as if they had a spear, so long as they are in base contact with 2 or more friendly Infantry models."
+        }
+      ],
+      "sourcePage": 29
+    }
+  ]
+}
