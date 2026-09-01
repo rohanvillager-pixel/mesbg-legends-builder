@@ -5241,7 +5241,7 @@
         "name": "Watchers of the Carrock",
         "alignment": "good",
         "legendsOfMiddleEarth": true,
-        "badge": "Legends of Middle-earth",
+        "badge": "LOM",
         "additionalRules": [
           "A Watchers of the Carrock Army must include Grimbeorn, who is always the Army's General."
         ],
@@ -5264,7 +5264,7 @@
         "name": "Denizens of the Drúadan Forest",
         "alignment": "good",
         "legendsOfMiddleEarth": true,
-        "badge": "Legends of Middle-earth",
+        "badge": "LOM",
         "additionalRules": [
           "A Denizens of the Drúadan Forest must always include Ghân-buri-Ghân, who is always the Army's General."
         ],
@@ -5292,7 +5292,7 @@
         "name": "Helm's Guard",
         "alignment": "good",
         "legendsOfMiddleEarth": true,
-        "badge": "Legends of Middle-earth",
+        "badge": "LOM",
         "additionalRules": [
           "A Helm’s Guard Army must always include Helm, who is always the Army’s General.",
           "A Helm’s Guard Army may have up to 50% of its Warrior models armed with throwing spears rather than the usual 33%."
@@ -5316,7 +5316,7 @@
         "name": "Defenders of Aglarond",
         "alignment": "good",
         "legendsOfMiddleEarth": true,
-        "badge": "Legends of Middle-earth",
+        "badge": "LOM",
         "additionalRules": [
           "A Defenders of Aglarond Army must include Gimli and Erkenbrand. Gimli must always be the Army’s General.",
           "A Defenders of Aglarond Army may have up to 50% of its Warrior models armed with Throwing Spears rather than the usual 33%.",
@@ -5345,7 +5345,7 @@
         "name": "Host of Eärnur",
         "alignment": "good",
         "legendsOfMiddleEarth": true,
-        "badge": "Legends of Middle-earth",
+        "badge": "LOM",
         "additionalRules": [
           "A Host of Eärnur Army must include Eärnur, who is always the Army’s General."
         ],
@@ -5367,7 +5367,7 @@
         "name": "Defenders of Cair Andros",
         "alignment": "good",
         "legendsOfMiddleEarth": true,
-        "badge": "Legends of Middle-earth",
+        "badge": "LOM",
         "additionalRules": [
           "A Defenders of Cair Andros Army must always contain a Captain of Minas Tirith, who is always the Army’s General.",
           "A Defenders of Cair Andros Army must always contain only one Gondor Battlecry Trebuchet.",
@@ -5397,7 +5397,7 @@
         "name": "Remnants of Arnor",
         "alignment": "good",
         "legendsOfMiddleEarth": true,
-        "badge": "Legends of Middle-earth",
+        "badge": "LOM",
         "additionalRules": [
           "A Remnants of Arnor Army must include Aranarth, who is always the Army's General."
         ],
@@ -5420,7 +5420,7 @@
         "name": "The Dead of Dunharrow",
         "alignment": "good",
         "legendsOfMiddleEarth": true,
-        "badge": "Legends of Middle-earth",
+        "badge": "LOM",
         "additionalRules": [
           "A Dead of Dunharrow Army must include The King of the Dead, who is always the Army's General."
         ],
@@ -5442,7 +5442,7 @@
         "name": "Army of Eryn Lasgalen",
         "alignment": "good",
         "legendsOfMiddleEarth": true,
-        "badge": "Legends of Middle-earth",
+        "badge": "LOM",
         "additionalRules": [
           "An Army of Eryn Lasgalen Army must always contain Celeborn or Thranduil.",
           "Mirkwood Warrior models can only be included in the Warband of a Mirkwood Hero.",
@@ -5464,7 +5464,7 @@
         "name": "Battle of Eregion",
         "alignment": "good",
         "legendsOfMiddleEarth": true,
-        "badge": "Legends of Middle-earth",
+        "badge": "LOM",
         "additionalRules": [
           "A Battle of Eregion Army must always contain Elrond, who is always the Army's General.",
           "Elf Warrior models can only be included in the Warband of an Elf Hero.",
@@ -5487,7 +5487,7 @@
         "name": "Waywardens of Eriador",
         "alignment": "good",
         "legendsOfMiddleEarth": true,
-        "badge": "Legends of Middle-earth",
+        "badge": "LOM",
         "additionalRules": [
           "A Waywardens of Eriador Army must include Gildor Inglorion, who is always the Army's General."
         ],
@@ -5511,7 +5511,7 @@
         "name": "Kingdom of the Ered Luin",
         "alignment": "good",
         "legendsOfMiddleEarth": true,
-        "badge": "Legends of Middle-earth",
+        "badge": "LOM",
         "additionalRules": [
           "If a Dwarf King is your General, they gain the Leader (Khazad Guard) special rule."
         ],
@@ -5527,7 +5527,7 @@
         "name": "Brigands of Breeland",
         "alignment": "evil",
         "legendsOfMiddleEarth": true,
-        "badge": "Legends of Middle-earth",
+        "badge": "LOM",
         "additionalRules": [
           "A Brigands of Breeland Army must always include Sid Briarthorn, who is always the Army’s General.",
           "This Army may include Warbands of 10-12 Ruffians without a Hero to lead them. In these Warbands, nominate a single Warrior model to count as the Warband's Captain for the purpose of deployment. These Warbands may only be included after all other available Ruffian Hero models have been Included in the Army.",
@@ -5552,7 +5552,7 @@
         "name": "Battle of Moria",
         "alignment": "evil",
         "legendsOfMiddleEarth": true,
-        "badge": "Legends of Middle-earth",
+        "badge": "LOM",
         "additionalRules": [
           "A Battle of Moria Army must always include Azog, who is always the Army’s General."
         ],
@@ -5575,7 +5575,7 @@
         "name": "Assault upon Minas Tirith",
         "alignment": "evil",
         "legendsOfMiddleEarth": true,
-        "badge": "Legends of Middle-earth",
+        "badge": "LOM",
         "additionalRules": [
           "An Assault upon Minas Tirith Army must always include Goroth, who is always the Army’s General."
         ],
@@ -5597,7 +5597,7 @@
         "name": "Raiders from the Ered Nimras",
         "alignment": "evil",
         "legendsOfMiddleEarth": true,
-        "badge": "Legends of Middle-earth",
+        "badge": "LOM",
         "additionalRules": [
           "A Raiders from the Ered Nimras Army must always include Shank and Wrot. Shank must always be the Army’s General."
         ],
@@ -5620,7 +5620,7 @@
         "name": "Grishnakh's Horde",
         "alignment": "evil",
         "legendsOfMiddleEarth": true,
-        "badge": "Legends of Middle-earth",
+        "badge": "LOM",
         "additionalRules": [
           "A Grishnákh's Horde Army must always include Grishnákh, who is always the Army’s General.",
           "Grishnákh and Snaga replace their Isengard keyword with the Mordor keyword."
@@ -5644,7 +5644,7 @@
         "name": "Dread from the Barrow-downs",
         "alignment": "evil",
         "legendsOfMiddleEarth": true,
-        "badge": "Legends of Middle-earth",
+        "badge": "LOM",
         "additionalRules": [
           "A Dread from the Barrow-downs Army must always include The Tainted or The Dwimmerlaik."
         ],
@@ -5665,7 +5665,7 @@
         "name": "Terrors of Fornost",
         "alignment": "evil",
         "legendsOfMiddleEarth": true,
-        "badge": "Legends of Middle-earth",
+        "badge": "LOM",
         "additionalRules": [
           "A Terrors of Fornost Army must always include Gûlavhar, who is always the Army’s General."
         ],
@@ -5687,7 +5687,7 @@
         "name": "Host of the Black Easterling",
         "alignment": "evil",
         "legendsOfMiddleEarth": true,
-        "badge": "Legends of Middle-earth",
+        "badge": "LOM",
         "additionalRules": [
           "A Host of the Black Easterling Army must always include Khamûl, who is always the Army’s General."
         ],
@@ -5709,7 +5709,7 @@
         "name": "The Dragon Legion",
         "alignment": "evil",
         "legendsOfMiddleEarth": true,
-        "badge": "Legends of Middle-earth",
+        "badge": "LOM",
         "additionalRules": [
           "A Dragon Legion Army must always include Rutabi, who is always the Army’s General."
         ],
@@ -5730,7 +5730,7 @@
         "name": "The Wainriders",
         "alignment": "evil",
         "legendsOfMiddleEarth": true,
-        "badge": "Legends of Middle-earth",
+        "badge": "LOM",
         "additionalRules": [
           "A Wainriders Army must include an Easterling Kataphrakt Captain, who is always the Army’s General. The Easterling Kataphrakt Captain that is your General is treated as a Hero of Valour.",
           "A Wainriders Army must always contain a Khandish King. No other Khandish Kings can be taken.",
@@ -5761,7 +5761,7 @@
         "name": "Host of the Golden King",
         "alignment": "evil",
         "legendsOfMiddleEarth": true,
-        "badge": "Legends of Middle-earth",
+        "badge": "LOM",
         "additionalRules": [
           "A Host of the Golden King Army must always contain the Golden King of Abrakhân, who is always the Army’s General.",
           "A Host of the Golden King Army may have up to 50% of its Warrior models armed with bows rather than the usual 33%."
@@ -5784,7 +5784,7 @@
         "name": "Tyranny from the Southlands",
         "alignment": "evil",
         "legendsOfMiddleEarth": true,
-        "badge": "Legends of Middle-earth",
+        "badge": "LOM",
         "additionalRules": [
           "A Tyranny from the Southlands Army must always include the Knight of Umbar, who is always the Army’s General."
         ],
