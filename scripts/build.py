@@ -135,7 +135,7 @@ def merge(upstream: dict, custom: dict, public_manifest_url: str) -> dict:
             "name": faction_name,
             "alignment": faction_spec["alignment"],
             toggle["property"]: True,
-            "badge": "Legends of Middle-earth",
+            "badge": "LOM",
             "additionalRules": faction_spec["additionalRules"],
             "armyBonuses": bonus_names,
         }
