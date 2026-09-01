@@ -5,7 +5,7 @@
   "appVersion": 2,
   "update": {
     "manifestUrl": "https://raw.githubusercontent.com/rohanvillager-pixel/mesbg-legends-builder/main/data2024-legends.update.json",
-    "contentVersion": "2026.08.21.3-legends-1.2"
+    "contentVersion": "2026.08.21.3-legends-1.2.1"
   },
   "disallowMultipleFactions": true,
   "colors": {
