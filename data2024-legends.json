@@ -5,7 +5,7 @@
   "appVersion": 2,
   "update": {
     "manifestUrl": "https://raw.githubusercontent.com/rohanvillager-pixel/mesbg-legends-builder/main/data2024-legends.update.json",
-    "contentVersion": "2026.08.21.3-legends-1.2.1"
+    "contentVersion": "2026.08.21.3-legends-1.2.1-twp-1.0"
   },
   "disallowMultipleFactions": true,
   "colors": {
@@ -540,6 +540,10 @@
     {
       "type": "text",
       "text": "Custom army lists from Legends of Middle-earth 1.2 by Antonio Andrino. "
+    },
+    {
+      "type": "text",
+      "text": "Custom profiles and army lists from The Watchful Peace fan-made sourcebook (2025). "
     }
   ],
   "game": "Middle-Earth Strategy Battle Game - 2024",
@@ -557,6 +561,11 @@
     {
       "property": "legendsOfMiddleEarth",
       "label": "Legends of Middle-earth",
+      "default": false
+    },
+    {
+      "property": "watchfulPeace",
+      "label": "The Watchful Peace",
       "default": false
     }
   ],
@@ -5802,6 +5811,156 @@
             "mustBeLeader": true
           }
         ]
+      },
+      {
+        "name": "Defenders of Fallen Arnor",
+        "alignment": "good",
+        "watchfulPeace": true,
+        "badge": "TWP",
+        "additionalRules": [
+          "This Army may include up to 50% of its models armed with bows.",
+          "Despite being Independent Heroes, Rangers of the North that are not in another Hero's Warband may lead up to four Rangers of Arnor."
+        ],
+        "armyBonuses": [
+          "Men of the North",
+          "Reclaimers of the Realm",
+          "To me, men of Arnor!"
+        ],
+        "requiredChildren": [
+          {
+            "name": "Aranarth, First Chieftain of the Dunedain",
+            "points": 80,
+            "elementPropertyName": "heroes",
+            "mustBeLeader": true
+          }
+        ]
+      },
+      {
+        "name": "Knights of Imladris",
+        "alignment": "good",
+        "watchfulPeace": true,
+        "badge": "TWP",
+        "additionalRules": [
+          "This Army must include either Glorfindel or Galdor; the Hero with the highest Heroic Tier is always the Army's General."
+        ],
+        "armyBonuses": [
+          "Hunters of Oromë",
+          "Elf Craftsmanship",
+          "Masters of Ambush"
+        ],
+        "requireOne": [
+          [
+            "Glorfindel, Lord of the West",
+            "Galdor, Scout Captain"
+          ]
+        ]
+      },
+      {
+        "name": "The Éothéod",
+        "alignment": "good",
+        "watchfulPeace": true,
+        "badge": "TWP",
+        "additionalRules": [
+          "Éothéod Riders do not count towards this Army's Bow Limit."
+        ],
+        "armyBonuses": [
+          "The Fury of the North",
+          "Slaves No More",
+          "Allies in Desperate Times"
+        ],
+        "requiredChildren": [
+          {
+            "name": "Frumgar, Lord of the Éothéod",
+            "points": 110,
+            "elementPropertyName": "heroes",
+            "mustBeLeader": true
+          }
+        ]
+      },
+      {
+        "name": "Garrison of Mount Gram",
+        "alignment": "evil",
+        "watchfulPeace": true,
+        "badge": "TWP",
+        "additionalRules": [],
+        "armyBonuses": [
+          "Mount Gram Siege Engines",
+          "Mountain Veterans",
+          "Iron Discipline"
+        ],
+        "requiredChildren": [
+          {
+            "name": "Ghur, the Black Spear",
+            "points": 75,
+            "elementPropertyName": "heroes",
+            "mustBeLeader": true
+          }
+        ]
+      },
+      {
+        "name": "The Beasts of Ered Mithrin",
+        "alignment": "evil",
+        "watchfulPeace": true,
+        "badge": "TWP",
+        "additionalRules": [
+          "This Army must include at least one Cold Drake, one of which is always the Army's General."
+        ],
+        "armyBonuses": [
+          "Servants of the Great Wyrm",
+          "Fanaticism",
+          "The Most Terrible Servants of the Enemy"
+        ],
+        "requiredChildren": [
+          {
+            "name": "Cold Drake",
+            "points": 240,
+            "elementPropertyName": "heroes",
+            "mustBeLeader": true
+          }
+        ]
+      },
+      {
+        "name": "Reavers of Dunland",
+        "alignment": "evil",
+        "watchfulPeace": true,
+        "badge": "TWP",
+        "additionalRules": [
+          "Only one Kranak may be included in this Army."
+        ],
+        "armyBonuses": [
+          "Striking in Darkness",
+          "The Shade of Dunland",
+          "Raider's Greed",
+          "Ravagers"
+        ],
+        "requiredChildren": [
+          {
+            "name": "The Eater of Dreams",
+            "points": 105,
+            "elementPropertyName": "heroes",
+            "mustBeLeader": true
+          }
+        ]
+      },
+      {
+        "name": "Shadows of Númenor",
+        "alignment": "evil",
+        "watchfulPeace": true,
+        "badge": "TWP",
+        "additionalRules": [
+          "This Army must include either Herumor or Fuinur; one of them is always the Army's General."
+        ],
+        "armyBonuses": [
+          "Gifted Beast",
+          "Shadow of the Past",
+          "Pride of Umbar"
+        ],
+        "requireOne": [
+          [
+            "Fuinur, the Scourge of Umbar",
+            "Herumor, the Despot"
+          ]
+        ]
       }
     ],
     "heroicTiers": [
@@ -9521,6 +9680,10 @@
           },
           {
             "name": "Tyranny from the Southlands",
+            "heroicTier": "Hero of Fortitude"
+          },
+          {
+            "name": "Shadows of Númenor",
             "heroicTier": "Hero of Fortitude"
           }
         ],
@@ -14320,6 +14483,10 @@
           {
             "name": "Battle of Greenfields",
             "heroicTier": "Hero of Fortitude"
+          },
+          {
+            "name": "Defenders of Fallen Arnor",
+            "heroicTier": "Independent Hero"
           }
         ],
         "unlimited": true,
@@ -14368,7 +14535,10 @@
             "name": "Spear",
             "points": 1
           }
-        ]
+        ],
+        "increaseMaximumChildren": {
+          "warriors": 4
+        }
       },
       {
         "name": "Halbarad",
@@ -14561,6 +14731,10 @@
           {
             "name": "Lindon",
             "heroicTier": "Hero of Valour"
+          },
+          {
+            "name": "Knights of Imladris",
+            "heroicTier": "Hero of Legend"
           }
         ],
         "points": 160,
@@ -14688,6 +14862,10 @@
           },
           {
             "name": "Remnants of Arnor",
+            "heroicTier": "Hero of Valour"
+          },
+          {
+            "name": "Defenders of Fallen Arnor",
             "heroicTier": "Hero of Valour"
           }
         ],
@@ -14846,6 +15024,10 @@
           {
             "name": "Realms of Men",
             "heroicTier": "Hero of Fortitude"
+          },
+          {
+            "name": "Defenders of Fallen Arnor",
+            "heroicTier": "Hero of Fortitude"
           }
         ],
         "unlimited": true,
@@ -14886,7 +15068,29 @@
           "Shield",
           "Hand weapon"
         ],
-        "options": []
+        "options": [
+          {
+            "name": "Horse",
+            "points": 20,
+            "availableIn": [
+              "Defenders of Fallen Arnor"
+            ]
+          },
+          {
+            "name": "Lance",
+            "points": 5,
+            "availableIn": [
+              "Defenders of Fallen Arnor"
+            ]
+          },
+          {
+            "name": "Swap shield for bow",
+            "points": 0,
+            "availableIn": [
+              "Defenders of Fallen Arnor"
+            ]
+          }
+        ]
       },
       {
         "name": "Haleth, Prince of Rohan",
@@ -31313,6 +31517,1028 @@
           "Heavy armour",
           "Hand weapon"
         ]
+      },
+      {
+        "name": "Tarvegil, Captain of Fornost",
+        "points": 80,
+        "movement": 6,
+        "fight": 5,
+        "shoot": 4,
+        "strength": 4,
+        "defence": 6,
+        "attack": 2,
+        "wounds": 2,
+        "courage": 6,
+        "intelligence": 6,
+        "might": 2,
+        "will": 2,
+        "fate": 1,
+        "race": [
+          "Man"
+        ],
+        "faction": [
+          "Arnor"
+        ],
+        "unitType": [
+          "Hero",
+          "Infantry",
+          "Unique"
+        ],
+        "baseSize": [
+          "25mm"
+        ],
+        "heroicActions": [
+          "Heroic Resolve"
+        ],
+        "wargear": [
+          "Heavy armour",
+          "Hand weapon"
+        ],
+        "options": [
+          {
+            "name": "Royal Banner of Annúminas",
+            "points": 40
+          }
+        ],
+        "specialRules": [
+          "Hatred (Angmar)",
+          "Desperate Fighter"
+        ],
+        "factions": [
+          {
+            "name": "Defenders of Fallen Arnor",
+            "heroicTier": "Hero of Fortitude"
+          }
+        ]
+      },
+      {
+        "name": "Galdor, Scout Captain",
+        "points": 80,
+        "movement": 6,
+        "fight": 6,
+        "shoot": 3,
+        "strength": 4,
+        "defence": 4,
+        "attack": 2,
+        "wounds": 2,
+        "courage": 4,
+        "intelligence": 4,
+        "might": 2,
+        "will": 2,
+        "fate": 1,
+        "race": [
+          "Elf"
+        ],
+        "faction": [
+          "Rivendell"
+        ],
+        "unitType": [
+          "Hero",
+          "Infantry",
+          "Unique"
+        ],
+        "baseSize": [
+          "25mm"
+        ],
+        "heroicActions": [
+          "Heroic Strike",
+          "Heroic March",
+          "Heroic Accuracy"
+        ],
+        "wargear": [
+          "Elven hand-and-a-half weapon",
+          "Elven cloak"
+        ],
+        "options": [
+          {
+            "name": "Horse",
+            "points": 20
+          },
+          {
+            "name": "Elf bow",
+            "points": 5
+          }
+        ],
+        "specialRules": [
+          "Woodland Creature",
+          "Fleetfoot",
+          "Expert Rider",
+          "Swift Riders, Stalking in Shade"
+        ],
+        "factions": [
+          {
+            "name": "Knights of Imladris",
+            "heroicTier": "Hero of Valour"
+          }
+        ]
+      },
+      {
+        "name": "Frumgar, Lord of the Éothéod",
+        "points": 110,
+        "movement": 6,
+        "fight": 5,
+        "shoot": 4,
+        "strength": 4,
+        "defence": 6,
+        "attack": 3,
+        "wounds": 3,
+        "courage": 4,
+        "intelligence": 5,
+        "might": 3,
+        "will": 2,
+        "fate": 2,
+        "race": [
+          "Man"
+        ],
+        "faction": [
+          "Éothéod"
+        ],
+        "unitType": [
+          "Hero",
+          "Infantry",
+          "Unique"
+        ],
+        "baseSize": [
+          "25mm"
+        ],
+        "heroicActions": [
+          "Heroic Strike",
+          "Heroic March"
+        ],
+        "wargear": [
+          "Heavy armour",
+          "Throwing weapons",
+          "Hand weapon"
+        ],
+        "options": [
+          {
+            "name": "Horse",
+            "points": 20
+          },
+          {
+            "name": "Shield",
+            "points": 5
+          }
+        ],
+        "specialRules": [
+          "Expert Rider",
+          "Horse Lord",
+          "Spear Mastery",
+          "Hatred (Orc)",
+          "Vengeance",
+          "First Spear",
+          "Heir of Rhovanion"
+        ],
+        "factions": [
+          {
+            "name": "The Éothéod",
+            "heroicTier": "Hero of Legend"
+          }
+        ]
+      },
+      {
+        "name": "Éothéod Captain",
+        "unlimited": true,
+        "points": 55,
+        "movement": 6,
+        "fight": 4,
+        "shoot": 4,
+        "strength": 4,
+        "defence": 6,
+        "attack": 2,
+        "wounds": 2,
+        "courage": 6,
+        "intelligence": 6,
+        "might": 2,
+        "will": 1,
+        "fate": 1,
+        "race": [
+          "Man"
+        ],
+        "faction": [
+          "Éothéod"
+        ],
+        "unitType": [
+          "Hero",
+          "Infantry"
+        ],
+        "baseSize": [
+          "25mm"
+        ],
+        "heroicActions": [
+          "Heroic March"
+        ],
+        "wargear": [
+          "Heavy armour",
+          "Hand weapon"
+        ],
+        "options": [
+          {
+            "name": "Horse",
+            "points": 20
+          },
+          {
+            "name": "Throwing spears",
+            "points": 5
+          },
+          {
+            "name": "Shield",
+            "points": 5
+          }
+        ],
+        "specialRules": [
+          "Expert Rider",
+          "Horse Lord",
+          "Spear Mastery",
+          "Heir of Rhovanion"
+        ],
+        "factions": [
+          {
+            "name": "The Éothéod",
+            "heroicTier": "Hero of Fortitude"
+          }
+        ]
+      },
+      {
+        "name": "Ghur, the Black Spear",
+        "points": 75,
+        "movement": 6,
+        "fight": 4,
+        "shoot": 5,
+        "strength": 5,
+        "defence": 7,
+        "attack": 2,
+        "wounds": 2,
+        "courage": 6,
+        "intelligence": 7,
+        "might": 2,
+        "will": 2,
+        "fate": 2,
+        "race": [
+          "Orc"
+        ],
+        "faction": [
+          "Mount Gram"
+        ],
+        "unitType": [
+          "Hero",
+          "Infantry",
+          "Unique"
+        ],
+        "baseSize": [
+          "25mm"
+        ],
+        "heroicActions": [
+          "Heroic Strike",
+          "Heroic Defence"
+        ],
+        "wargear": [
+          "Heavy armour",
+          "Shield",
+          "Spear",
+          "Hand weapon"
+        ],
+        "options": [],
+        "specialRules": [
+          "Shieldwall",
+          "Resolute Fighter"
+        ],
+        "factions": [
+          {
+            "name": "Garrison of Mount Gram",
+            "heroicTier": "Hero of Valour"
+          }
+        ]
+      },
+      {
+        "name": "The Headsman",
+        "points": 85,
+        "movement": 6,
+        "fight": 5,
+        "shoot": 5,
+        "strength": 5,
+        "defence": 6,
+        "attack": 2,
+        "wounds": 2,
+        "courage": 7,
+        "intelligence": 8,
+        "might": 2,
+        "will": 1,
+        "fate": 2,
+        "race": [
+          "Orc"
+        ],
+        "faction": [
+          "Mount Gram"
+        ],
+        "unitType": [
+          "Hero",
+          "Infantry",
+          "Unique"
+        ],
+        "baseSize": [
+          "25mm"
+        ],
+        "heroicActions": [
+          "Heroic Strength"
+        ],
+        "wargear": [
+          "Heavy armour",
+          "Two-handed weapon"
+        ],
+        "options": [],
+        "specialRules": [
+          "Burly",
+          "Do Not Come Close",
+          "The Maddening Voices"
+        ],
+        "factions": [
+          {
+            "name": "Garrison of Mount Gram",
+            "heroicTier": "Independent Hero"
+          }
+        ]
+      },
+      {
+        "name": "Cold Drake",
+        "unlimited": true,
+        "points": 240,
+        "movement": 6,
+        "fight": 7,
+        "shoot": 5,
+        "strength": 7,
+        "defence": 7,
+        "attack": 4,
+        "wounds": 7,
+        "courage": 6,
+        "intelligence": 6,
+        "might": 3,
+        "will": 3,
+        "fate": 1,
+        "race": [
+          "Dragon"
+        ],
+        "faction": [
+          "Ered Mithrin"
+        ],
+        "unitType": [
+          "Hero",
+          "Infantry",
+          "Monster"
+        ],
+        "baseSize": [
+          "100mm"
+        ],
+        "heroicActions": [
+          "Heroic Strength",
+          "Heroic Defence"
+        ],
+        "wargear": [
+          "Claws and fangs"
+        ],
+        "options": [],
+        "specialRules": [
+          "Dominant (6)",
+          "Harbinger of Evil (12\")",
+          "Monstrous Charge",
+          "Resistant to Magic",
+          "Survival Instinct",
+          "Terror"
+        ],
+        "factions": [
+          {
+            "name": "The Beasts of Ered Mithrin",
+            "heroicTier": "Hero of Valour"
+          }
+        ]
+      },
+      {
+        "name": "Murmrûm",
+        "points": 45,
+        "movement": 5,
+        "fight": 2,
+        "shoot": 5,
+        "strength": 3,
+        "defence": 4,
+        "attack": 1,
+        "wounds": 2,
+        "courage": 7,
+        "intelligence": 6,
+        "might": 1,
+        "will": 3,
+        "fate": 1,
+        "race": [
+          "Goblin"
+        ],
+        "faction": [
+          "Ered Mithrin"
+        ],
+        "unitType": [
+          "Hero",
+          "Infantry",
+          "Unique"
+        ],
+        "baseSize": [
+          "25mm"
+        ],
+        "heroicActions": [
+          "Heroic Channelling"
+        ],
+        "wargear": [
+          "Armour",
+          "Spear"
+        ],
+        "options": [],
+        "specialRules": [
+          "Cave Dweller"
+        ],
+        "magicalPowers": [
+          {
+            "name": "Fury (Moria Goblin)",
+            "range": "Self",
+            "casting": 3
+          },
+          {
+            "name": "Drain Courage",
+            "range": 6,
+            "casting": 5
+          }
+        ],
+        "factions": [
+          {
+            "name": "The Beasts of Ered Mithrin",
+            "heroicTier": "Hero of Fortitude"
+          }
+        ]
+      },
+      {
+        "name": "The Eater of Dreams",
+        "points": 105,
+        "movement": 6,
+        "fight": 5,
+        "shoot": 4,
+        "strength": 5,
+        "defence": 5,
+        "attack": 2,
+        "wounds": 2,
+        "courage": 6,
+        "intelligence": 6,
+        "might": 3,
+        "will": 3,
+        "fate": 2,
+        "race": [
+          "Man"
+        ],
+        "faction": [
+          "Dunland"
+        ],
+        "unitType": [
+          "Hero",
+          "Infantry",
+          "Unique"
+        ],
+        "baseSize": [
+          "25mm"
+        ],
+        "heroicActions": [
+          "Heroic Strike",
+          "Heroic Channelling"
+        ],
+        "wargear": [
+          "Armour",
+          "Hand weapon",
+          "Shield"
+        ],
+        "options": [],
+        "specialRules": [
+          "The Voice of the Shaman"
+        ],
+        "magicalPowers": [
+          {
+            "name": "Fury (Dunland)",
+            "range": 6,
+            "casting": 4
+          },
+          {
+            "name": "Transfix",
+            "range": 12,
+            "casting": 4
+          }
+        ],
+        "factions": [
+          {
+            "name": "Reavers of Dunland",
+            "heroicTier": "Hero of Fortitude"
+          }
+        ]
+      },
+      {
+        "name": "Dunland Reaver Captain",
+        "unlimited": true,
+        "points": 55,
+        "movement": 6,
+        "fight": 4,
+        "shoot": 4,
+        "strength": 5,
+        "defence": 5,
+        "attack": 2,
+        "wounds": 2,
+        "courage": 6,
+        "intelligence": 7,
+        "might": 3,
+        "will": 1,
+        "fate": 1,
+        "race": [
+          "Man"
+        ],
+        "faction": [
+          "Dunland"
+        ],
+        "unitType": [
+          "Hero",
+          "Infantry"
+        ],
+        "baseSize": [
+          "25mm"
+        ],
+        "heroicActions": [
+          "Heroic March"
+        ],
+        "wargear": [
+          "Armour",
+          "Hand weapon",
+          "Shield"
+        ],
+        "options": [],
+        "specialRules": [],
+        "factions": [
+          {
+            "name": "Reavers of Dunland",
+            "heroicTier": "Hero of Fortitude"
+          }
+        ]
+      },
+      {
+        "name": "Fuinur, the Scourge of Umbar",
+        "hideStats": true,
+        "points": 300,
+        "race": [
+          "Mûmak"
+        ],
+        "faction": [
+          "Umbar"
+        ],
+        "unitType": [
+          "Hero",
+          "War Beast",
+          "Unique"
+        ],
+        "baseSize": [
+          "180x140mm oval"
+        ],
+        "heroicActions": [
+          "Heroic March",
+          "Heroic Resolve"
+        ],
+        "wargear": [],
+        "options": [],
+        "specialRules": [
+          "Dominant (10)",
+          "Terror",
+          "Large Target",
+          "Trample (Fuinur's Mûmak)",
+          "Awesome Presence",
+          "Gifted War Beast of Far Harad"
+        ],
+        "includes": [
+          {
+            "dataSource": "heroes",
+            "name": "Fuinur (Commander)"
+          },
+          {
+            "dataSource": "heroes",
+            "name": "Fuinur's Mûmak"
+          }
+        ],
+        "decreaseModelCount": 1,
+        "factions": [
+          {
+            "name": "Shadows of Númenor",
+            "heroicTier": "Hero of Valour"
+          }
+        ]
+      },
+      {
+        "name": "Fuinur (Commander)",
+        "autoAddOnly": true,
+        "points": 0,
+        "movement": 6,
+        "fight": 5,
+        "shoot": 3,
+        "strength": 5,
+        "defence": 5,
+        "attack": 2,
+        "wounds": 2,
+        "courage": 5,
+        "intelligence": 6,
+        "might": 2,
+        "will": 2,
+        "fate": 1,
+        "race": [
+          "Man"
+        ],
+        "faction": [
+          "Umbar"
+        ],
+        "unitType": [
+          "Hero",
+          "Infantry"
+        ],
+        "baseSize": [
+          "25mm"
+        ],
+        "heroicActions": [
+          "Heroic March",
+          "Heroic Resolve"
+        ],
+        "wargear": [
+          "Armour",
+          "Hand weapon",
+          "War horn"
+        ],
+        "options": [],
+        "specialRules": [],
+        "factions": []
+      },
+      {
+        "name": "Fuinur's Mûmak",
+        "autoAddOnly": true,
+        "points": 0,
+        "movement": 8,
+        "fight": 4,
+        "shoot": 6,
+        "strength": 10,
+        "defence": 7,
+        "attack": 3,
+        "wounds": 10,
+        "courage": 8,
+        "intelligence": 9,
+        "race": [
+          "Mûmak"
+        ],
+        "faction": [
+          "Umbar"
+        ],
+        "unitType": [
+          "War Beast"
+        ],
+        "baseSize": [
+          "180x140mm oval"
+        ],
+        "wargear": [
+          "Tusks and huge, stomping feet"
+        ],
+        "options": [],
+        "specialRules": [
+          "Dominant (10)",
+          "Terror",
+          "Large Target",
+          "Trample (Fuinur's Mûmak)",
+          "Awesome Presence"
+        ],
+        "factions": []
+      },
+      {
+        "name": "Herumor, the Despot",
+        "points": 140,
+        "movement": 6,
+        "fight": 5,
+        "shoot": 3,
+        "strength": 4,
+        "defence": 7,
+        "attack": 3,
+        "wounds": 2,
+        "courage": 5,
+        "intelligence": 6,
+        "might": 2,
+        "will": 2,
+        "fate": 2,
+        "race": [
+          "Man"
+        ],
+        "faction": [
+          "Umbar"
+        ],
+        "unitType": [
+          "Hero",
+          "Cavalry",
+          "Unique"
+        ],
+        "baseSize": [
+          "25mm"
+        ],
+        "heroicActions": [
+          "Heroic Strike",
+          "Heroic Challenge"
+        ],
+        "wargear": [
+          "Heavy armour",
+          "Shield",
+          "Hand weapon",
+          "Lance",
+          "Armoured horse"
+        ],
+        "options": [],
+        "specialRules": [
+          "Terror",
+          "Visage of Terror"
+        ],
+        "factions": [
+          {
+            "name": "Shadows of Númenor",
+            "heroicTier": "Hero of Valour"
+          }
+        ]
+      },
+      {
+        "name": "Lindon Captain",
+        "factions": [
+          {
+            "name": "Knights of Imladris",
+            "heroicTier": "Hero of Fortitude"
+          }
+        ],
+        "unlimited": true,
+        "points": 65,
+        "movement": 6,
+        "fight": 6,
+        "shoot": 3,
+        "strength": 4,
+        "defence": 4,
+        "attack": 2,
+        "wounds": 2,
+        "courage": 4,
+        "intelligence": 5,
+        "might": 2,
+        "will": 1,
+        "fate": 1,
+        "race": [
+          "Elf"
+        ],
+        "faction": [
+          "Rivendell"
+        ],
+        "unitType": [
+          "Hero",
+          "Infantry"
+        ],
+        "baseSize": [
+          "25mm"
+        ],
+        "heroicActions": [
+          "Heroic March"
+        ],
+        "specialRules": [
+          "Woodland Creature"
+        ],
+        "wargear": [
+          "Elven-made Hand-and-a-half weapon",
+          "Elf bow",
+          "Elven cloak"
+        ],
+        "options": [
+          {
+            "name": "Horse",
+            "points": 20,
+            "chooseOneKey": "a"
+          },
+          {
+            "name": "Elf Chariot",
+            "points": 45,
+            "chooseOneKey": "a"
+          }
+        ]
+      },
+      {
+        "name": "Mount Gram Orc Captain",
+        "factions": [
+          {
+            "name": "Garrison of Mount Gram",
+            "heroicTier": "Hero of Fortitude"
+          }
+        ],
+        "unlimited": true,
+        "points": 60,
+        "movement": 6,
+        "fight": 5,
+        "shoot": 5,
+        "strength": 5,
+        "defence": 7,
+        "attack": 2,
+        "wounds": 2,
+        "courage": 6,
+        "intelligence": 7,
+        "might": 2,
+        "will": 1,
+        "fate": 1,
+        "race": [
+          "Orc"
+        ],
+        "faction": [
+          "Mount Gram"
+        ],
+        "unitType": [
+          "Hero",
+          "Infantry"
+        ],
+        "baseSize": [
+          "25mm"
+        ],
+        "heroicActions": [
+          "Heroic March"
+        ],
+        "options": [],
+        "specialRules": [
+          "Shieldwall"
+        ],
+        "wargear": [
+          "Heavy Armour",
+          "Shield",
+          "hand weapon"
+        ]
+      },
+      {
+        "name": "Mount Gram Siege Ballista",
+        "factions": [
+          {
+            "name": "Garrison of Mount Gram",
+            "heroicTier": "Minor Hero"
+          }
+        ],
+        "includes": [
+          {
+            "dataSource": "heroes",
+            "name": "Mordor Orc Siege Veteran"
+          }
+        ],
+        "increaseMaximumChildren": {
+          "warriors": -4
+        },
+        "unlimited": true,
+        "points": 55,
+        "movement": 0,
+        "fight": 0,
+        "shoot": 0,
+        "strength": 8,
+        "defence": 9,
+        "attack": 0,
+        "wounds": 3,
+        "courage": 0,
+        "might": 0,
+        "will": 0,
+        "fate": 0,
+        "heroicActions": [],
+        "range": [
+          "6\"-48\""
+        ],
+        "baseSize": [
+          "40mm"
+        ],
+        "options": [],
+        "specialRules": [
+          "Direct Shot",
+          "Accurate",
+          "Piercing Shot"
+        ],
+        "wargear": [],
+        "requiredChildren": [
+          {
+            "elementPropertyName": "warriors",
+            "name": "Mordor Orc Siege Crew",
+            "quantity": 2,
+            "points": 0,
+            "lockedChildren": true
+          }
+        ],
+        "faction": [
+          "Mount Gram"
+        ]
+      },
+      {
+        "name": "Ered Mithrin Goblin Captain",
+        "factions": [
+          {
+            "name": "The Beasts of Ered Mithrin",
+            "heroicTier": "Hero of Fortitude"
+          }
+        ],
+        "unlimited": true,
+        "points": 40,
+        "movement": 5,
+        "fight": 3,
+        "shoot": 5,
+        "strength": 4,
+        "defence": 5,
+        "attack": 2,
+        "wounds": 2,
+        "courage": 7,
+        "intelligence": 7,
+        "might": 2,
+        "will": 1,
+        "fate": 1,
+        "race": [
+          "Goblin"
+        ],
+        "faction": [
+          "Ered Mithrin"
+        ],
+        "unitType": [
+          "Hero",
+          "Infantry"
+        ],
+        "baseSize": [
+          "25mm"
+        ],
+        "heroicActions": [
+          "Heroic March"
+        ],
+        "options": [
+          {
+            "name": "Shield",
+            "points": 5,
+            "chooseOneKey": "a"
+          },
+          {
+            "name": "Orc bow",
+            "points": 5,
+            "chooseOneKey": "a"
+          }
+        ],
+        "specialRules": [
+          "Cave Dweller"
+        ],
+        "wargear": [
+          "Armour",
+          "Hand weapon"
+        ]
+      },
+      {
+        "name": "Ered Mithrin Cave Drake",
+        "factions": [
+          {
+            "name": "The Beasts of Ered Mithrin",
+            "heroicTier": "Minor Hero"
+          }
+        ],
+        "unlimited": true,
+        "points": 150,
+        "movement": 8,
+        "fight": 7,
+        "shoot": 5,
+        "strength": 7,
+        "defence": 7,
+        "attack": 4,
+        "wounds": 6,
+        "courage": 6,
+        "intelligence": 7,
+        "might": 1,
+        "will": 3,
+        "fate": 1,
+        "heroicActions": [
+          "Heroic Defence"
+        ],
+        "race": [
+          "Drake"
+        ],
+        "faction": [
+          "Ered Mithrin"
+        ],
+        "unitType": [
+          "Hero",
+          "Infantry",
+          "Monster",
+          "Beast"
+        ],
+        "baseSize": [
+          "100mm"
+        ],
+        "specialRules": [
+          "Cave Dweller",
+          "Dominant (5)",
+          "Large Target",
+          "Monstrous Charge",
+          "Mountain Dweller",
+          "Resistant to Magic",
+          "Terror",
+          "Woodland Creature",
+          "Protect the Nest",
+          "Cornered Beast",
+          "Gaping Maw"
+        ],
+        "wargear": [
+          "Claws and teeth (hand weapons)"
+        ],
+        "options": []
       }
     ],
     "warriors": [
@@ -33766,7 +34992,8 @@
         "factions": [
           "Army of the White Hand",
           "Muster of Isengard",
-          "Assault Upon Helm's Deep"
+          "Assault Upon Helm's Deep",
+          "Reavers of Dunland"
         ],
         "points": 100,
         "movement": 6,
@@ -34145,7 +35372,8 @@
           "Barad-Dur",
           "Legions of Mordor",
           "Umbar",
-          "Tyranny from the Southlands"
+          "Tyranny from the Southlands",
+          "Shadows of Númenor"
         ],
         "points": 10,
         "movement": 6,
@@ -34187,7 +35415,8 @@
           "Army of the Great Eye",
           "Barad-Dur",
           "Legions of Mordor",
-          "Tyranny from the Southlands"
+          "Tyranny from the Southlands",
+          "Shadows of Númenor"
         ],
         "points": 20,
         "movement": 6,
@@ -36863,7 +38092,8 @@
         "name": "Warrior of Arnor",
         "factions": [
           "Arnor",
-          "Realms of Men"
+          "Realms of Men",
+          "Defenders of Fallen Arnor"
         ],
         "points": 8,
         "movement": 6,
@@ -36908,7 +38138,8 @@
         "name": "Knight of Arnor",
         "factions": [
           "Arnor",
-          "Realms of Men"
+          "Realms of Men",
+          "Defenders of Fallen Arnor"
         ],
         "points": 15,
         "movement": 6,
@@ -36949,7 +38180,8 @@
         "name": "Ranger of Arnor",
         "factions": [
           "Arnor",
-          "Realms of Men"
+          "Realms of Men",
+          "Defenders of Fallen Arnor"
         ],
         "points": 8,
         "movement": 6,
@@ -39791,7 +41023,8 @@
         "factions": [
           "Rivendell",
           "Lindon",
-          "Battle of Eregion"
+          "Battle of Eregion",
+          "Knights of Imladris"
         ],
         "points": 20,
         "movement": 6,
@@ -40289,7 +41522,8 @@
           "Buhrdur's Horde",
           "Wolf Pack of Angmar",
           "Raiders from the Ered Nimras",
-          "Terrors of Fornost"
+          "Terrors of Fornost",
+          "Reavers of Dunland"
         ],
         "points": 7,
         "movement": 10,
@@ -42954,7 +44188,8 @@
           "Usurpers of Edoras",
           "Besiegers of the Hornburg",
           "Army of Dunland",
-          "Brigands of Breeland"
+          "Brigands of Breeland",
+          "Reavers of Dunland"
         ],
         "unavailableIn": [
           [
@@ -43733,6 +44968,577 @@
         ],
         "wargear": [
           "Teeth and claws (hand weapons)"
+        ]
+      },
+      {
+        "name": "Veteran of Fornost",
+        "points": 8,
+        "movement": 6,
+        "fight": 4,
+        "shoot": 4,
+        "strength": 3,
+        "defence": 5,
+        "attack": 1,
+        "wounds": 1,
+        "courage": 7,
+        "intelligence": 7,
+        "race": [
+          "Man"
+        ],
+        "faction": [
+          "Arnor"
+        ],
+        "unitType": [
+          "Warrior",
+          "Infantry"
+        ],
+        "baseSize": [
+          "25mm"
+        ],
+        "wargear": [
+          "Heavy armour",
+          "Hand weapon"
+        ],
+        "options": [
+          {
+            "name": "Banner",
+            "points": 25,
+            "chooseOneKey": "a"
+          },
+          {
+            "name": "Shield",
+            "points": 1,
+            "chooseOneKey": "a"
+          },
+          {
+            "name": "Spear",
+            "points": 1,
+            "chooseOneKey": "a"
+          },
+          {
+            "name": "Spear and shield",
+            "points": 2,
+            "chooseOneKey": "a"
+          },
+          {
+            "name": "Bow",
+            "points": 1,
+            "chooseOneKey": "a"
+          }
+        ],
+        "specialRules": [
+          "Hatred (Angmar)",
+          "Desperate Fighter"
+        ],
+        "factions": [
+          "Defenders of Fallen Arnor"
+        ]
+      },
+      {
+        "name": "Rivendell Scout",
+        "points": 18,
+        "movement": 6,
+        "fight": 5,
+        "shoot": 3,
+        "strength": 3,
+        "defence": 3,
+        "attack": 1,
+        "wounds": 1,
+        "courage": 5,
+        "intelligence": 5,
+        "race": [
+          "Elf"
+        ],
+        "faction": [
+          "Rivendell"
+        ],
+        "unitType": [
+          "Warrior",
+          "Cavalry"
+        ],
+        "baseSize": [
+          "25mm"
+        ],
+        "wargear": [
+          "Elven hand-and-a-half weapon",
+          "Elven cloak",
+          "Horse"
+        ],
+        "options": [
+          {
+            "name": "Banner",
+            "points": 25,
+            "chooseOneKey": "a"
+          },
+          {
+            "name": "War horn",
+            "points": 25,
+            "chooseOneKey": "a"
+          },
+          {
+            "name": "Elf bow",
+            "points": 2,
+            "chooseOneKey": "a"
+          }
+        ],
+        "specialRules": [
+          "Woodland Creature",
+          "Fleetfoot",
+          "Expert Rider",
+          "Swift Riders, Stalking in Shade"
+        ],
+        "factions": [
+          "Knights of Imladris"
+        ]
+      },
+      {
+        "name": "Rivendell Chariot",
+        "points": 50,
+        "movement": 10,
+        "fight": 5,
+        "shoot": 3,
+        "strength": 3,
+        "defence": 7,
+        "attack": 1,
+        "wounds": 3,
+        "courage": 5,
+        "intelligence": 5,
+        "race": [
+          "Elf"
+        ],
+        "faction": [
+          "Rivendell"
+        ],
+        "unitType": [
+          "Warrior",
+          "Chariot"
+        ],
+        "baseSize": [
+          "80mm"
+        ],
+        "wargear": [
+          "Elven hand-and-a-half weapon",
+          "Elven cloak"
+        ],
+        "options": [
+          {
+            "name": "Banner",
+            "points": 25,
+            "chooseOneKey": "a"
+          },
+          {
+            "name": "Elf bow",
+            "points": 2,
+            "chooseOneKey": "a"
+          }
+        ],
+        "specialRules": [
+          "Dominant (3)",
+          "Light Chariot"
+        ],
+        "factions": [
+          "Knights of Imladris"
+        ]
+      },
+      {
+        "name": "Éothéod Rider",
+        "points": 14,
+        "movement": 6,
+        "fight": 3,
+        "shoot": 4,
+        "strength": 3,
+        "defence": 4,
+        "attack": 1,
+        "wounds": 1,
+        "courage": 7,
+        "intelligence": 6,
+        "race": [
+          "Man"
+        ],
+        "faction": [
+          "Éothéod"
+        ],
+        "unitType": [
+          "Warrior",
+          "Cavalry"
+        ],
+        "baseSize": [
+          "25mm"
+        ],
+        "wargear": [
+          "Armour",
+          "Horse",
+          "Hand weapon"
+        ],
+        "options": [
+          {
+            "name": "Bow",
+            "points": 1,
+            "chooseOneKey": "a"
+          },
+          {
+            "name": "Shield",
+            "points": 1,
+            "chooseOneKey": "a"
+          },
+          {
+            "name": "Throwing weapons",
+            "points": 2,
+            "chooseOneKey": "a"
+          },
+          {
+            "name": "Banner",
+            "points": 25,
+            "chooseOneKey": "a"
+          }
+        ],
+        "specialRules": [
+          "Expert Rider",
+          "Heir of Rhovanion",
+          "Spear Mastery"
+        ],
+        "factions": [
+          "The Éothéod"
+        ]
+      },
+      {
+        "name": "Éothéod Berserker",
+        "points": 20,
+        "movement": 6,
+        "fight": 3,
+        "shoot": 4,
+        "strength": 3,
+        "defence": 4,
+        "attack": 2,
+        "wounds": 1,
+        "courage": 6,
+        "intelligence": 6,
+        "race": [
+          "Man"
+        ],
+        "faction": [
+          "Éothéod"
+        ],
+        "unitType": [
+          "Warrior",
+          "Cavalry"
+        ],
+        "baseSize": [
+          "25mm"
+        ],
+        "wargear": [
+          "Armour",
+          "Horse",
+          "Hand-and-a-half weapon"
+        ],
+        "options": [],
+        "specialRules": [
+          "Expert Rider",
+          "Heir of Rhovanion"
+        ],
+        "factions": [
+          "The Éothéod"
+        ]
+      },
+      {
+        "name": "Mount Gram Orc Warrior",
+        "points": 11,
+        "movement": 6,
+        "fight": 4,
+        "shoot": 5,
+        "strength": 4,
+        "defence": 6,
+        "attack": 1,
+        "wounds": 1,
+        "courage": 8,
+        "intelligence": 8,
+        "race": [
+          "Orc"
+        ],
+        "faction": [
+          "Mount Gram"
+        ],
+        "unitType": [
+          "Warrior",
+          "Infantry"
+        ],
+        "baseSize": [
+          "25mm"
+        ],
+        "wargear": [
+          "Heavy armour",
+          "Shield",
+          "Spear",
+          "Hand weapon"
+        ],
+        "options": [
+          {
+            "name": "Banner and shield",
+            "points": 25
+          }
+        ],
+        "specialRules": [
+          "Shieldwall"
+        ],
+        "factions": [
+          "Garrison of Mount Gram"
+        ]
+      },
+      {
+        "name": "Goblin of the Scaled Tribes",
+        "points": 6,
+        "movement": 5,
+        "fight": 2,
+        "shoot": 5,
+        "strength": 3,
+        "defence": 5,
+        "attack": 1,
+        "wounds": 1,
+        "courage": 8,
+        "intelligence": 8,
+        "race": [
+          "Goblin"
+        ],
+        "faction": [
+          "Ered Mithrin"
+        ],
+        "unitType": [
+          "Warrior",
+          "Infantry"
+        ],
+        "baseSize": [
+          "25mm"
+        ],
+        "wargear": [
+          "Heavy armour",
+          "Scaled cloak",
+          "Hand weapon"
+        ],
+        "options": [
+          {
+            "name": "Banner",
+            "points": 25,
+            "chooseOneKey": "a"
+          },
+          {
+            "name": "Shield",
+            "points": 1,
+            "chooseOneKey": "a"
+          },
+          {
+            "name": "Spear",
+            "points": 1,
+            "chooseOneKey": "a"
+          },
+          {
+            "name": "Spear and shield",
+            "points": 2,
+            "chooseOneKey": "a"
+          },
+          {
+            "name": "Orc bow",
+            "points": 1,
+            "chooseOneKey": "a"
+          }
+        ],
+        "specialRules": [
+          "Cave Dweller",
+          "Scaled Cloaks"
+        ],
+        "factions": [
+          "The Beasts of Ered Mithrin"
+        ]
+      },
+      {
+        "name": "Dunland Reaver",
+        "points": 7,
+        "movement": 6,
+        "fight": 3,
+        "shoot": 4,
+        "strength": 4,
+        "defence": 4,
+        "attack": 1,
+        "wounds": 1,
+        "courage": 7,
+        "intelligence": 8,
+        "race": [
+          "Man"
+        ],
+        "faction": [
+          "Dunland"
+        ],
+        "unitType": [
+          "Warrior",
+          "Infantry"
+        ],
+        "baseSize": [
+          "25mm"
+        ],
+        "wargear": [
+          "Armour",
+          "Hand weapon"
+        ],
+        "options": [
+          {
+            "name": "Banner and shield",
+            "points": 25,
+            "chooseOneKey": "a"
+          },
+          {
+            "name": "Shield",
+            "points": 1,
+            "chooseOneKey": "a"
+          },
+          {
+            "name": "Spear and shield",
+            "points": 2,
+            "chooseOneKey": "a"
+          },
+          {
+            "name": "Two-handed weapon",
+            "points": 2,
+            "chooseOneKey": "a"
+          }
+        ],
+        "specialRules": [],
+        "factions": [
+          "Reavers of Dunland"
+        ]
+      },
+      {
+        "name": "Kranak, Subjugated Troll",
+        "points": 110,
+        "movement": 6,
+        "fight": 8,
+        "shoot": 5,
+        "strength": 7,
+        "defence": 8,
+        "attack": 4,
+        "wounds": 4,
+        "courage": 6,
+        "intelligence": 9,
+        "race": [
+          "Troll"
+        ],
+        "faction": [
+          "Dunland"
+        ],
+        "unitType": [
+          "Warrior",
+          "Infantry",
+          "Monster",
+          "Unique"
+        ],
+        "baseSize": [
+          "60mm"
+        ],
+        "wargear": [
+          "Heavy armour",
+          "Hand weapon",
+          "Shield"
+        ],
+        "options": [],
+        "specialRules": [
+          "Dominant (3)",
+          "Terror",
+          "Throw Stones (range 12\", Strength 8)",
+          "Subjugated",
+          "One of a Kind (Kranak)"
+        ],
+        "factions": [
+          "Reavers of Dunland"
+        ]
+      },
+      {
+        "name": "Lindon Elf Warrior",
+        "factions": [
+          "Knights of Imladris"
+        ],
+        "availableIn": [
+          {
+            "all": [
+              {
+                "in": "Haldir, Galadhrim Captain"
+              },
+              {
+                "in": "Breaking of the Fellowship"
+              }
+            ]
+          },
+          {
+            "all": [
+              {
+                "in": "Gildor Inglorion"
+              },
+              {
+                "in": "Road to Rivendell"
+              }
+            ]
+          }
+        ],
+        "points": 8,
+        "movement": 6,
+        "fight": 5,
+        "shoot": 3,
+        "strength": 3,
+        "defence": 3,
+        "attack": 1,
+        "wounds": 1,
+        "courage": 5,
+        "intelligence": 6,
+        "race": [
+          "Elf"
+        ],
+        "faction": [
+          "Rivendell"
+        ],
+        "unitType": [
+          "Warrior",
+          "Infantry"
+        ],
+        "baseSize": [
+          "25mm"
+        ],
+        "requiredChildren": [
+          {
+            "elementPropertyName": "options",
+            "name": "Noldorian Exile",
+            "in": [
+              [
+                "Gildor Inglorion"
+              ]
+            ],
+            "points": 1
+          }
+        ],
+        "options": [
+          {
+            "name": "Banner",
+            "points": 25,
+            "chooseOneKey": "a"
+          },
+          {
+            "name": "Elf bow",
+            "points": 2,
+            "chooseOneKey": "a"
+          },
+          {
+            "name": "Elven throwing weapons",
+            "points": 2,
+            "chooseOneKey": "a"
+          },
+          {
+            "name": "Wood Elf spear",
+            "points": 1,
+            "chooseOneKey": "a"
+          }
+        ],
+        "specialRules": [
+          "Woodland Creature"
+        ],
+        "wargear": [
+          "Elven-made hand-and-a-half weapon",
+          "Elven cloak"
         ]
       }
     ],
@@ -46377,6 +48183,11 @@
         "name": "Your Staff is Broken",
         "duration": "Instant",
         "definition": "This Magical Power targets one enemy model that has a Staff of Power within range. The target's Staff of Power is immediately destroyed - remove it from their wargear."
+      },
+      {
+        "name": "Fury (Dunland)",
+        "duration": "Exhaustion",
+        "definition": "This Magical Power targets the caster. Friendly Dunland models within 6\" of the caster automatically pass any Courage Tests they are required to take."
       }
     ],
     "keywords": [
@@ -49471,6 +51282,81 @@
       {
         "name": "Howdah",
         "definition": "The Howdah has a capacity of 12 models in addition to the Haradrim Commander, which is placed on the highest part of the Howdah. The only other models the Howdah may include are Haradrim Warriors."
+      },
+      {
+        "name": "Royal Banner of Annúminas",
+        "tag": "Passive",
+        "definition": "This is a Unique banner with a range of 3\". Tarvegil does not suffer the -1 penalty to his Duel Roll for carrying a banner. Additionally, friendly Arnor models (including Tarvegil) within 3\" gain the Dominant (2) special rule."
+      },
+      {
+        "name": "Desperate Fighter",
+        "tag": "Passive",
+        "definition": "If this model is outnumbered in a Fight (including spear and pike support) and wins the ensuing Duel Roll, it may re-roll results of a natural 1 To Wound when making Strikes."
+      },
+      {
+        "name": "Swift Riders, Stalking in Shade",
+        "tag": "Passive",
+        "definition": "This model benefits from the effects of its Elven cloak even while it has the Cavalry keyword."
+      },
+      {
+        "name": "Light Chariot",
+        "tag": "Passive",
+        "definition": "When this model moves using Chariot Charge, it inflicts two Strength 4 hits."
+      },
+      {
+        "name": "Vengeance",
+        "tag": "Passive",
+        "definition": "At the beginning of the Move phase, if Frumgar has an enemy Orc model within charge distance, he must charge one such model whenever possible. Frumgar also has Hatred (Orc)."
+      },
+      {
+        "name": "First Spear",
+        "tag": "Passive",
+        "definition": "Whenever Frumgar charges while he has the Cavalry keyword, he counts as a banner for Éothéod models within 3\"."
+      },
+      {
+        "name": "Heir of Rhovanion",
+        "tag": "Passive",
+        "definition": "Whilst mounted, this model may re-roll failed Jump and Swim tests."
+      },
+      {
+        "name": "Do Not Come Close",
+        "tag": "Passive",
+        "definition": "No friendly Warrior models may use any of the Headsman's Heroic Actions or Stand Fast!"
+      },
+      {
+        "name": "The Maddening Voices",
+        "tag": "Passive",
+        "definition": "Whenever the Headsman kills a model, he gains Terror for the rest of the game. Before Priority in each following turn, roll a D6. On a 1, the opposing player may make the Headsman charge any friendly or enemy model within 6\". Resolve the move before Priority. If it is a friendly model, the Headsman may Strike normally but the friendly model may not Strike him."
+      },
+      {
+        "name": "Scaled Cloaks",
+        "tag": "Passive",
+        "definition": "If this model is shot and wounded by a missile weapon of Strength 3 or less, roll a D6. On a 6+, the Wound is ignored."
+      },
+      {
+        "name": "The Voice of the Shaman",
+        "tag": "Active",
+        "definition": "The Eater of Dreams' Stand Fast! has a range of 12\"."
+      },
+      {
+        "name": "Subjugated",
+        "tag": "Passive",
+        "definition": "If the Eater of Dreams is removed from the battlefield or moves more than 30\" from Kranak, knock all models within 1\" of Kranak 1\" away and make them Prone. Both players roll a D6; the higher roller controls Kranak for the rest of the turn, with ties won by Kranak's original owner. Repeat the roll at the start of each subsequent Priority phase."
+      },
+      {
+        "name": "One of a Kind (Kranak)",
+        "tag": "Passive",
+        "definition": "Only one Kranak may be included in an Army, despite Kranak not being a Hero."
+      },
+      {
+        "name": "Trample (Fuinur's Mûmak)",
+        "tag": "Active",
+        "definition": "When Fuinur's Mûmak Tramples, it inflicts four Strength 9 impact hits."
+      },
+      {
+        "name": "Gifted War Beast of Far Harad",
+        "tag": "Passive",
+        "definition": "Fuinur is a Beastmaster riding a Mûmak with Tusk Weapons and Sigils of Defiance. The Mûmak has no howdah."
       }
     ],
     "armyBonuses": [
@@ -51069,6 +52955,94 @@
       {
         "name": "Númenórean Formation",
         "definition": "The Knight of Umbar came from a noble lineage of warrior kings, and his followers were trained in the most advanced tactics from Westernesse. Friendly Infantry models may Support as if they had a spear, so long as they are in base contact with 2 or more friendly Infantry models."
+      },
+      {
+        "name": "Men of the North",
+        "definition": "Aranarth, Rangers of the North and Rangers of Arnor gain Woodland Creature."
+      },
+      {
+        "name": "Reclaimers of the Realm",
+        "definition": "Tarvegil, Veterans of Fornost and Warriors of Arnor gain Mountain Dweller."
+      },
+      {
+        "name": "To me, men of Arnor!",
+        "definition": "Once per game, at the start of any Fight phase while Aranarth is alive and on the battlefield, friendly Arnor Warrior models within 6\" of Aranarth gain +1 To Wound when making Strikes until the end of the turn."
+      },
+      {
+        "name": "Hunters of Oromë",
+        "definition": "If a model moves at least 5\" during the Move phase, it counts as being in cover for Swift Riders, Stalking in Shade."
+      },
+      {
+        "name": "Elf Craftsmanship",
+        "definition": "Rivendell Chariots gain Woodland Creature."
+      },
+      {
+        "name": "Masters of Ambush",
+        "definition": "In Scenarios where Warbands roll to arrive or to determine their deployment area, you may modify the roll for Galdor's Warband by +1 or -1. If Galdor is on the battlefield, you may also modify other friendly Warbands' rolls by +1 or -1."
+      },
+      {
+        "name": "The Fury of the North",
+        "definition": "Frumgar may re-roll failed Courage tests to Charge Terror-causing enemies while mounted."
+      },
+      {
+        "name": "Slaves No More",
+        "definition": "All Éothéod models gain Hatred (Easterling)."
+      },
+      {
+        "name": "Allies in Desperate Times",
+        "definition": "In Scenarios where Warbands roll to enter the board, Éothéod Warbands composed entirely of Cavalry may add 5\" to their movement on the turn they enter. They may shoot as if they had moved half their Move, but may not Charge."
+      },
+      {
+        "name": "Mount Gram Siege Engines",
+        "definition": "Mount Gram Siege Ballistas do not suffer a -1 To Hit penalty when rotating."
+      },
+      {
+        "name": "Mountain Veterans",
+        "definition": "All models in this Army gain Mountain Dweller."
+      },
+      {
+        "name": "Iron Discipline",
+        "definition": "Immediately after the Army becomes Broken, Ghur automatically succeeds in his first Stand Fast! check, and its range is 12\". Later Stand Fast! checks are rolled normally."
+      },
+      {
+        "name": "Servants of the Great Wyrm",
+        "definition": "While the General is alive and on the battlefield, all Ered Mithrin Goblins gain +1 to Courage rolls."
+      },
+      {
+        "name": "Fanaticism",
+        "definition": "Friendly Goblin models treat Dragons and Drakes as banners while within 3\" of them."
+      },
+      {
+        "name": "The Most Terrible Servants of the Enemy",
+        "definition": "During the Move phase, a Cold Drake may devour an Ered Mithrin Goblin in base contact. Remove the Goblin and restore one Will Point previously spent by the Cold Drake."
+      },
+      {
+        "name": "Striking in Darkness",
+        "definition": "Any battle featuring this Army takes place at night for the first two rounds. In each subsequent round, roll a D6; on a 4+ night ends."
+      },
+      {
+        "name": "The Shade of Dunland",
+        "definition": "The Eater of Dreams gains Terror."
+      },
+      {
+        "name": "Raider's Greed",
+        "definition": "Reavers of Dunland Heroes gain +1 To Wound while carrying a relic or item that grants objective points, and gain +1 Intelligence for uncovering-item rolls."
+      },
+      {
+        "name": "Ravagers",
+        "definition": "Allied Man models gain +1 Fight while within 3\" of an Objective Marker."
+      },
+      {
+        "name": "Gifted Beast",
+        "definition": "Fuinur gains Harbinger of Evil (12\")."
+      },
+      {
+        "name": "Shadow of the Past",
+        "definition": "Herumor gains Harbinger of Evil (6\")."
+      },
+      {
+        "name": "Pride of Umbar",
+        "definition": "If your General slays an enemy Hero in Combat, friendly Black Númenórean Warriors within 6\" of your General gain +1 Fight until the end of the turn."
       }
     ]
   },
