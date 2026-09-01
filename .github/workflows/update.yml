@@ -2,6 +2,11 @@ name: Update Tabletop Admiral data
 
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "custom/**"
+      - "scripts/build.py"
   schedule:
     - cron: "17 5 * * *"
 
