@@ -1,0 +1,36 @@
+name: Update Tabletop Admiral data
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 5 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Build merged data
+        run: python scripts/build.py
+
+      - name: Commit upstream changes
+        run: |
+          if git diff --quiet -- data2024-legends.json data2024-legends.update.json; then
+            echo "Already current"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data2024-legends.json data2024-legends.update.json
+          git commit -m "Update Now For Wrath data"
+          git push
