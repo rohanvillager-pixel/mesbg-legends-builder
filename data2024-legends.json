@@ -5,7 +5,7 @@
   "appVersion": 2,
   "update": {
     "manifestUrl": "https://raw.githubusercontent.com/rohanvillager-pixel/mesbg-legends-builder/main/data2024-legends.update.json",
-    "contentVersion": "2026.08.21.3-legends-1.2.1-twp-1.0"
+    "contentVersion": "2026.08.21.3-legends-1.2.1-twp-1.0-wotr-1.1"
   },
   "disallowMultipleFactions": true,
   "colors": {
@@ -544,6 +544,10 @@
     {
       "type": "text",
       "text": "Custom profiles and army lists from The Watchful Peace fan-made sourcebook (2025). "
+    },
+    {
+      "type": "text",
+      "text": "Custom profiles and army lists from Supplement for The War of the Rohirrim v1.1 by Orcstew. "
     }
   ],
   "game": "Middle-Earth Strategy Battle Game - 2024",
@@ -566,6 +570,11 @@
     {
       "property": "watchfulPeace",
       "label": "The Watchful Peace",
+      "default": false
+    },
+    {
+      "property": "warOfTheRohirrimOrcstew",
+      "label": "War of the Rohirrim - Orcstew",
       "default": false
     }
   ],
@@ -5961,6 +5970,195 @@
             "Herumor, the Despot"
           ]
         ]
+      },
+      {
+        "name": "Army of Edoras (Orcstew)",
+        "alignment": "good",
+        "additionalRules": [
+          "Riders of Rohan do not count towards this Army's Bow Limit."
+        ],
+        "armyBonuses": [
+          "\"Forth Eorlingas!\" (Edoras)",
+          "Protect the King (Edoras)"
+        ],
+        "warOfTheRohirrimOrcstew": true,
+        "badge": "WotR"
+      },
+      {
+        "name": "Defenders of the Hornburg (Orcstew)",
+        "alignment": "good",
+        "additionalRules": [
+          "Helm Hammerhand may not include any Warrior models in his Warband.",
+          "Only a maximum of 33% of the Warrior models in this Army may be Veterans of the Hornburg."
+        ],
+        "armyBonuses": [
+          "Defend the Hornburg",
+          "A Desperate Defence",
+          "Frenzy of the King"
+        ],
+        "specialRules": [
+          "Dominant (2)"
+        ],
+        "warOfTheRohirrimOrcstew": true,
+        "badge": "WotR"
+      },
+      {
+        "name": "Usurpers of Edoras (Orcstew)",
+        "alignment": "evil",
+        "additionalRules": [
+          "If your Army includes Freca, then he must be your General.",
+          "Rohirrim Traitors can only be included in Lord Thorne's Warband."
+        ],
+        "armyBonuses": [
+          "Whipped into a frenzy",
+          "Barbarous Killers"
+        ],
+        "warOfTheRohirrimOrcstew": true,
+        "badge": "WotR"
+      },
+      {
+        "name": "Besiegers of the Hornburg (Orcstew)",
+        "alignment": "evil",
+        "additionalRules": [
+          "A Besiegers of the Hornburg Army must include Wulf, who is always the Army's General."
+        ],
+        "armyBonuses": [
+          "Wulf's Revenge",
+          "The Promise of Wealth",
+          "Shank & Wrot"
+        ],
+        "requiredChildren": [
+          {
+            "name": "Wulf, High Lord of the Hill Tribes",
+            "points": 110,
+            "mustBeLeader": true,
+            "elementPropertyName": "heroes"
+          }
+        ],
+        "warOfTheRohirrimOrcstew": true,
+        "badge": "WotR"
+      },
+      {
+        "name": "The Gates of Edoras",
+        "alignment": "good",
+        "warOfTheRohirrimOrcstew": true,
+        "badge": "WotR",
+        "additionalRules": [],
+        "armyBonuses": [
+          "Spur the Defenders",
+          "The Princess's Defiance",
+          "Hera's Ploy",
+          "Ready to rejoin the battle"
+        ],
+        "requiredChildren": [
+          {
+            "name": "Hera, Daughter of Helm",
+            "points": 70,
+            "elementPropertyName": "heroes",
+            "mustBeLeader": true
+          }
+        ]
+      },
+      {
+        "name": "Friendship of Isengard",
+        "alignment": "good",
+        "warOfTheRohirrimOrcstew": true,
+        "badge": "WotR",
+        "additionalRules": [
+          "This Army may include at most two Kings of Men: one with the Gondor keyword and one with the Rohan keyword.",
+          "If a Rohan King of Men is included, no Unique Rohan Hero may be included.",
+          "Gondor Warriors may only join Gondor Heroes; Rohan Warriors may only join Rohan Heroes.",
+          "Saruman may only lead Warriors of Minas Tirith, which replace Gondor with Orthanc.",
+          "Riders of Rohan do not count towards this Army's Bow Limit."
+        ],
+        "armyBonuses": [
+          "The Garrison of Orthanc",
+          "Support from Gondor",
+          "Ride for ruin and the world's ending (Orcstew)",
+          "Saruman's Advice"
+        ]
+      },
+      {
+        "name": "The Green Promise of Spring",
+        "alignment": "good",
+        "warOfTheRohirrimOrcstew": true,
+        "badge": "WotR",
+        "additionalRules": [
+          "Hera may not include Warriors in her Warband. If Olwyn and/or Gandalf are included, they deploy with Hera as one Warband that cannot include Warriors.",
+          "Hera and Olwyn lose the Rohan keyword."
+        ],
+        "armyBonuses": [
+          "Heroine of Rohan",
+          "Hardened by war",
+          "Ride for ruin and the world's ending (Green Promise)",
+          "Gandalf's Investigation"
+        ],
+        "requiredChildren": [
+          {
+            "name": "Fréaláf Hildeson, First King of the Second Line",
+            "points": 120,
+            "elementPropertyName": "heroes",
+            "mustBeLeader": true
+          },
+          {
+            "name": "Hera, Daughter of Helm",
+            "points": 70,
+            "elementPropertyName": "heroes"
+          }
+        ]
+      },
+      {
+        "name": "Southron Mercenaries",
+        "alignment": "evil",
+        "warOfTheRohirrimOrcstew": true,
+        "badge": "WotR",
+        "additionalRules": [],
+        "armyBonuses": [
+          "Mercenary Commander",
+          "Prized gear of the Mûmakil",
+          "Come from afar",
+          "Swift as Snakes"
+        ]
+      },
+      {
+        "name": "Weald se Witega",
+        "alignment": "evil",
+        "warOfTheRohirrimOrcstew": true,
+        "badge": "WotR",
+        "additionalRules": [],
+        "armyBonuses": [
+          "Hidden in the Wood",
+          "Mission for the High Lord",
+          "Opportunistic Ambush"
+        ],
+        "requiredChildren": [
+          {
+            "name": "General Targg",
+            "points": 80,
+            "elementPropertyName": "heroes",
+            "mustBeLeader": true
+          },
+          {
+            "name": "Wulf's Lieutenant",
+            "points": 50,
+            "elementPropertyName": "heroes"
+          }
+        ]
+      },
+      {
+        "name": "Army of Wulf",
+        "alignment": "evil",
+        "warOfTheRohirrimOrcstew": true,
+        "badge": "WotR",
+        "additionalRules": [
+          "No more than 50% of the models in this Army may have the Harad keyword."
+        ],
+        "armyBonuses": [
+          "Whipped into a frenzy (War of the Rohirrim - Orcstew)",
+          "Treacherous Shot",
+          "Green lights of Isengard",
+          "Tactical Approach"
+        ]
       }
     ],
     "heroicTiers": [
@@ -9335,6 +9533,18 @@
           {
             "name": "Defenders of Aglarond",
             "heroicTier": "Minor Hero"
+          },
+          {
+            "name": "Army of Edoras (Orcstew)",
+            "heroicTier": "Minor Hero"
+          },
+          {
+            "name": "Friendship of Isengard",
+            "heroicTier": "Minor Hero"
+          },
+          {
+            "name": "The Green Promise of Spring",
+            "heroicTier": "Minor Hero"
           }
         ],
         "points": 55,
@@ -9615,6 +9825,10 @@
           },
           {
             "name": "Host of Eärnur",
+            "heroicTier": "Hero of Fortitude"
+          },
+          {
+            "name": "Friendship of Isengard",
             "heroicTier": "Hero of Fortitude"
           }
         ],
@@ -15098,6 +15312,10 @@
           {
             "name": "Army of Edoras",
             "heroicTier": "Hero of Valour"
+          },
+          {
+            "name": "Army of Edoras (Orcstew)",
+            "heroicTier": "Hero of Valour"
           }
         ],
         "points": 100,
@@ -15158,6 +15376,10 @@
           {
             "name": "Army of Edoras",
             "heroicTier": "Hero of Valour"
+          },
+          {
+            "name": "Army of Edoras (Orcstew)",
+            "heroicTier": "Hero of Valour"
           }
         ],
         "points": 70,
@@ -15215,6 +15437,10 @@
           {
             "name": "Army of Edoras",
             "heroicTier": "Hero of Valour"
+          },
+          {
+            "name": "Army of Edoras (Orcstew)",
+            "heroicTier": "Hero of Valour"
           }
         ],
         "points": 100,
@@ -15271,6 +15497,18 @@
           {
             "name": "Army of Edoras",
             "heroicTier": "Hero of Fortitude"
+          },
+          {
+            "name": "Army of Edoras (Orcstew)",
+            "heroicTier": "Hero of Fortitude"
+          },
+          {
+            "name": "The Gates of Edoras",
+            "heroicTier": "Hero of Valour"
+          },
+          {
+            "name": "The Green Promise of Spring",
+            "heroicTier": "Hero of Valour"
           }
         ],
         "points": 70,
@@ -15319,14 +15557,28 @@
           {
             "name": "Ashere",
             "points": 20
+          },
+          {
+            "name": "Ballista of Edoras",
+            "usesDefinition": "Ballista Trained",
+            "points": 60,
+            "availableIn": [
+              "Army of Edoras (Orcstew)",
+              "The Gates of Edoras"
+            ]
           }
-        ]
+        ],
+        "availableIn": []
       },
       {
         "name": "Hera, The Bride of Death",
         "factions": [
           {
             "name": "Defenders of the Hornburg",
+            "heroicTier": "Hero of Legend"
+          },
+          {
+            "name": "Defenders of the Hornburg (Orcstew)",
             "heroicTier": "Hero of Legend"
           }
         ],
@@ -15389,6 +15641,22 @@
           {
             "name": "Defenders of the Hornburg",
             "heroicTier": "Hero of Fortitude"
+          },
+          {
+            "name": "Army of Edoras (Orcstew)",
+            "heroicTier": "Hero of Fortitude"
+          },
+          {
+            "name": "Defenders of the Hornburg (Orcstew)",
+            "heroicTier": "Hero of Fortitude"
+          },
+          {
+            "name": "The Gates of Edoras",
+            "heroicTier": "Hero of Fortitude"
+          },
+          {
+            "name": "The Green Promise of Spring",
+            "heroicTier": "Hero of Fortitude"
           }
         ],
         "points": 80,
@@ -15450,6 +15718,26 @@
           {
             "name": "Defenders of the Hornburg",
             "heroicTier": "Minor Hero"
+          },
+          {
+            "name": "Army of Edoras (Orcstew)",
+            "heroicTier": "Minor Hero"
+          },
+          {
+            "name": "Defenders of the Hornburg (Orcstew)",
+            "heroicTier": "Minor Hero"
+          },
+          {
+            "name": "The Gates of Edoras",
+            "heroicTier": "Minor Hero"
+          },
+          {
+            "name": "Friendship of Isengard",
+            "heroicTier": "Minor Hero"
+          },
+          {
+            "name": "The Green Promise of Spring",
+            "heroicTier": "Minor Hero"
           }
         ],
         "points": 50,
@@ -15507,6 +15795,22 @@
           {
             "name": "Besiegers of the Hornburg",
             "heroicTier": "Hero of Fortitude"
+          },
+          {
+            "name": "Usurpers of Edoras (Orcstew)",
+            "heroicTier": "Hero of Fortitude"
+          },
+          {
+            "name": "Besiegers of the Hornburg (Orcstew)",
+            "heroicTier": "Hero of Fortitude"
+          },
+          {
+            "name": "Weald se Witega",
+            "heroicTier": "Hero of Valour"
+          },
+          {
+            "name": "Army of Wulf",
+            "heroicTier": "Hero of Valour"
           }
         ],
         "points": 80,
@@ -15559,6 +15863,10 @@
           {
             "name": "Usurpers of Edoras",
             "heroicTier": "Hero of Fortitude"
+          },
+          {
+            "name": "Usurpers of Edoras (Orcstew)",
+            "heroicTier": "Hero of Fortitude"
           }
         ],
         "points": 70,
@@ -15609,6 +15917,22 @@
           {
             "name": "Besiegers of the Hornburg",
             "heroicTier": "Hero of Fortitude"
+          },
+          {
+            "name": "Usurpers of Edoras (Orcstew)",
+            "heroicTier": "Hero of Fortitude"
+          },
+          {
+            "name": "Besiegers of the Hornburg (Orcstew)",
+            "heroicTier": "Hero of Fortitude"
+          },
+          {
+            "name": "Weald se Witega",
+            "heroicTier": "Hero of Fortitude"
+          },
+          {
+            "name": "Army of Wulf",
+            "heroicTier": "Hero of Fortitude"
           }
         ],
         "unlimited": true,
@@ -15655,8 +15979,20 @@
           {
             "name": "Two-handed weapon",
             "points": 5
+          },
+          {
+            "name": "Skull mask",
+            "usesDefinition": "Skull Mask",
+            "points": 5,
+            "availableIn": [
+              "Usurpers of Edoras (Orcstew)",
+              "Besiegers of the Hornburg (Orcstew)",
+              "Weald se Witega",
+              "Army of Wulf"
+            ]
           }
-        ]
+        ],
+        "availableIn": []
       },
       {
         "name": "Shank & Wrot, Orc Scavengers",
@@ -15668,6 +16004,10 @@
           {
             "name": "Raiders from the Ered Nimras",
             "heroicTier": "Hero of Valour"
+          },
+          {
+            "name": "Besiegers of the Hornburg (Orcstew)",
+            "heroicTier": "Minor Hero"
           }
         ],
         "points": 150,
@@ -15701,6 +16041,10 @@
         "factions": [
           {
             "name": "Besiegers of the Hornburg",
+            "heroicTier": "Minor Hero"
+          },
+          {
+            "name": "Besiegers of the Hornburg (Orcstew)",
             "heroicTier": "Minor Hero"
           }
         ],
@@ -15751,6 +16095,10 @@
           {
             "name": "Besiegers of the Hornburg",
             "heroicTier": "Minor Hero"
+          },
+          {
+            "name": "Besiegers of the Hornburg (Orcstew)",
+            "heroicTier": "Minor Hero"
           }
         ],
         "autoAddOnly": true,
@@ -15799,6 +16147,10 @@
         "factions": [
           {
             "name": "Usurpers of Edoras",
+            "heroicTier": "Hero of Valour"
+          },
+          {
+            "name": "Usurpers of Edoras (Orcstew)",
             "heroicTier": "Hero of Valour"
           }
         ],
@@ -15853,6 +16205,18 @@
           },
           {
             "name": "Besiegers of the Hornburg",
+            "heroicTier": "Hero of Legend"
+          },
+          {
+            "name": "Usurpers of Edoras (Orcstew)",
+            "heroicTier": "Hero of Valour"
+          },
+          {
+            "name": "Besiegers of the Hornburg (Orcstew)",
+            "heroicTier": "Hero of Legend"
+          },
+          {
+            "name": "Army of Wulf",
             "heroicTier": "Hero of Legend"
           }
         ],
@@ -16718,6 +17082,26 @@
           {
             "name": "Defenders of Aglarond",
             "heroicTier": "Hero of Fortitude"
+          },
+          {
+            "name": "Army of Edoras (Orcstew)",
+            "heroicTier": "Hero of Fortitude"
+          },
+          {
+            "name": "Defenders of the Hornburg (Orcstew)",
+            "heroicTier": "Hero of Fortitude"
+          },
+          {
+            "name": "The Gates of Edoras",
+            "heroicTier": "Hero of Fortitude"
+          },
+          {
+            "name": "Friendship of Isengard",
+            "heroicTier": "Hero of Fortitude"
+          },
+          {
+            "name": "The Green Promise of Spring",
+            "heroicTier": "Hero of Fortitude"
           }
         ],
         "unlimited": true,
@@ -16799,7 +17183,9 @@
               "The Grief of Eomer",
               "Fords of Isen",
               "Paths of the Druadan",
-              "Fields of Celebrant"
+              "Fields of Celebrant",
+              "Army of Edoras (Orcstew)",
+              "Defenders of the Hornburg (Orcstew)"
             ]
           },
           {
@@ -16825,7 +17211,9 @@
               "The Grief of Eomer",
               "Fords of Isen",
               "Paths of the Druadan",
-              "Fields of Celebrant"
+              "Fields of Celebrant",
+              "Army of Edoras (Orcstew)",
+              "Defenders of the Hornburg (Orcstew)"
             ]
           }
         ],
@@ -20210,6 +20598,10 @@
           {
             "name": "Vanquishers of the Necromancer",
             "heroicTier": "Hero of Legend"
+          },
+          {
+            "name": "Friendship of Isengard",
+            "heroicTier": "Hero of Legend"
           }
         ],
         "points": 170,
@@ -22193,6 +22585,10 @@
           {
             "name": "The Battle of Five Armies",
             "heroicTier": "Hero of Legend"
+          },
+          {
+            "name": "The Green Promise of Spring",
+            "heroicTier": "Hero of Valour"
           }
         ],
         "points": 170,
@@ -22354,6 +22750,10 @@
           {
             "name": "Fields of Celebrant",
             "heroicTier": "Hero of Valour"
+          },
+          {
+            "name": "Friendship of Isengard",
+            "heroicTier": "Hero of Legend"
           }
         ],
         "points": 75,
@@ -22421,6 +22821,10 @@
         "factions": [
           {
             "name": "Realms of Men",
+            "heroicTier": "Hero of Legend"
+          },
+          {
+            "name": "Friendship of Isengard",
             "heroicTier": "Hero of Legend"
           }
         ],
@@ -24680,6 +25084,10 @@
           {
             "name": "Defenders of Cair Andros",
             "heroicTier": "Hero of Fortitude"
+          },
+          {
+            "name": "Friendship of Isengard",
+            "heroicTier": "Hero of Fortitude"
           }
         ],
         "unlimited": true,
@@ -25841,6 +26249,10 @@
           {
             "name": "Helm's Guard",
             "heroicTier": "Hero of Legend"
+          },
+          {
+            "name": "Army of Edoras (Orcstew)",
+            "heroicTier": "Hero of Legend"
           }
         ],
         "points": 160,
@@ -25901,6 +26313,10 @@
         "factions": [
           {
             "name": "Defenders of the Hornburg",
+            "heroicTier": "Hero of Legend"
+          },
+          {
+            "name": "Defenders of the Hornburg (Orcstew)",
             "heroicTier": "Hero of Legend"
           }
         ],
@@ -27804,6 +28220,10 @@
           },
           {
             "name": "Realms of Men",
+            "heroicTier": "Minor Hero"
+          },
+          {
+            "name": "Friendship of Isengard",
             "heroicTier": "Minor Hero"
           }
         ],
@@ -30602,6 +31022,10 @@
           {
             "name": "Host of the Golden King",
             "heroicTier": "Hero of Fortitude"
+          },
+          {
+            "name": "Usurpers of Edoras (Orcstew)",
+            "heroicTier": "Minor Hero"
           }
         ],
         "unavailableWith": [
@@ -32539,6 +32963,1068 @@
           "Claws and teeth (hand weapons)"
         ],
         "options": []
+      },
+      {
+        "name": "Lord Fryght of the Westfold",
+        "points": 60,
+        "movement": 6,
+        "fight": 4,
+        "shoot": 4,
+        "strength": 4,
+        "defence": 6,
+        "attack": 2,
+        "wounds": 2,
+        "courage": 7,
+        "intelligence": 6,
+        "might": 2,
+        "will": 1,
+        "fate": 2,
+        "race": [
+          "Man"
+        ],
+        "faction": [
+          "Rohan"
+        ],
+        "unitType": [
+          "Hero",
+          "Infantry",
+          "Unique"
+        ],
+        "baseSize": [
+          "25mm"
+        ],
+        "heroicActions": [
+          "Heroic Defence"
+        ],
+        "wargear": [
+          "Heavy armour",
+          "Hand weapon"
+        ],
+        "options": [
+          {
+            "name": "Horse",
+            "points": 20,
+            "availableIn": [
+              "Army of Edoras (Orcstew)",
+              "Friendship of Isengard",
+              "The Green Promise of Spring"
+            ]
+          }
+        ],
+        "specialRules": [
+          "Expert Rider",
+          "Horse Lord",
+          "Sworn Protector (Helm Hammerhand, King of Rohan)",
+          "Words of Caution"
+        ],
+        "factions": [
+          {
+            "name": "Army of Edoras (Orcstew)",
+            "heroicTier": "Hero of Fortitude"
+          },
+          {
+            "name": "Defenders of the Hornburg (Orcstew)",
+            "heroicTier": "Hero of Fortitude"
+          },
+          {
+            "name": "Friendship of Isengard",
+            "heroicTier": "Hero of Fortitude"
+          },
+          {
+            "name": "The Green Promise of Spring",
+            "heroicTier": "Hero of Fortitude"
+          }
+        ]
+      },
+      {
+        "name": "Lord Pryme of the Folde",
+        "points": 60,
+        "movement": 6,
+        "fight": 4,
+        "shoot": 4,
+        "strength": 4,
+        "defence": 5,
+        "attack": 2,
+        "wounds": 2,
+        "courage": 6,
+        "intelligence": 5,
+        "might": 1,
+        "will": 3,
+        "fate": 2,
+        "race": [
+          "Man"
+        ],
+        "faction": [
+          "Rohan"
+        ],
+        "unitType": [
+          "Hero",
+          "Infantry",
+          "Unique"
+        ],
+        "baseSize": [
+          "25mm"
+        ],
+        "heroicActions": [
+          "Heroic Defence",
+          "Heroic Resolve"
+        ],
+        "wargear": [
+          "Armour",
+          "Hand weapon"
+        ],
+        "options": [
+          {
+            "name": "Horse",
+            "points": 20,
+            "availableIn": [
+              "Army of Edoras (Orcstew)",
+              "Friendship of Isengard",
+              "The Green Promise of Spring"
+            ]
+          }
+        ],
+        "specialRules": [
+          "Expert Rider",
+          "Horse Lord",
+          "Sworn Protector (Helm Hammerhand, King of Rohan)",
+          "Clarity of Mind"
+        ],
+        "factions": [
+          {
+            "name": "Army of Edoras (Orcstew)",
+            "heroicTier": "Hero of Fortitude"
+          },
+          {
+            "name": "Defenders of the Hornburg (Orcstew)",
+            "heroicTier": "Hero of Fortitude"
+          },
+          {
+            "name": "Friendship of Isengard",
+            "heroicTier": "Hero of Fortitude"
+          },
+          {
+            "name": "The Green Promise of Spring",
+            "heroicTier": "Hero of Fortitude"
+          }
+        ]
+      },
+      {
+        "name": "Lord Gramhere of Westemnet",
+        "points": 60,
+        "movement": 6,
+        "fight": 5,
+        "shoot": 4,
+        "strength": 4,
+        "defence": 5,
+        "attack": 2,
+        "wounds": 2,
+        "courage": 5,
+        "intelligence": 6,
+        "might": 2,
+        "will": 1,
+        "fate": 1,
+        "race": [
+          "Man"
+        ],
+        "faction": [
+          "Rohan"
+        ],
+        "unitType": [
+          "Hero",
+          "Infantry",
+          "Unique"
+        ],
+        "baseSize": [
+          "25mm"
+        ],
+        "heroicActions": [
+          "Heroic March",
+          "Heroic Strike"
+        ],
+        "wargear": [
+          "Armour",
+          "Hand weapon"
+        ],
+        "options": [
+          {
+            "name": "Horse",
+            "points": 20
+          }
+        ],
+        "specialRules": [
+          "Expert Rider",
+          "Horse Lord",
+          "Sworn Protector (Helm Hammerhand, King of Rohan)",
+          "Gallant Charge"
+        ],
+        "factions": [
+          {
+            "name": "Army of Edoras (Orcstew)",
+            "heroicTier": "Hero of Fortitude"
+          }
+        ]
+      },
+      {
+        "name": "Lord Everbrand of Eastemnet",
+        "points": 60,
+        "movement": 6,
+        "fight": 5,
+        "shoot": 4,
+        "strength": 4,
+        "defence": 6,
+        "attack": 2,
+        "wounds": 2,
+        "courage": 6,
+        "intelligence": 6,
+        "might": 2,
+        "will": 1,
+        "fate": 1,
+        "race": [
+          "Man"
+        ],
+        "faction": [
+          "Rohan"
+        ],
+        "unitType": [
+          "Hero",
+          "Infantry",
+          "Unique"
+        ],
+        "baseSize": [
+          "25mm"
+        ],
+        "heroicActions": [
+          "Heroic Strength"
+        ],
+        "wargear": [
+          "Heavy armour",
+          "Hand weapon"
+        ],
+        "options": [
+          {
+            "name": "Horse",
+            "points": 20
+          }
+        ],
+        "specialRules": [
+          "Expert Rider",
+          "Horse Lord",
+          "Sworn Protector (Helm Hammerhand, King of Rohan)",
+          "Steadfast Backing"
+        ],
+        "factions": [
+          {
+            "name": "Army of Edoras (Orcstew)",
+            "heroicTier": "Hero of Fortitude"
+          }
+        ]
+      },
+      {
+        "name": "Ballista of Edoras",
+        "unlimited": true,
+        "points": 60,
+        "range": [
+          "0-48\""
+        ],
+        "movement": 0,
+        "fight": 0,
+        "shoot": 0,
+        "strength": 8,
+        "defence": 9,
+        "attack": 0,
+        "wounds": 3,
+        "courage": 0,
+        "intelligence": 0,
+        "baseSize": [
+          "40mm"
+        ],
+        "race": [
+          "Siege Engine"
+        ],
+        "faction": [
+          "Rohan"
+        ],
+        "unitType": [
+          "Small Siege Engine"
+        ],
+        "keywords": [
+          "Siege Weapon"
+        ],
+        "includes": [
+          {
+            "name": "Rohan Siege Veteran (Edoras)",
+            "dataSource": "heroes"
+          }
+        ],
+        "increaseMaximumChildren": {
+          "warriors": -5
+        },
+        "requiredChildren": [
+          {
+            "elementPropertyName": "warriors",
+            "name": "Rohan Siege Crew (Edoras)",
+            "quantity": 1,
+            "points": 0,
+            "hideFromPrint": true,
+            "lockedChildren": true
+          }
+        ],
+        "heroicActions": [],
+        "wargear": [],
+        "options": [
+          {
+            "name": "Flaming Ammunition",
+            "usesDefinition": "Flaming Ammunition (Edoras)",
+            "points": 10
+          }
+        ],
+        "specialRules": [
+          "Direct Shot",
+          "Accurate",
+          "Piercing Shot",
+          "Last Second Shot"
+        ],
+        "composition": "A Ballista of Edoras is a Small Siege Engine crewed by two Rohan Siege Crew, one of which is the Siege Veteran.",
+        "factions": [
+          {
+            "name": "Army of Edoras (Orcstew)",
+            "heroicTier": "Minor Hero"
+          },
+          {
+            "name": "The Gates of Edoras",
+            "heroicTier": "Minor Hero"
+          }
+        ]
+      },
+      {
+        "name": "Rohan Siege Veteran (Edoras)",
+        "autoAddOnly": true,
+        "unavailableSolo": true,
+        "points": 0,
+        "movement": 6,
+        "fight": 3,
+        "shoot": 4,
+        "strength": 3,
+        "defence": 4,
+        "attack": 1,
+        "wounds": 1,
+        "courage": 7,
+        "intelligence": 6,
+        "might": 1,
+        "will": 1,
+        "fate": 1,
+        "race": [
+          "Man"
+        ],
+        "faction": [
+          "Rohan"
+        ],
+        "unitType": [
+          "Hero",
+          "Infantry"
+        ],
+        "baseSize": [
+          "25mm"
+        ],
+        "heroicActions": [],
+        "wargear": [
+          "Armour",
+          "Hand weapon"
+        ],
+        "options": [],
+        "specialRules": [],
+        "factions": []
+      },
+      {
+        "name": "Old Pennicruik",
+        "points": 25,
+        "movement": 5,
+        "fight": 1,
+        "shoot": 6,
+        "strength": 2,
+        "defence": 3,
+        "attack": 1,
+        "wounds": 1,
+        "courage": 5,
+        "intelligence": 4,
+        "might": 0,
+        "will": 3,
+        "fate": 2,
+        "race": [
+          "Man"
+        ],
+        "faction": [
+          "Rohan"
+        ],
+        "unitType": [
+          "Hero",
+          "Infantry",
+          "Unique"
+        ],
+        "baseSize": [
+          "25mm"
+        ],
+        "heroicActions": [],
+        "wargear": [
+          "Unarmed"
+        ],
+        "options": [],
+        "specialRules": [
+          "Stalk Unseen",
+          "Ghost Stories",
+          "Inscrutable Crone"
+        ],
+        "factions": [
+          {
+            "name": "Defenders of the Hornburg (Orcstew)",
+            "heroicTier": "Minor Hero"
+          }
+        ]
+      },
+      {
+        "name": "Hornburg Garrison Captain",
+        "unlimited": true,
+        "points": 55,
+        "movement": 6,
+        "fight": 4,
+        "shoot": 4,
+        "strength": 4,
+        "defence": 6,
+        "attack": 2,
+        "wounds": 2,
+        "courage": 5,
+        "intelligence": 6,
+        "might": 2,
+        "will": 1,
+        "fate": 1,
+        "race": [
+          "Man"
+        ],
+        "faction": [
+          "Rohan"
+        ],
+        "unitType": [
+          "Hero",
+          "Infantry"
+        ],
+        "baseSize": [
+          "25mm"
+        ],
+        "heroicActions": [
+          "Heroic March"
+        ],
+        "wargear": [
+          "Heavy armour",
+          "Hand weapon"
+        ],
+        "options": [
+          {
+            "name": "Shield",
+            "points": 5
+          },
+          {
+            "name": "Bow",
+            "points": 5
+          }
+        ],
+        "specialRules": [
+          "Defender on the Wall"
+        ],
+        "factions": [
+          {
+            "name": "Defenders of the Hornburg (Orcstew)",
+            "heroicTier": "Hero of Fortitude"
+          }
+        ]
+      },
+      {
+        "name": "Fréaláf Hildeson, First King of the Second Line",
+        "points": 120,
+        "movement": 6,
+        "fight": 6,
+        "shoot": 4,
+        "strength": 4,
+        "defence": 5,
+        "attack": 3,
+        "wounds": 3,
+        "courage": 4,
+        "intelligence": 4,
+        "might": 2,
+        "will": 3,
+        "fate": 3,
+        "race": [
+          "Man"
+        ],
+        "faction": [
+          "Rohan"
+        ],
+        "unitType": [
+          "Hero",
+          "Infantry",
+          "Unique"
+        ],
+        "baseSize": [
+          "25mm"
+        ],
+        "heroicActions": [
+          "Heroic Defence",
+          "Heroic Resolve"
+        ],
+        "wargear": [
+          "Armour",
+          "Hand weapon"
+        ],
+        "options": [
+          {
+            "name": "Armoured horse",
+            "points": 25
+          }
+        ],
+        "specialRules": [
+          "Expert Rider",
+          "Horse Lord",
+          "Master of Battle (4+)",
+          "Leader (Rohan Royal Guard)",
+          "Secure Reign"
+        ],
+        "factions": [
+          {
+            "name": "Friendship of Isengard",
+            "heroicTier": "Hero of Legend"
+          },
+          {
+            "name": "The Green Promise of Spring",
+            "heroicTier": "Hero of Legend"
+          }
+        ]
+      },
+      {
+        "name": "Southron Mercenary Captain",
+        "unlimited": true,
+        "points": 55,
+        "movement": 6,
+        "fight": 5,
+        "shoot": 4,
+        "strength": 4,
+        "defence": 5,
+        "attack": 2,
+        "wounds": 2,
+        "courage": 6,
+        "intelligence": 6,
+        "might": 2,
+        "will": 1,
+        "fate": 1,
+        "race": [
+          "Man"
+        ],
+        "faction": [
+          "Harad",
+          "Variag"
+        ],
+        "unitType": [
+          "Hero",
+          "Infantry"
+        ],
+        "baseSize": [
+          "25mm"
+        ],
+        "heroicActions": [
+          "Heroic March"
+        ],
+        "wargear": [
+          "Armour",
+          "Hand weapon"
+        ],
+        "options": [
+          {
+            "name": "Bow",
+            "points": 5
+          }
+        ],
+        "specialRules": [
+          "Hired for a Mission"
+        ],
+        "factions": [
+          {
+            "name": "Southron Mercenaries",
+            "heroicTier": "Hero of Fortitude"
+          },
+          {
+            "name": "Army of Wulf",
+            "heroicTier": "Hero of Fortitude"
+          }
+        ]
+      },
+      {
+        "name": "Southron Mercenary Mûmak",
+        "unlimited": true,
+        "hideStats": true,
+        "decreaseModelCount": 1,
+        "increaseMaximumChildren": {
+          "warriors": -6
+        },
+        "points": 200,
+        "race": [
+          "Mûmak"
+        ],
+        "faction": [
+          "Harad",
+          "Variag"
+        ],
+        "heroicActions": [
+          "Heroic March"
+        ],
+        "wargear": [],
+        "options": [
+          {
+            "name": "Armored Headplate",
+            "points": 10
+          },
+          {
+            "name": "Tusks Trophies",
+            "points": 10
+          },
+          {
+            "name": "Gnarled Hide",
+            "points": 20
+          },
+          {
+            "name": "Sigils of Defiance",
+            "points": 20
+          },
+          {
+            "name": "Tusk Weapons",
+            "points": 20
+          },
+          {
+            "name": "Foul Temperament",
+            "points": 15
+          },
+          {
+            "name": "Rappelling Lines",
+            "points": 10
+          }
+        ],
+        "specialRules": [],
+        "includes": [
+          {
+            "dataSource": "heroes",
+            "name": "Variag Mûmak Commander"
+          },
+          {
+            "dataSource": "heroes",
+            "name": "Mercenary Mûmak"
+          },
+          {
+            "dataSource": "heroes",
+            "name": "Mercenary Howdah"
+          }
+        ],
+        "factions": [
+          {
+            "name": "Southron Mercenaries",
+            "heroicTier": "Hero of Fortitude"
+          },
+          {
+            "name": "Army of Wulf",
+            "heroicTier": "Hero of Fortitude"
+          }
+        ]
+      },
+      {
+        "name": "Variag Mûmak Commander",
+        "autoAddOnly": true,
+        "unavailableSolo": true,
+        "points": 0,
+        "movement": 6,
+        "fight": 5,
+        "shoot": 4,
+        "strength": 4,
+        "defence": 5,
+        "attack": 2,
+        "wounds": 2,
+        "courage": 6,
+        "intelligence": 6,
+        "might": 2,
+        "will": 1,
+        "fate": 1,
+        "race": [
+          "Man"
+        ],
+        "faction": [
+          "Harad",
+          "Variag"
+        ],
+        "unitType": [
+          "Hero",
+          "Infantry"
+        ],
+        "baseSize": [
+          "25mm"
+        ],
+        "heroicActions": [
+          "Heroic March"
+        ],
+        "wargear": [
+          "Armour",
+          "Hand weapon"
+        ],
+        "options": [],
+        "specialRules": [
+          "Hired for a Mission",
+          "Drop Attack"
+        ],
+        "factions": []
+      },
+      {
+        "name": "Mercenary Mûmak",
+        "unavailableSolo": true,
+        "points": 0,
+        "movement": 8,
+        "fight": 4,
+        "shoot": 6,
+        "strength": 9,
+        "defence": 7,
+        "attack": 3,
+        "wounds": 8,
+        "courage": 8,
+        "intelligence": 9,
+        "race": [
+          "Mûmak"
+        ],
+        "faction": [
+          "Harad",
+          "Variag"
+        ],
+        "unitType": [
+          "War Beast"
+        ],
+        "baseSize": [
+          "170x105mm oval"
+        ],
+        "heroicActions": [],
+        "wargear": [
+          "Tusks and huge, stomping feet (hand weapons)"
+        ],
+        "options": [],
+        "specialRules": [
+          "Dominant (8)",
+          "Large Target",
+          "Terror",
+          "Trample (Mercenary Mûmak)"
+        ],
+        "factions": []
+      },
+      {
+        "name": "Mercenary Howdah",
+        "unavailableSolo": true,
+        "points": 0,
+        "defence": 9,
+        "wounds": 4,
+        "heroicActions": [],
+        "wargear": [],
+        "options": [],
+        "specialRules": [
+          "Mercenary Howdah"
+        ],
+        "factions": []
+      },
+      {
+        "name": "Rabid Mûmak",
+        "points": 200,
+        "movement": 10,
+        "fight": 4,
+        "shoot": 6,
+        "strength": 9,
+        "defence": 7,
+        "attack": 4,
+        "wounds": 7,
+        "courage": 8,
+        "intelligence": 9,
+        "race": [
+          "Mûmak"
+        ],
+        "faction": [
+          "Harad",
+          "Variag"
+        ],
+        "unitType": [
+          "War Beast",
+          "Unique"
+        ],
+        "baseSize": [
+          "170x105mm oval"
+        ],
+        "increaseMaximumChildren": {
+          "warriors": -12
+        },
+        "heroicActions": [],
+        "wargear": [
+          "Tusks and huge, stomping feet (hand weapons)"
+        ],
+        "options": [],
+        "specialRules": [
+          "Dominant (8)",
+          "Large Target",
+          "Terror",
+          "Fearless",
+          "Trample (Mercenary Mûmak)",
+          "Instinct of the Beast",
+          "Madness Beyond Pain",
+          "Destructive Rampage",
+          "Savage Stalking",
+          "Mad with the Sound of Horn"
+        ],
+        "factions": [
+          {
+            "name": "Southron Mercenaries",
+            "heroicTier": "Hero of Fortitude"
+          }
+        ]
+      },
+      {
+        "name": "Southron Mercenary Beastmaster",
+        "unlimited": true,
+        "points": 55,
+        "movement": 6,
+        "fight": 5,
+        "shoot": 4,
+        "strength": 4,
+        "defence": 5,
+        "attack": 2,
+        "wounds": 2,
+        "courage": 5,
+        "intelligence": 6,
+        "might": 1,
+        "will": 1,
+        "fate": 1,
+        "race": [
+          "Man"
+        ],
+        "faction": [
+          "Harad",
+          "Variag"
+        ],
+        "unitType": [
+          "Hero",
+          "Infantry"
+        ],
+        "baseSize": [
+          "25mm"
+        ],
+        "heroicActions": [
+          "Heroic Resolve"
+        ],
+        "wargear": [
+          "Armour",
+          "Spear",
+          "Southron Command Horn"
+        ],
+        "options": [],
+        "specialRules": [
+          "Hired for a Mission",
+          "Southron Command Horn",
+          "War Beast Herder"
+        ],
+        "factions": [
+          {
+            "name": "Southron Mercenaries",
+            "heroicTier": "Hero of Fortitude"
+          }
+        ]
+      },
+      {
+        "name": "The Watcher in the Wood",
+        "points": 300,
+        "movement": 4,
+        "fight": 8,
+        "shoot": 4,
+        "strength": 9,
+        "defence": 6,
+        "attack": 6,
+        "wounds": 10,
+        "courage": 6,
+        "intelligence": 7,
+        "might": 1,
+        "will": 5,
+        "fate": 1,
+        "race": [
+          "Kraken"
+        ],
+        "faction": [
+          "Moria"
+        ],
+        "unitType": [
+          "Hero",
+          "Infantry",
+          "Monster",
+          "Unique"
+        ],
+        "baseSize": [
+          "160mm"
+        ],
+        "heroicActions": [],
+        "wargear": [
+          "Tentacles (hand weapon)"
+        ],
+        "options": [],
+        "specialRules": [
+          "Dominant (10)",
+          "Harbinger of Evil (12\")",
+          "Woodland Creature",
+          "Large Target",
+          "Resistant to Magic",
+          "Terror",
+          "Survival Instinct",
+          "Lone Monster",
+          "Lake Dweller",
+          "Grasping Predator",
+          "From the Deep (Watcher in the Wood)",
+          "Abominable Engulfing"
+        ],
+        "factions": [
+          {
+            "name": "Weald se Witega",
+            "heroicTier": "Independent Hero"
+          }
+        ]
+      },
+      {
+        "name": "Wulf's Lieutenant",
+        "points": 50,
+        "movement": 6,
+        "fight": 4,
+        "shoot": 4,
+        "strength": 4,
+        "defence": 4,
+        "attack": 2,
+        "wounds": 2,
+        "courage": 6,
+        "intelligence": 7,
+        "might": 2,
+        "will": 1,
+        "fate": 1,
+        "race": [
+          "Man"
+        ],
+        "faction": [
+          "Dunland"
+        ],
+        "unitType": [
+          "Hero",
+          "Infantry",
+          "Unique"
+        ],
+        "baseSize": [
+          "25mm"
+        ],
+        "heroicActions": [
+          "Heroic Strength"
+        ],
+        "wargear": [
+          "Hand weapon"
+        ],
+        "options": [
+          {
+            "name": "Horse",
+            "points": 20,
+            "availableIn": [
+              "Usurpers of Edoras (Orcstew)",
+              "Army of Wulf"
+            ]
+          },
+          {
+            "name": "Siege Tower Drum",
+            "points": 25,
+            "availableIn": [
+              "Besiegers of the Hornburg (Orcstew)"
+            ]
+          }
+        ],
+        "specialRules": [
+          "Hatred (Rohan)",
+          "Sworn Protector (Freca)",
+          "Sworn Protector (Wulf)",
+          "Burly",
+          "Dirty Work",
+          "Fall of a Pawn"
+        ],
+        "factions": [
+          {
+            "name": "Usurpers of Edoras (Orcstew)",
+            "heroicTier": "Hero of Fortitude"
+          },
+          {
+            "name": "Besiegers of the Hornburg (Orcstew)",
+            "heroicTier": "Hero of Fortitude"
+          },
+          {
+            "name": "Weald se Witega",
+            "heroicTier": "Hero of Fortitude"
+          },
+          {
+            "name": "Army of Wulf",
+            "heroicTier": "Hero of Fortitude"
+          }
+        ]
+      },
+      {
+        "name": "The Archer Chieftain of Dunland",
+        "points": 60,
+        "movement": 6,
+        "fight": 4,
+        "shoot": 4,
+        "strength": 4,
+        "defence": 5,
+        "attack": 2,
+        "wounds": 2,
+        "courage": 6,
+        "intelligence": 6,
+        "might": 2,
+        "will": 1,
+        "fate": 1,
+        "race": [
+          "Man"
+        ],
+        "faction": [
+          "Dunland"
+        ],
+        "unitType": [
+          "Hero",
+          "Infantry",
+          "Unique"
+        ],
+        "baseSize": [
+          "25mm"
+        ],
+        "heroicActions": [
+          "Heroic March",
+          "Heroic Accuracy"
+        ],
+        "wargear": [
+          "Armour",
+          "Hand weapon",
+          "Bow"
+        ],
+        "options": [],
+        "specialRules": [
+          "Hatred (Rohan)",
+          "Sharpshooter",
+          "Leader (Dunlending Clan Warrior)",
+          "Aim for the Riders",
+          "Deadly Volley"
+        ],
+        "factions": [
+          {
+            "name": "Usurpers of Edoras (Orcstew)",
+            "heroicTier": "Hero of Fortitude"
+          },
+          {
+            "name": "Army of Wulf",
+            "heroicTier": "Hero of Fortitude"
+          }
+        ]
       }
     ],
     "warriors": [
@@ -33964,7 +35450,9 @@
           "Fords of Isen",
           "Paths of the Druadan",
           "Realms of Men",
-          "Helm's Guard"
+          "Helm's Guard",
+          "Friendship of Isengard",
+          "The Green Promise of Spring"
         ],
         "points": 8,
         "legacy": true,
@@ -34449,7 +35937,8 @@
           "Armour",
           "Spear"
         ],
-        "options": []
+        "options": [],
+        "factions": []
       },
       {
         "name": "Hobbit Shirriff",
@@ -38236,7 +39725,11 @@
         "name": "Hill Tribesman",
         "factions": [
           "Usurpers of Edoras",
-          "Besiegers of the Hornburg"
+          "Besiegers of the Hornburg",
+          "Usurpers of Edoras (Orcstew)",
+          "Besiegers of the Hornburg (Orcstew)",
+          "Weald se Witega",
+          "Army of Wulf"
         ],
         "unavailableIn": [
           [
@@ -38314,6 +39807,29 @@
             "name": "War horn and light shield",
             "points": 26,
             "chooseOneKey": "a"
+          },
+          {
+            "name": "Carnyx",
+            "usesDefinition": "Carnyx",
+            "points": 30,
+            "chooseOneKey": "a",
+            "availableIn": [
+              "Usurpers of Edoras (Orcstew)",
+              "Besiegers of the Hornburg (Orcstew)",
+              "Weald se Witega",
+              "Army of Wulf"
+            ]
+          },
+          {
+            "name": "Skull mask",
+            "usesDefinition": "Skull Mask",
+            "points": 1,
+            "availableIn": [
+              "Usurpers of Edoras (Orcstew)",
+              "Besiegers of the Hornburg (Orcstew)",
+              "Weald se Witega",
+              "Army of Wulf"
+            ]
           }
         ],
         "specialRules": [
@@ -38321,7 +39837,8 @@
         ],
         "wargear": [
           "Hand weapon"
-        ]
+        ],
+        "availableIn": []
       },
       {
         "name": "Rohirrim Traitor",
@@ -39433,7 +40950,12 @@
           "The Grief of Eomer",
           "Fords of Isen",
           "Helm's Guard",
-          "Defenders of Aglarond"
+          "Defenders of Aglarond",
+          "Army of Edoras (Orcstew)",
+          "Defenders of the Hornburg (Orcstew)",
+          "The Gates of Edoras",
+          "Friendship of Isengard",
+          "The Green Promise of Spring"
         ],
         "unavailableIn": [
           [
@@ -39520,7 +41042,12 @@
           "Fords of Isen",
           "Paths of the Druadan",
           "Fields of Celebrant",
-          "Defenders of Aglarond"
+          "Defenders of Aglarond",
+          "Army of Edoras (Orcstew)",
+          "Defenders of the Hornburg (Orcstew)",
+          "The Gates of Edoras",
+          "Friendship of Isengard",
+          "The Green Promise of Spring"
         ],
         "points": 14,
         "movement": 6,
@@ -39618,13 +41145,21 @@
               "Army of Edoras"
             ],
             "type": "bow"
+          },
+          {
+            "in": [
+              "Army of Edoras (Orcstew)"
+            ],
+            "type": "bow"
           }
         ]
       },
       {
         "name": "Rohan Royal Guard",
         "factions": [
-          "Helm's Guard"
+          "Helm's Guard",
+          "Friendship of Isengard",
+          "The Green Promise of Spring"
         ],
         "availableIn": [
           {
@@ -39914,6 +41449,36 @@
               },
               {
                 "in": "Riders of Theoden"
+              }
+            ]
+          },
+          {
+            "all": [
+              {
+                "in": "Fréaláf Hildeson, First King of the Second Line"
+              },
+              {
+                "in": "Friendship of Isengard"
+              }
+            ]
+          },
+          {
+            "all": [
+              {
+                "in": "King of Men (Rohan)"
+              },
+              {
+                "in": "Friendship of Isengard"
+              }
+            ]
+          },
+          {
+            "all": [
+              {
+                "in": "Fréaláf Hildeson, First King of the Second Line"
+              },
+              {
+                "in": "The Green Promise of Spring"
               }
             ]
           }
@@ -41097,7 +42662,8 @@
           "Fields of Celebrant",
           "Expedition to the East",
           "Host of Eärnur",
-          "Defenders of Cair Andros"
+          "Defenders of Cair Andros",
+          "Friendship of Isengard"
         ],
         "availableIn": [
           {
@@ -41107,6 +42673,56 @@
               },
               {
                 "in": "Defenders of the Pelennor"
+              }
+            ]
+          },
+          {
+            "all": [
+              {
+                "in": "King of Men (Gondor)"
+              },
+              {
+                "in": "Friendship of Isengard"
+              }
+            ]
+          },
+          {
+            "all": [
+              {
+                "in": "Captain of Minas Tirith"
+              },
+              {
+                "in": "Friendship of Isengard"
+              }
+            ]
+          },
+          {
+            "all": [
+              {
+                "in": "Knight of the White Tower"
+              },
+              {
+                "in": "Friendship of Isengard"
+              }
+            ]
+          },
+          {
+            "all": [
+              {
+                "in": "King's Huntsman"
+              },
+              {
+                "in": "Friendship of Isengard"
+              }
+            ]
+          },
+          {
+            "all": [
+              {
+                "in": "Saruman the White"
+              },
+              {
+                "in": "Friendship of Isengard"
               }
             ]
           }
@@ -41225,7 +42841,8 @@
           "The Grief of Eomer",
           "Expedition to the East",
           "Host of Eärnur",
-          "Defenders of Cair Andros"
+          "Defenders of Cair Andros",
+          "Friendship of Isengard"
         ],
         "availableIn": [
           {
@@ -41282,7 +42899,8 @@
       {
         "name": "Guard of the Fountain Court",
         "factions": [
-          "Host of Eärnur"
+          "Host of Eärnur",
+          "Friendship of Isengard"
         ],
         "availableIn": [
           {
@@ -41302,6 +42920,46 @@
               },
               {
                 "in": "Realms of Men"
+              }
+            ]
+          },
+          {
+            "all": [
+              {
+                "in": "King of Men (Gondor)"
+              },
+              {
+                "in": "Friendship of Isengard"
+              }
+            ]
+          },
+          {
+            "all": [
+              {
+                "in": "Captain of Minas Tirith"
+              },
+              {
+                "in": "Friendship of Isengard"
+              }
+            ]
+          },
+          {
+            "all": [
+              {
+                "in": "Knight of the White Tower"
+              },
+              {
+                "in": "Friendship of Isengard"
+              }
+            ]
+          },
+          {
+            "all": [
+              {
+                "in": "King's Huntsman"
+              },
+              {
+                "in": "Friendship of Isengard"
               }
             ]
           }
@@ -41344,7 +43002,8 @@
       {
         "name": "Citadel Guard",
         "factions": [
-          "Host of Eärnur"
+          "Host of Eärnur",
+          "Friendship of Isengard"
         ],
         "availableIn": [
           {
@@ -41424,6 +43083,46 @@
               },
               {
                 "in": "Fields of Celebrant"
+              }
+            ]
+          },
+          {
+            "all": [
+              {
+                "in": "King of Men (Gondor)"
+              },
+              {
+                "in": "Friendship of Isengard"
+              }
+            ]
+          },
+          {
+            "all": [
+              {
+                "in": "Captain of Minas Tirith"
+              },
+              {
+                "in": "Friendship of Isengard"
+              }
+            ]
+          },
+          {
+            "all": [
+              {
+                "in": "Knight of the White Tower"
+              },
+              {
+                "in": "Friendship of Isengard"
+              }
+            ]
+          },
+          {
+            "all": [
+              {
+                "in": "King's Huntsman"
+              },
+              {
+                "in": "Friendship of Isengard"
               }
             ]
           }
@@ -41654,7 +43353,8 @@
           "Reclamation of Osgiliath",
           "Realms of Men",
           "Expedition to the East",
-          "Defenders of Cair Andros"
+          "Defenders of Cair Andros",
+          "Friendship of Isengard"
         ],
         "points": 8,
         "movement": 6,
@@ -44189,7 +45889,10 @@
           "Besiegers of the Hornburg",
           "Army of Dunland",
           "Brigands of Breeland",
-          "Reavers of Dunland"
+          "Reavers of Dunland",
+          "Usurpers of Edoras (Orcstew)",
+          "Besiegers of the Hornburg (Orcstew)",
+          "Weald se Witega"
         ],
         "unavailableIn": [
           [
@@ -45539,6 +47242,342 @@
         "wargear": [
           "Elven-made hand-and-a-half weapon",
           "Elven cloak"
+        ]
+      },
+      {
+        "name": "Hill Tribes Drummer",
+        "autoAddOnly": true,
+        "unavailableSolo": true,
+        "points": 0,
+        "movement": 6,
+        "fight": 3,
+        "shoot": 4,
+        "strength": 3,
+        "defence": 3,
+        "attack": 1,
+        "wounds": 1,
+        "courage": 7,
+        "intelligence": 8,
+        "race": [
+          "Man"
+        ],
+        "faction": [
+          "Dunland"
+        ],
+        "unitType": [
+          "Warrior",
+          "Infantry"
+        ],
+        "baseSize": [
+          "25mm"
+        ],
+        "wargear": [
+          "Hand weapon"
+        ],
+        "options": [],
+        "specialRules": [
+          "Hatred (Rohan)"
+        ],
+        "factions": []
+      },
+      {
+        "name": "Rohan Siege Crew (Edoras)",
+        "autoAddOnly": true,
+        "points": 0,
+        "movement": 6,
+        "fight": 3,
+        "shoot": 4,
+        "strength": 3,
+        "defence": 4,
+        "attack": 1,
+        "wounds": 1,
+        "courage": 7,
+        "intelligence": 6,
+        "race": [
+          "Man"
+        ],
+        "faction": [
+          "Rohan"
+        ],
+        "unitType": [
+          "Warrior",
+          "Infantry"
+        ],
+        "baseSize": [
+          "25mm"
+        ],
+        "wargear": [
+          "Armour",
+          "Hand weapon"
+        ],
+        "options": [],
+        "specialRules": [],
+        "factions": []
+      },
+      {
+        "name": "Hornburg Garrison Warrior",
+        "unlimited": true,
+        "points": 8,
+        "movement": 6,
+        "fight": 3,
+        "shoot": 4,
+        "strength": 4,
+        "defence": 4,
+        "attack": 1,
+        "wounds": 1,
+        "courage": 6,
+        "intelligence": 6,
+        "race": [
+          "Man"
+        ],
+        "faction": [
+          "Rohan"
+        ],
+        "unitType": [
+          "Warrior",
+          "Infantry"
+        ],
+        "baseSize": [
+          "25mm"
+        ],
+        "wargear": [
+          "Armour",
+          "Hand weapon"
+        ],
+        "options": [
+          {
+            "name": "Bow",
+            "points": 1,
+            "requireChooseOneKey": "a"
+          },
+          {
+            "name": "Shield",
+            "points": 1,
+            "requireChooseOneKey": "a"
+          },
+          {
+            "name": "Shield and throwing spears",
+            "points": 3,
+            "requireChooseOneKey": "a"
+          }
+        ],
+        "specialRules": [
+          "Spear Mastery",
+          "Defender on the Wall"
+        ],
+        "factions": [
+          "Defenders of the Hornburg (Orcstew)"
+        ]
+      },
+      {
+        "name": "Southron Mercenary Warrior",
+        "unlimited": true,
+        "points": 8,
+        "movement": 6,
+        "fight": 4,
+        "shoot": 4,
+        "strength": 3,
+        "defence": 4,
+        "attack": 1,
+        "wounds": 1,
+        "courage": 7,
+        "intelligence": 7,
+        "race": [
+          "Man"
+        ],
+        "faction": [
+          "Harad",
+          "Variag"
+        ],
+        "unitType": [
+          "Warrior",
+          "Infantry"
+        ],
+        "baseSize": [
+          "25mm"
+        ],
+        "wargear": [
+          "Armour",
+          "Hand weapon"
+        ],
+        "options": [
+          {
+            "name": "Bow",
+            "points": 1,
+            "requireChooseOneKey": "a"
+          },
+          {
+            "name": "Spear",
+            "points": 1,
+            "requireChooseOneKey": "a"
+          }
+        ],
+        "specialRules": [
+          "Hired for a Mission"
+        ],
+        "factions": [
+          "Southron Mercenaries",
+          "Army of Wulf"
+        ]
+      },
+      {
+        "name": "Dunlending Clan Warrior",
+        "unlimited": true,
+        "points": 8,
+        "movement": 6,
+        "fight": 3,
+        "shoot": 4,
+        "strength": 4,
+        "defence": 4,
+        "attack": 1,
+        "wounds": 1,
+        "courage": 7,
+        "intelligence": 7,
+        "race": [
+          "Man"
+        ],
+        "faction": [
+          "Dunland"
+        ],
+        "unitType": [
+          "Warrior",
+          "Infantry"
+        ],
+        "baseSize": [
+          "25mm"
+        ],
+        "availableIn": [
+          "Wulf, High Lord of the Hill Tribes",
+          "The Archer Chieftain of Dunland"
+        ],
+        "wargear": [
+          "Armour",
+          "Hand weapon"
+        ],
+        "options": [
+          {
+            "name": "Bow",
+            "points": 1,
+            "chooseOneKey": "a"
+          },
+          {
+            "name": "Flaming brand",
+            "points": 1,
+            "chooseOneKey": "a"
+          },
+          {
+            "name": "Shield",
+            "points": 1,
+            "chooseOneKey": "a"
+          },
+          {
+            "name": "Spear",
+            "points": 1,
+            "chooseOneKey": "a"
+          },
+          {
+            "name": "Two-handed weapon",
+            "points": 1,
+            "chooseOneKey": "a"
+          }
+        ],
+        "specialRules": [
+          "Hatred (Rohan)",
+          "Elite",
+          "Skull Mask",
+          "Chosen Warriors"
+        ],
+        "factions": [
+          "Usurpers of Edoras (Orcstew)",
+          "Besiegers of the Hornburg (Orcstew)",
+          "Army of Wulf"
+        ]
+      },
+      {
+        "name": "Dunlending Clan Horseman",
+        "unlimited": true,
+        "points": 14,
+        "movement": 6,
+        "fight": 3,
+        "shoot": 4,
+        "strength": 4,
+        "defence": 4,
+        "attack": 1,
+        "wounds": 1,
+        "courage": 7,
+        "intelligence": 7,
+        "race": [
+          "Man"
+        ],
+        "faction": [
+          "Dunland"
+        ],
+        "unitType": [
+          "Warrior",
+          "Cavalry"
+        ],
+        "baseSize": [
+          "40mm"
+        ],
+        "availableIn": [
+          "Wulf, High Lord of the Hill Tribes"
+        ],
+        "wargear": [
+          "Armour",
+          "Hand weapon",
+          "Horse"
+        ],
+        "options": [
+          {
+            "name": "Flaming brand",
+            "points": 1
+          }
+        ],
+        "specialRules": [
+          "Hatred (Rohan)",
+          "Elite",
+          "Skull Mask",
+          "Chosen Warriors",
+          "Nocturnal Raiders"
+        ],
+        "factions": [
+          "Usurpers of Edoras (Orcstew)",
+          "Army of Wulf"
+        ]
+      },
+      {
+        "name": "Hill Tribes Drums",
+        "unlimited": true,
+        "hideStats": true,
+        "points": 25,
+        "faction": [
+          "Dunland"
+        ],
+        "unitType": [
+          "Warrior",
+          "Infantry"
+        ],
+        "includes": [
+          {
+            "dataSource": "warriors",
+            "name": "Hill Tribes Drummer"
+          },
+          {
+            "dataSource": "warriors",
+            "name": "Hill Tribes Drummer"
+          }
+        ],
+        "wargear": [
+          "Hill Tribes Drums"
+        ],
+        "options": [],
+        "specialRules": [
+          "Hill Tribes Drums",
+          "Echoed Beating",
+          "Take up the Drums"
+        ],
+        "factions": [
+          "Besiegers of the Hornburg (Orcstew)"
         ]
       }
     ],
@@ -51357,6 +53396,241 @@
         "name": "Gifted War Beast of Far Harad",
         "tag": "Passive",
         "definition": "Fuinur is a Beastmaster riding a Mûmak with Tusk Weapons and Sigils of Defiance. The Mûmak has no howdah."
+      },
+      {
+        "name": "Sworn Protector (Helm Hammerhand, King of Rohan)",
+        "tag": "Passive",
+        "definition": "While Helm Hammerhand, King of Rohan is alive and on the battlefield, this model automatically passes all Courage Tests."
+      },
+      {
+        "name": "Sworn Protector (Freca)",
+        "tag": "Passive",
+        "definition": "While Freca is alive and on the battlefield, this model automatically passes all Courage Tests."
+      },
+      {
+        "name": "Sworn Protector (Wulf)",
+        "tag": "Passive",
+        "definition": "While Wulf is alive and on the battlefield, this model automatically passes all Courage Tests."
+      },
+      {
+        "name": "Leader (Dunlending Clan Warrior)",
+        "tag": "Passive",
+        "definition": "This Hero may include Dunlending Clan Warriors in its Warband."
+      },
+      {
+        "name": "Dominant (8)",
+        "tag": "Passive",
+        "definition": "When determining control of an Objective Marker, this model counts as eight models instead of one."
+      },
+      {
+        "name": "Elite",
+        "tag": "Passive",
+        "definition": "This model may only join a Warband led by a Hero with the appropriate Leader special rule."
+      },
+      {
+        "name": "Words of Caution",
+        "tag": "Active",
+        "definition": "Friendly Rohan models within 3\" of Fryght that did not Charge this turn are not considered Trapped when they cannot Back Away."
+      },
+      {
+        "name": "Clarity of Mind",
+        "tag": "Active",
+        "definition": "If a friendly Rohan Hero within 6\" of Pryme declares a Heroic Move in the same turn as an enemy Hero and loses the roll-off, roll a D6. On a 3+, that Hero may cancel the Heroic Move and retrieve the Might spent. This may affect one friendly Hero per turn."
+      },
+      {
+        "name": "Gallant Charge",
+        "tag": "Passive",
+        "definition": "If Gramhere Charges during his Activation, friendly Rohan Warrior models within 6\" that Activate after him and also Charge may re-roll one D6 in their Duel Roll."
+      },
+      {
+        "name": "Steadfast Backing",
+        "tag": "Active",
+        "definition": "When another friendly Rohan Hero within 6\" declares a Heroic Combat, Everbrand may re-roll failed To Wound rolls when making Strikes until the end of the Fight phase."
+      },
+      {
+        "name": "Flaming Ammunition (Edoras)",
+        "tag": "Passive",
+        "definition": "A Ballista of Edoras upgraded with Flaming Ammunition may re-roll failed To Wound rolls against a Siege Target."
+      },
+      {
+        "name": "Last Second Shot",
+        "tag": "Active",
+        "definition": "When a Ballista of Edoras shoots at a Battlefield Target within 6\", its Scatter result counts as Dead On on a 4+ rather than a 6+. If it Scatters, it may not Scatter onto a target outside its Arc of Sight."
+      },
+      {
+        "name": "Ghost Stories",
+        "tag": "Active",
+        "definition": "Once per Move phase during her Activation, Pennicruik may select a friendly Rohan Hero within 6\". That Hero makes a Courage Test and regains one previously spent Fate Point if it passes. Alternatively, select an enemy Hero within 6\"; it loses one Fate Point if it fails its Courage Test. Automatic passes cannot be used, except Heroic Resolve."
+      },
+      {
+        "name": "Inscrutable Crone",
+        "tag": "Passive",
+        "definition": "Models with Blades of the Dead always require a 6 To Wound Pennicruik. They suffer -1 To Wound against other friendly models within 3\" unless they already require a 6. Enemy Spirit models cannot select Pennicruik or friendly models within 3\" as targets of special rules that choose a friendly model."
+      },
+      {
+        "name": "Defender on the Wall",
+        "tag": "Active",
+        "definition": "While this model is within range of an Objective Marker, it gains +1 Fight Value."
+      },
+      {
+        "name": "Secure Reign",
+        "tag": "Passive",
+        "definition": "This rule applies while Fréaláf is in the Army, even if he is not on the battlefield or has been removed. Friendly Rohan Heroes may benefit from other friendly Heroes' Stand Fast and may re-roll one D6 in their Duel Roll while within 3\" of another friendly Rohan Hero. All other friendly Rohan models gain +1 to Courage and Intelligence Tests."
+      },
+      {
+        "name": "Hired for a Mission",
+        "tag": "Active",
+        "definition": "This model counts as in range of a banner while within range of an Objective Marker. It may also re-roll failed To Wound rolls in Combat and Shooting against an enemy model whose death awards Victory Points in the current Scenario. Secretly selected targets do not qualify unless their death awards Victory Points for another reason."
+      },
+      {
+        "name": "Drop Attack",
+        "tag": "Active",
+        "definition": "If the Howdah is destroyed or the Mûmak is slain, roll a D6. On a 1, the Variag Mûmak Commander suffers Falling Damage and is placed Prone. On a 2+, place him within 3\" of the Mûmak's base, including in base contact with enemies. Infantry on 25mm bases contacted this way are knocked Prone. The placement is not a Charge. Might may modify the roll."
+      },
+      {
+        "name": "Trample (Mercenary Mûmak)",
+        "tag": "Active",
+        "definition": "When this Mûmak Tramples, it inflicts three Strength 8 Impact Hits. If upgraded with Tusk Weapons, it inflicts four Strength 8 Impact Hits instead."
+      },
+      {
+        "name": "Mercenary Howdah",
+        "tag": "Passive",
+        "definition": "The Howdah has capacity for six models in addition to the Southron Mûmak Beastmaster at its front. The only other models it may include are Southron Mercenary Warriors."
+      },
+      {
+        "name": "Armored Headplate",
+        "tag": "Passive",
+        "definition": "To Wound rolls against the Mûmak with Strength greater than 8 are instead resolved at Strength 8. If it contacts another War Beast or terrain while Moving or Stampeding, it suffers three Strength 6 hits rather than Strength 8 hits."
+      },
+      {
+        "name": "Tusks Trophies",
+        "tag": "Passive",
+        "definition": "The Mûmak gains the Awesome Presence special rule."
+      },
+      {
+        "name": "Instinct of the Beast",
+        "tag": "Passive",
+        "definition": "After the Rabid Mûmak's initial pivot, make an Intelligence Test. If passed, continue its Activation normally. If failed, the opponent may pivot it again by up to 1\" measured from the tip of its base. The final pivot must allow it to Trample models if possible. It can never benefit from friendly Heroic Actions, Stand Fast, banners or special rules."
+      },
+      {
+        "name": "Madness Beyond Pain",
+        "tag": "Passive",
+        "definition": "Whenever the Rabid Mûmak would suffer a Wound, roll a D6. On a natural 6, the Wound is ignored."
+      },
+      {
+        "name": "Destructive Rampage",
+        "tag": "Active",
+        "definition": "The Rabid Mûmak may move through woodland and ignores trees and vegetation in its path. Temporarily remove terrain that prevents placement and replace it when the space is free, where possible."
+      },
+      {
+        "name": "Savage Stalking",
+        "tag": "Active",
+        "definition": "While within woodland terrain, the Rabid Mûmak follows the Stalk Unseen special rule."
+      },
+      {
+        "name": "Mad with the Sound of Horn",
+        "tag": "Active",
+        "definition": "At the start of its Activation, if an enemy war horn bearer is within Trample or Charge range, the Rabid Mûmak makes an Intelligence Test. If failed, it must take the shortest route to Trample or Charge such a model, bypassing Instinct of the Beast."
+      },
+      {
+        "name": "Southron Command Horn",
+        "tag": "Active",
+        "definition": "This is a war horn. Friendly Mûmak models within 24\" may re-roll one D6 when making Courage or Intelligence Tests."
+      },
+      {
+        "name": "War Beast Herder",
+        "tag": "Active",
+        "definition": "Friendly Mûmakil within 6\" may re-roll one D6 in the Duel Roll and one D6 when making Strikes."
+      },
+      {
+        "name": "Lone Monster",
+        "tag": "Passive",
+        "definition": "The Watcher never affects friendly models with its Heroic Actions or Stand Fast, and cannot benefit from their Heroic Actions or Stand Fast."
+      },
+      {
+        "name": "Lake Dweller",
+        "tag": "Passive",
+        "definition": "The Watcher is never slowed by water, may Shoot from deep water, and always counts as rolling a 6 on the Swim chart. It cannot be knocked Prone or forced to Move."
+      },
+      {
+        "name": "Grasping Predator",
+        "tag": "Active",
+        "definition": "In the Shoot phase the Watcher makes D3 Strength 7 attacks with 8\" range that ignore In The Way, Moving and Shooting, and movement restrictions. If eligible targets larger than 25mm are in range, they must be targeted first. A hit that does not slay its target drags the whole model into base contact with the Watcher. It may drag a War Beast whose Strength is not higher than its own, but all shots must target that War Beast. It may Shoot while Engaged unless fighting a Monster or War Beast."
+      },
+      {
+        "name": "From the Deep (Watcher in the Wood)",
+        "tag": "Active",
+        "definition": "The Watcher cannot join another Hero's warband and begins off the battlefield. In each Priority phase its controlling player may roll for it to arrive; on a 3+ place it anywhere without displacing models. It cannot Charge on the turn it arrives but otherwise acts normally."
+      },
+      {
+        "name": "Abominable Engulfing",
+        "tag": "Brutal Power Attack",
+        "definition": "Instead of Strikes, select one enemy Monster or War Beast in the Combat whose Strength, Defence and Wounds are all below 10. Make one Strike. If it causes an unprevented Wound, remove the target as a casualty; destroy its Howdah and place Riders, Passengers, Commander and occupants Prone within its footprint, applying Falling Damage where appropriate. Remove the Watcher, which must roll to return using From the Deep."
+      },
+      {
+        "name": "Siege Tower Drum",
+        "tag": "Passive",
+        "definition": "While equipped and on foot, Wulf's Lieutenant follows the Hill Tribes Drums, Echoed Beating and Take up the Drums rules, counts as a Hill Tribes Drummer, and carries Hill Tribes Drums."
+      },
+      {
+        "name": "Dirty Work",
+        "tag": "Active",
+        "definition": "If Wulf's Lieutenant is in a Combat against only one enemy model and that enemy is not Supported, he gains +1 Fight Value and +1 Strength for that Fight."
+      },
+      {
+        "name": "Fall of a Pawn",
+        "tag": "Passive",
+        "definition": "Wulf's Lieutenant awards no Victory Points for being slain and cannot be selected as a protected, harmed or target Hero unless he is the Army's only Hero. When removed, friendly Dunlending Man Warriors automatically pass Courage Tests and re-roll natural 1s To Wound when making Strikes during the next turn."
+      },
+      {
+        "name": "Aim for the Riders",
+        "tag": "Active",
+        "definition": "Friendly Dunland models within 6\" of the Archer Chieftain gain Sharpshooter."
+      },
+      {
+        "name": "Deadly Volley",
+        "tag": "Active",
+        "definition": "Once per game, at the start of the Shoot phase before Heroic Actions, friendly Dunland models within 6\" may re-roll To Hit and To Wound results of natural 1 until the end of the turn."
+      },
+      {
+        "name": "Skull Mask",
+        "tag": "Active",
+        "definition": "Enemy models in the same Combat, including Supporting models, cannot re-roll natural 1s in the Duel Roll. Enemy models within 2\" suffer -1 to Courage Tests. This is not cumulative with similar effects."
+      },
+      {
+        "name": "Chosen Warriors",
+        "tag": "Active",
+        "definition": "While within 3\" of a friendly Dunland Hero, if this model is in a Drawn Combat tied at its Fight Value of 3, it wins instead of rolling off. If both sides have a similar rule, roll off normally."
+      },
+      {
+        "name": "Nocturnal Raiders",
+        "tag": "Active",
+        "definition": "In Scenarios taking place at night, Dunlending Clan Horsemen gain +1 To Wound when making Strikes if they Charged this turn and still have the Cavalry keyword."
+      },
+      {
+        "name": "Hill Tribes Drums",
+        "tag": "Active",
+        "definition": "The drums are a Defence 5, 4 Wound Heavy Object on a 25mm base and deploy touching a Drummer. An enemy in base contact may remove them in the End phase if it only Moved that turn, was not Engaged, did not Shoot or cast, and was not affected by magic."
+      },
+      {
+        "name": "Echoed Beating",
+        "tag": "Active",
+        "definition": "At least one unengaged Drummer touching the drums and not having Moved is required. Dunland Man Infantry Warriors and Hill Tribes Chieftains within 18\" gain cumulative benefits according to the number of sets playing: one set grants +1 Defence against Shooting while touching at least two eligible friends; two sets also grant a natural 6 save against Wounds; three or more also grant +1 Strength when making Strikes while Engaged, not Supporting. Playing drums count as a banner for Victory Points."
+      },
+      {
+        "name": "Take up the Drums",
+        "tag": "Active",
+        "definition": "If a Drummer is slain, it may pass its wargear to a friendly Dunland Man Warrior within 1\". Replace that model with the slain Drummer; a Cavalry model becomes Infantry."
+      },
+      {
+        "name": "Ballista Trained",
+        "tag": "Passive",
+        "definition": "If Hera takes a Ballista of Edoras, she replaces its Siege Veteran and deploys with two Rohan Siege Crew. Use Hera's Shoot Value when she fires it. She may move more than 6\" from it and rotate it without the usual -1 To Hit. Against a Monster or War Beast, she gains +1 on Scatter rolls."
+      },
+      {
+        "name": "Carnyx",
+        "tag": "Active",
+        "definition": "This is a war horn. During the first turn, enemy Heroes within 24\" must pass a Courage Test to declare a Heroic Action. If failed, no Might is spent and they may not declare another Heroic Action that phase."
       }
     ],
     "armyBonuses": [
@@ -53043,6 +55317,98 @@
       {
         "name": "Pride of Umbar",
         "definition": "If your General slays an enemy Hero in Combat, friendly Black Númenórean Warriors within 6\" of your General gain +1 Fight until the end of the turn."
+      },
+      {
+        "name": "Spur the Defenders",
+        "definition": "At the start of the Move phase before Heroic Actions, Hera and Olwyn may each choose one effect for other friendly Rohan models within 3\" until the end of the turn: +1 Fight, +1 Defence, +1 To Wound when making Strikes, count as in range of a banner, or friendly Heroes may spend one free Might Point. They do not affect each other and identical effects do not stack."
+      },
+      {
+        "name": "The Princess's Defiance",
+        "definition": "Whenever Hera removes an enemy Hero, Monster or War Beast as a casualty, she may regain one Might Point spent earlier."
+      },
+      {
+        "name": "Hera's Ploy",
+        "definition": "Once per game at the start of the Move phase, if no enemy is within 2\" of Hera, place two 25mm markers as described in the supplement to create an impassable line of fire until the end of the turn. Fire-immune models ignore it and the area within 6\" counts as daylight."
+      },
+      {
+        "name": "Ready to rejoin the battle",
+        "definition": "If Hera has a Ballista of Edoras, at the start of her Move she may mount Ashere. Place mounted Hera within 6\" and finish her Move normally, no farther than 10\" from where she began."
+      },
+      {
+        "name": "The Garrison of Orthanc",
+        "definition": "Orthanc models gain Sworn Protector (Saruman) and re-roll failed To Wound rolls when making Strikes within 6\" of Saruman."
+      },
+      {
+        "name": "Support from Gondor",
+        "definition": "Friendly Rohan models Supporting or Supported by a friendly Gondor Warrior may re-roll natural 1s in the Duel Roll."
+      },
+      {
+        "name": "Ride for ruin and the world's ending (Orcstew)",
+        "definition": "Friendly Rohan Cavalry models gain +1 Strength on a turn in which they Charge."
+      },
+      {
+        "name": "Saruman's Advice",
+        "definition": "A friendly Hero within 6\" of Saruman may add one free die to a Resist Test. Roll it separately; on a natural 1 the Hero loses one Will and Saruman regains one previously spent Will."
+      },
+      {
+        "name": "Heroine of Rohan",
+        "definition": "In this Army, Hera increases her Fight Value to 6 and her Attacks, Wounds and starting Will to 3."
+      },
+      {
+        "name": "Hardened by war",
+        "definition": "Friendly Rohan Infantry gain +1 Fight Value while within 3\" of a friendly Unique Rohan Hero."
+      },
+      {
+        "name": "Ride for ruin and the world's ending (Green Promise)",
+        "definition": "Friendly Rohan Cavalry gain +1 Strength on a turn in which they Charge."
+      },
+      {
+        "name": "Gandalf's Investigation",
+        "definition": "During his Activation Gandalf may select an enemy Hero within 3\" and make an Intelligence Test. Two successful Tests score 1 Victory Point; four score 2 instead, to a maximum Army total of 20."
+      },
+      {
+        "name": "Mercenary Commander",
+        "definition": "The Variag Hero who is the General increases Fight Value to 6 and Attacks to 3, and gains Master of Battle (4+)."
+      },
+      {
+        "name": "Prized gear of the Mûmakil",
+        "definition": "Each Southron Mercenary Mûmak receives one free upgrade, but every Mûmak in the Army must have a different combination of upgrades."
+      },
+      {
+        "name": "Come from afar",
+        "definition": "During the first turn, one Southron Mercenary Captain or Variag Mûmak Commander may call a free Heroic March. In Scenarios with rolling arrivals, friendly Warbands may re-roll results of 1."
+      },
+      {
+        "name": "Swift as Snakes",
+        "definition": "After Duel re-rolls and Might, if an opponent has a natural 1 in a Combat involving a friendly Harad Man, select one Engaged enemy to suffer a Strength 2 hit. If Cavalry, this cannot target the Mount."
+      },
+      {
+        "name": "Hidden in the Wood",
+        "definition": "All friendly Dunland Man models gain Stalk Unseen and Woodland Creature."
+      },
+      {
+        "name": "Mission for the High Lord",
+        "definition": "After deployment select an enemy non-Monster Hero. If Dunland Men defeat it in Combat without the Watcher participating, score 2 Victory Points, to a maximum Army total of 20. The Watcher cannot target it with Grasping Predator."
+      },
+      {
+        "name": "Opportunistic Ambush",
+        "definition": "Before deployment, one non-General Dunlending Hero's Warband may be held back. From turn 2, deploy it at the end of an Activation phase in or within 1\" of agreed terrain, or from a board edge if it cannot fit. It cannot arrive in Control Zones or base contact. Most models count as moving half and do not Activate; Targg or Wulf's Lieutenant may Activate and Charge, gaining a free Heroic Strike and preventing an Engaged enemy Hero from calling Heroic Actions that Fight phase."
+      },
+      {
+        "name": "Whipped into a frenzy (War of the Rohirrim - Orcstew)",
+        "definition": "Whenever a Dunland Man Warrior or Hill Tribes Chieftain suffers a Wound, roll a D6. On a natural 6, ignore it."
+      },
+      {
+        "name": "Treacherous Shot",
+        "definition": "Once per game, if Wulf's Army is Broken, at the start of the End phase Wulf may make a bow shot as if stationary and using Heroic Accuracy, with Sharpshooter, re-rolled failed In The Way rolls and +1 To Wound."
+      },
+      {
+        "name": "Green lights of Isengard",
+        "definition": "At night, enemy Shooting Attacks do not receive the normal +1 To Wound against this Army."
+      },
+      {
+        "name": "Tactical Approach",
+        "definition": "If General Targg is included, you may pass once instead of deploying a Warband. Targg's Master of Battle (4+) improves to Master of Battle (3+)."
       }
     ]
   },
