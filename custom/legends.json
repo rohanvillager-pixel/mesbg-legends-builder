@@ -1,6 +1,6 @@
 {
   "name": "Legends of Middle-earth",
-  "version": "1.2",
+  "version": "1.2.1",
   "toggle": {
     "property": "legendsOfMiddleEarth",
     "label": "Legends of Middle-earth",
