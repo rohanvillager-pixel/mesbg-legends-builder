@@ -5,7 +5,7 @@
   "appVersion": 2,
   "update": {
     "manifestUrl": "https://raw.githubusercontent.com/rohanvillager-pixel/mesbg-legends-builder/main/data2024-legends.update.json",
-    "contentVersion": "2026.08.21.3-legends-1.2.1-twp-1.0-wotr-1.1"
+    "contentVersion": "2026.08.21.6-legends-1.2.1-twp-1.0-wotr-1.1"
   },
   "disallowMultipleFactions": true,
   "colors": {
@@ -23960,7 +23960,7 @@
         "race": [
           "Goblin"
         ],
-        "factino": [
+        "faction": [
           "Goblin-town"
         ],
         "unitType": [
@@ -51161,6 +51161,16 @@
         "definition": "Whilst Durin is alive and on the battlefield, this model passes all Courage tests."
       },
       {
+        "name": "Sworn Protector (Frodo)",
+        "tag": "Active",
+        "definition": "Whilst Frodo is alive and on the battlefield, this model passes all Courage tests."
+      },
+      {
+        "name": "Sworn Protector (Rosie)",
+        "tag": "Active",
+        "definition": "Whilst Rosie is alive and on the battlefield, this model passes all Courage tests."
+      },
+      {
         "name": "Sworn Protector (Suladan)",
         "tag": "Active",
         "definition": "Whilst Suladan is alive and on the battlefield, this model passes all Courage tests."
@@ -53098,7 +53108,7 @@
       {
         "name": "Majestic Steed",
         "tag": "Active",
-        "definition": "In a turn in which Thranduil Charges into Combat, he resolves his Strikes at Stength 5. Additionally, each time this model Charges into Combat, it will inflict a single Strength 4 hit upon one model it has Charged (Cavalry models suffer this hit on both the rider and the Mount). If after this hit Thranduil is no longer Engaged in Combat, he may continue his Move in any way his controlling player wishes; stopping straight away. Charging another enemy model, or anything in between."
+        "definition": "In a turn in which Thranduil Charges into Combat, he resolves his Strikes at Strength 5. Additionally, each time this model Charges into Combat, it will inflict a single Strength 4 hit upon one model it has Charged (Cavalry models suffer this hit on both the rider and the Mount). If after this hit Thranduil is no longer Engaged in Combat, he may continue his Move in any way his controlling player wishes; stopping straight away. Charging another enemy model, or anything in between."
       },
       {
         "name": "Well fed, and ready to fight",
