@@ -5,7 +5,7 @@
   "appVersion": 2,
   "update": {
     "manifestUrl": "https://raw.githubusercontent.com/rohanvillager-pixel/mesbg-legends-builder/main/data2024-legends.update.json",
-    "contentVersion": "2026.08.21.6-legends-1.2.1-twp-1.0-wotr-1.1"
+    "contentVersion": "2026.08.21.7-legends-1.2.1-twp-1.0-wotr-1.1"
   },
   "disallowMultipleFactions": true,
   "colors": {
@@ -2227,7 +2227,6 @@
           "dataSource": "heroes",
           "label": "Hero",
           "type": "main",
-          "groupFactionPreviewByTier": true,
           "tierProperty": "heroicTier",
           "tierData": "heroicTiers",
           "tiers": [
@@ -61622,6 +61621,7 @@
           "id": "sorcerer",
           "label": "Path of the Sorcerer",
           "startingHeroicAction": "Heroic Channeling",
+          "startingMagicalPowerChoice": true,
           "rareLimit": 1,
           "maximums": {
             "Fv": 2,
@@ -62074,7 +62074,8 @@
               ],
               "takeOtherRollToo": true,
               "grantSpecialRule": "Heroic Resolve Mastery",
-              "companyHeroUpgradeAllowed": true
+              "companyHeroUpgradeAllowed": true,
+              "improveAllChoices": true
             },
             {
               "total": 8,
